@@ -117,4 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="archive64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\archive64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcode64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcode_bkg64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode-bkg64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcode_ref64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode-ref64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcode_samp64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode-samp64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beaker16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beaker16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bkg64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bkg64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="detector16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\detector16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="detector64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\detector64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="detectors64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\detectors64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jobs64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jobs64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rad01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rad01.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ref64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ref64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="samp64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\samp64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEMPLATE_BEAKERS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-BEAKERS.XML;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMPLATE_DEFAULT_BKG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-DEFAULT-BKG.QAF;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TEMPLATE_DETECTORS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-DETECTORS.XML;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMPLATE_LIBRARY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-LIBRARY.NLB;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TEMPLATE_MCAINFO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-MCAINFO.EXE;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TEMPLATE_QABEAKERS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-QABEAKERS.XML;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMPLATE_REPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-REPORT.TPL;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TEMPLATE_SYSTEM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\TEMPLATE-SYSTEM.XML;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>

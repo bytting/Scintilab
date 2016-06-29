@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.status = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu = new System.Windows.Forms.MenuStrip();
@@ -569,7 +569,7 @@
             // 
             this.btnBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnBack.Enabled = false;
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Image = global::Scintilab.Properties.Resources.back;
             this.btnBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(23, 22);
@@ -653,7 +653,7 @@
             this.tabs.Controls.Add(this.tabArchive);
             this.tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabs.Location = new System.Drawing.Point(0, 49);
-            this.tabs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabs.Margin = new System.Windows.Forms.Padding(2);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
             this.tabs.Size = new System.Drawing.Size(848, 427);
@@ -665,9 +665,9 @@
             this.tabMenu.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabMenu.Controls.Add(this.tableLayoutPanel4);
             this.tabMenu.Location = new System.Drawing.Point(4, 23);
-            this.tabMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabMenu.Margin = new System.Windows.Forms.Padding(2);
             this.tabMenu.Name = "tabMenu";
-            this.tabMenu.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabMenu.Padding = new System.Windows.Forms.Padding(2);
             this.tabMenu.Size = new System.Drawing.Size(840, 400);
             this.tabMenu.TabIndex = 0;
             this.tabMenu.Text = "Meny";
@@ -705,9 +705,9 @@
             this.btnMenuArchive.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuArchive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuArchive.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuArchive.Image")));
+            this.btnMenuArchive.Image = global::Scintilab.Properties.Resources.archive64;
             this.btnMenuArchive.Location = new System.Drawing.Point(280, 258);
-            this.btnMenuArchive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuArchive.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuArchive.Name = "btnMenuArchive";
             this.btnMenuArchive.Size = new System.Drawing.Size(274, 124);
             this.btnMenuArchive.TabIndex = 2;
@@ -724,9 +724,9 @@
             this.btnMenuJobs.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuJobs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuJobs.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuJobs.Image")));
+            this.btnMenuJobs.Image = global::Scintilab.Properties.Resources.jobs64;
             this.btnMenuJobs.Location = new System.Drawing.Point(2, 258);
-            this.btnMenuJobs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuJobs.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuJobs.Name = "btnMenuJobs";
             this.btnMenuJobs.Size = new System.Drawing.Size(274, 124);
             this.btnMenuJobs.TabIndex = 1;
@@ -743,7 +743,7 @@
             this.btnMenuBkgSample.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuBkgSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuBkgSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuBkgSample.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuBkgSample.Image")));
+            this.btnMenuBkgSample.Image = global::Scintilab.Properties.Resources.bkg64;
             this.btnMenuBkgSample.Location = new System.Drawing.Point(559, 3);
             this.btnMenuBkgSample.Name = "btnMenuBkgSample";
             this.btnMenuBkgSample.Size = new System.Drawing.Size(274, 122);
@@ -761,9 +761,9 @@
             this.btnMenuRegSample.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuRegSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuRegSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuRegSample.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuRegSample.Image")));
+            this.btnMenuRegSample.Image = global::Scintilab.Properties.Resources.samp64;
             this.btnMenuRegSample.Location = new System.Drawing.Point(2, 2);
-            this.btnMenuRegSample.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuRegSample.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuRegSample.Name = "btnMenuRegSample";
             this.btnMenuRegSample.Size = new System.Drawing.Size(274, 124);
             this.btnMenuRegSample.TabIndex = 1;
@@ -780,9 +780,9 @@
             this.btnMenuBarcodeWizardBkg.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuBarcodeWizardBkg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuBarcodeWizardBkg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuBarcodeWizardBkg.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuBarcodeWizardBkg.Image")));
+            this.btnMenuBarcodeWizardBkg.Image = global::Scintilab.Properties.Resources.barcode_bkg64;
             this.btnMenuBarcodeWizardBkg.Location = new System.Drawing.Point(558, 130);
-            this.btnMenuBarcodeWizardBkg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuBarcodeWizardBkg.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuBarcodeWizardBkg.Name = "btnMenuBarcodeWizardBkg";
             this.btnMenuBarcodeWizardBkg.Size = new System.Drawing.Size(276, 124);
             this.btnMenuBarcodeWizardBkg.TabIndex = 4;
@@ -799,9 +799,9 @@
             this.btnMenuBarcodeWizard.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuBarcodeWizard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuBarcodeWizard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuBarcodeWizard.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuBarcodeWizard.Image")));
+            this.btnMenuBarcodeWizard.Image = global::Scintilab.Properties.Resources.barcode_samp64;
             this.btnMenuBarcodeWizard.Location = new System.Drawing.Point(2, 130);
-            this.btnMenuBarcodeWizard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuBarcodeWizard.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuBarcodeWizard.Name = "btnMenuBarcodeWizard";
             this.btnMenuBarcodeWizard.Size = new System.Drawing.Size(274, 124);
             this.btnMenuBarcodeWizard.TabIndex = 3;
@@ -818,9 +818,9 @@
             this.btnMenuBarcodeWizardRef.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuBarcodeWizardRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuBarcodeWizardRef.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuBarcodeWizardRef.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuBarcodeWizardRef.Image")));
+            this.btnMenuBarcodeWizardRef.Image = global::Scintilab.Properties.Resources.barcode_ref64;
             this.btnMenuBarcodeWizardRef.Location = new System.Drawing.Point(280, 130);
-            this.btnMenuBarcodeWizardRef.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuBarcodeWizardRef.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuBarcodeWizardRef.Name = "btnMenuBarcodeWizardRef";
             this.btnMenuBarcodeWizardRef.Size = new System.Drawing.Size(274, 124);
             this.btnMenuBarcodeWizardRef.TabIndex = 5;
@@ -837,7 +837,7 @@
             this.btnMenuRefSample.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenuRefSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuRefSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuRefSample.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuRefSample.Image")));
+            this.btnMenuRefSample.Image = global::Scintilab.Properties.Resources.ref64;
             this.btnMenuRefSample.Location = new System.Drawing.Point(281, 3);
             this.btnMenuRefSample.Name = "btnMenuRefSample";
             this.btnMenuRefSample.Size = new System.Drawing.Size(272, 122);
@@ -852,9 +852,9 @@
             this.tabDetectors.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabDetectors.Controls.Add(this.lvDetectors);
             this.tabDetectors.Location = new System.Drawing.Point(4, 23);
-            this.tabDetectors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDetectors.Margin = new System.Windows.Forms.Padding(2);
             this.tabDetectors.Name = "tabDetectors";
-            this.tabDetectors.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDetectors.Padding = new System.Windows.Forms.Padding(2);
             this.tabDetectors.Size = new System.Drawing.Size(840, 400);
             this.tabDetectors.TabIndex = 1;
             this.tabDetectors.Text = "Detektorer";
@@ -867,7 +867,7 @@
             this.lvDetectors.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvDetectors.LargeImageList = this.ilDetector;
             this.lvDetectors.Location = new System.Drawing.Point(2, 2);
-            this.lvDetectors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvDetectors.Margin = new System.Windows.Forms.Padding(2);
             this.lvDetectors.Name = "lvDetectors";
             this.lvDetectors.Size = new System.Drawing.Size(836, 396);
             this.lvDetectors.TabIndex = 0;
@@ -886,9 +886,9 @@
             this.tabJobs.Controls.Add(this.panel28);
             this.tabJobs.Controls.Add(this.panel27);
             this.tabJobs.Location = new System.Drawing.Point(4, 23);
-            this.tabJobs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabJobs.Margin = new System.Windows.Forms.Padding(2);
             this.tabJobs.Name = "tabJobs";
-            this.tabJobs.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabJobs.Padding = new System.Windows.Forms.Padding(2);
             this.tabJobs.Size = new System.Drawing.Size(840, 400);
             this.tabJobs.TabIndex = 2;
             this.tabJobs.Text = "Jobber";
@@ -990,9 +990,9 @@
             this.tabSample.Controls.Add(this.panel26);
             this.tabSample.Controls.Add(this.panel24);
             this.tabSample.Location = new System.Drawing.Point(4, 23);
-            this.tabSample.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSample.Margin = new System.Windows.Forms.Padding(2);
             this.tabSample.Name = "tabSample";
-            this.tabSample.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSample.Padding = new System.Windows.Forms.Padding(2);
             this.tabSample.Size = new System.Drawing.Size(840, 400);
             this.tabSample.TabIndex = 3;
             this.tabSample.Text = "Prøveinfo";
@@ -1004,7 +1004,7 @@
             this.tabsSamples.Controls.Add(this.tabSamplesAnalParams);
             this.tabsSamples.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabsSamples.Location = new System.Drawing.Point(2, 28);
-            this.tabsSamples.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabsSamples.Margin = new System.Windows.Forms.Padding(2);
             this.tabsSamples.Name = "tabsSamples";
             this.tabsSamples.SelectedIndex = 0;
             this.tabsSamples.Size = new System.Drawing.Size(836, 347);
@@ -1015,9 +1015,9 @@
             this.tabSamplesParams.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSamplesParams.Controls.Add(this.splitSamples);
             this.tabSamplesParams.Location = new System.Drawing.Point(4, 22);
-            this.tabSamplesParams.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSamplesParams.Margin = new System.Windows.Forms.Padding(2);
             this.tabSamplesParams.Name = "tabSamplesParams";
-            this.tabSamplesParams.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSamplesParams.Padding = new System.Windows.Forms.Padding(2);
             this.tabSamplesParams.Size = new System.Drawing.Size(828, 321);
             this.tabSamplesParams.TabIndex = 0;
             this.tabSamplesParams.Text = "Parametere";
@@ -1055,7 +1055,7 @@
             this.layoutSamples.Controls.Add(this.panel4, 3, 0);
             this.layoutSamples.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutSamples.Location = new System.Drawing.Point(0, 0);
-            this.layoutSamples.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutSamples.Margin = new System.Windows.Forms.Padding(2);
             this.layoutSamples.Name = "layoutSamples";
             this.layoutSamples.RowCount = 1;
             this.layoutSamples.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1071,7 +1071,7 @@
             this.panel1.Controls.Add(this.lblSampOrder);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(119, 201);
             this.panel1.TabIndex = 0;
@@ -1145,7 +1145,7 @@
             this.panel2.Controls.Add(this.tbSampOrder);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(125, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(284, 201);
             this.panel2.TabIndex = 1;
@@ -1156,7 +1156,7 @@
             this.cboxSampGeom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxSampGeom.FormattingEnabled = true;
             this.cboxSampGeom.Location = new System.Drawing.Point(0, 80);
-            this.cboxSampGeom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampGeom.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampGeom.Name = "cboxSampGeom";
             this.cboxSampGeom.Size = new System.Drawing.Size(284, 21);
             this.cboxSampGeom.TabIndex = 5;
@@ -1167,7 +1167,7 @@
             this.tbSampType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampType.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampType.Location = new System.Drawing.Point(0, 60);
-            this.tbSampType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampType.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampType.MaxLength = 16;
             this.tbSampType.Name = "tbSampType";
             this.tbSampType.Size = new System.Drawing.Size(284, 20);
@@ -1178,7 +1178,7 @@
             this.tbSampID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampID.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampID.Location = new System.Drawing.Point(0, 40);
-            this.tbSampID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampID.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampID.MaxLength = 16;
             this.tbSampID.Name = "tbSampID";
             this.tbSampID.Size = new System.Drawing.Size(284, 20);
@@ -1188,7 +1188,7 @@
             // 
             this.tbSampDesc.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampDesc.Location = new System.Drawing.Point(0, 20);
-            this.tbSampDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampDesc.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampDesc.MaxLength = 64;
             this.tbSampDesc.Name = "tbSampDesc";
             this.tbSampDesc.Size = new System.Drawing.Size(284, 20);
@@ -1198,7 +1198,7 @@
             // 
             this.tbSampOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampOrder.Location = new System.Drawing.Point(0, 0);
-            this.tbSampOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampOrder.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampOrder.MaxLength = 64;
             this.tbSampOrder.Name = "tbSampOrder";
             this.tbSampOrder.Size = new System.Drawing.Size(284, 20);
@@ -1214,7 +1214,7 @@
             this.panel3.Controls.Add(this.lblSampQuant);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(413, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(119, 201);
             this.panel3.TabIndex = 2;
@@ -1301,7 +1301,7 @@
             this.panel4.Controls.Add(this.tbSampQuant);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(536, 2);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(286, 201);
             this.panel4.TabIndex = 3;
@@ -1310,7 +1310,7 @@
             // 
             this.tbSampComment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampComment.Location = new System.Drawing.Point(0, 101);
-            this.tbSampComment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampComment.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampComment.MaxLength = 256;
             this.tbSampComment.Multiline = true;
             this.tbSampComment.Name = "tbSampComment";
@@ -1323,7 +1323,7 @@
             this.tbSampCollector.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampCollector.Enabled = false;
             this.tbSampCollector.Location = new System.Drawing.Point(0, 81);
-            this.tbSampCollector.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampCollector.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampCollector.MaxLength = 24;
             this.tbSampCollector.Name = "tbSampCollector";
             this.tbSampCollector.Size = new System.Drawing.Size(286, 20);
@@ -1334,7 +1334,7 @@
             this.tbSampRef.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampRef.Enabled = false;
             this.tbSampRef.Location = new System.Drawing.Point(0, 61);
-            this.tbSampRef.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampRef.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampRef.MaxLength = 64;
             this.tbSampRef.Name = "tbSampRef";
             this.tbSampRef.Size = new System.Drawing.Size(286, 20);
@@ -1346,7 +1346,7 @@
             this.tbSampQuantUnc.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampQuantUnc.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tbSampQuantUnc.Location = new System.Drawing.Point(0, 41);
-            this.tbSampQuantUnc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampQuantUnc.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampQuantUnc.MaxLength = 16;
             this.tbSampQuantUnc.Name = "tbSampQuantUnc";
             this.tbSampQuantUnc.Size = new System.Drawing.Size(286, 20);
@@ -1362,7 +1362,7 @@
             "g",
             "Kg"});
             this.cboxSampQuantUnit.Location = new System.Drawing.Point(0, 20);
-            this.cboxSampQuantUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampQuantUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampQuantUnit.Name = "cboxSampQuantUnit";
             this.cboxSampQuantUnit.Size = new System.Drawing.Size(286, 21);
             this.cboxSampQuantUnit.TabIndex = 4;
@@ -1372,7 +1372,7 @@
             this.tbSampQuant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampQuant.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampQuant.Location = new System.Drawing.Point(0, 0);
-            this.tbSampQuant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampQuant.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampQuant.MaxLength = 16;
             this.tbSampQuant.Name = "tbSampQuant";
             this.tbSampQuant.Size = new System.Drawing.Size(286, 20);
@@ -1386,7 +1386,7 @@
             this.tabsBuildup.Controls.Add(this.tabBuildupDeposit);
             this.tabsBuildup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabsBuildup.Location = new System.Drawing.Point(0, 0);
-            this.tabsBuildup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabsBuildup.Margin = new System.Windows.Forms.Padding(2);
             this.tabsBuildup.Name = "tabsBuildup";
             this.tabsBuildup.SelectedIndex = 0;
             this.tabsBuildup.Size = new System.Drawing.Size(824, 109);
@@ -1397,9 +1397,9 @@
             this.tabBuildupNone.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabBuildupNone.Controls.Add(this.panel11);
             this.tabBuildupNone.Location = new System.Drawing.Point(4, 22);
-            this.tabBuildupNone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabBuildupNone.Margin = new System.Windows.Forms.Padding(2);
             this.tabBuildupNone.Name = "tabBuildupNone";
-            this.tabBuildupNone.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabBuildupNone.Padding = new System.Windows.Forms.Padding(2);
             this.tabBuildupNone.Size = new System.Drawing.Size(816, 83);
             this.tabBuildupNone.TabIndex = 0;
             this.tabBuildupNone.Text = "None";
@@ -1410,7 +1410,7 @@
             this.panel11.Controls.Add(this.label21);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel11.Location = new System.Drawing.Point(2, 2);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(219, 79);
             this.panel11.TabIndex = 0;
@@ -1421,7 +1421,7 @@
             this.panel16.Controls.Add(this.dtSampBuildNoneDate);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 17);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(219, 22);
             this.panel16.TabIndex = 3;
@@ -1431,7 +1431,7 @@
             this.dtSampBuildNoneTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtSampBuildNoneTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtSampBuildNoneTime.Location = new System.Drawing.Point(116, 0);
-            this.dtSampBuildNoneTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildNoneTime.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildNoneTime.Name = "dtSampBuildNoneTime";
             this.dtSampBuildNoneTime.ShowUpDown = true;
             this.dtSampBuildNoneTime.Size = new System.Drawing.Size(103, 20);
@@ -1442,7 +1442,7 @@
             this.dtSampBuildNoneDate.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtSampBuildNoneDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtSampBuildNoneDate.Location = new System.Drawing.Point(0, 0);
-            this.dtSampBuildNoneDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildNoneDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildNoneDate.Name = "dtSampBuildNoneDate";
             this.dtSampBuildNoneDate.Size = new System.Drawing.Size(116, 20);
             this.dtSampBuildNoneDate.TabIndex = 0;
@@ -1464,9 +1464,9 @@
             this.tabBuildupIrrad.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabBuildupIrrad.Controls.Add(this.panel12);
             this.tabBuildupIrrad.Location = new System.Drawing.Point(4, 22);
-            this.tabBuildupIrrad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabBuildupIrrad.Margin = new System.Windows.Forms.Padding(2);
             this.tabBuildupIrrad.Name = "tabBuildupIrrad";
-            this.tabBuildupIrrad.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabBuildupIrrad.Padding = new System.Windows.Forms.Padding(2);
             this.tabBuildupIrrad.Size = new System.Drawing.Size(816, 83);
             this.tabBuildupIrrad.TabIndex = 1;
             this.tabBuildupIrrad.Text = "Irrad";
@@ -1479,7 +1479,7 @@
             this.panel12.Controls.Add(this.label22);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel12.Location = new System.Drawing.Point(2, 2);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(219, 79);
             this.panel12.TabIndex = 1;
@@ -1490,7 +1490,7 @@
             this.panel14.Controls.Add(this.dtSampBuildIrradDateTo);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 56);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(219, 22);
             this.panel14.TabIndex = 4;
@@ -1500,7 +1500,7 @@
             this.dtSampBuildIrradTimeTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtSampBuildIrradTimeTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtSampBuildIrradTimeTo.Location = new System.Drawing.Point(116, 0);
-            this.dtSampBuildIrradTimeTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildIrradTimeTo.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildIrradTimeTo.Name = "dtSampBuildIrradTimeTo";
             this.dtSampBuildIrradTimeTo.ShowUpDown = true;
             this.dtSampBuildIrradTimeTo.Size = new System.Drawing.Size(103, 20);
@@ -1511,7 +1511,7 @@
             this.dtSampBuildIrradDateTo.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtSampBuildIrradDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtSampBuildIrradDateTo.Location = new System.Drawing.Point(0, 0);
-            this.dtSampBuildIrradDateTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildIrradDateTo.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildIrradDateTo.Name = "dtSampBuildIrradDateTo";
             this.dtSampBuildIrradDateTo.Size = new System.Drawing.Size(116, 20);
             this.dtSampBuildIrradDateTo.TabIndex = 0;
@@ -1534,7 +1534,7 @@
             this.panel13.Controls.Add(this.dtSampBuildIrradDateFrom);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 17);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(219, 22);
             this.panel13.TabIndex = 3;
@@ -1544,7 +1544,7 @@
             this.dtSampBuildIrradTimeFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtSampBuildIrradTimeFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtSampBuildIrradTimeFrom.Location = new System.Drawing.Point(116, 0);
-            this.dtSampBuildIrradTimeFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildIrradTimeFrom.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildIrradTimeFrom.Name = "dtSampBuildIrradTimeFrom";
             this.dtSampBuildIrradTimeFrom.ShowUpDown = true;
             this.dtSampBuildIrradTimeFrom.Size = new System.Drawing.Size(103, 20);
@@ -1555,7 +1555,7 @@
             this.dtSampBuildIrradDateFrom.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtSampBuildIrradDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtSampBuildIrradDateFrom.Location = new System.Drawing.Point(0, 0);
-            this.dtSampBuildIrradDateFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildIrradDateFrom.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildIrradDateFrom.Name = "dtSampBuildIrradDateFrom";
             this.dtSampBuildIrradDateFrom.Size = new System.Drawing.Size(116, 20);
             this.dtSampBuildIrradDateFrom.TabIndex = 0;
@@ -1577,9 +1577,9 @@
             this.tabBuildupDeposit.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabBuildupDeposit.Controls.Add(this.panel15);
             this.tabBuildupDeposit.Location = new System.Drawing.Point(4, 22);
-            this.tabBuildupDeposit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabBuildupDeposit.Margin = new System.Windows.Forms.Padding(2);
             this.tabBuildupDeposit.Name = "tabBuildupDeposit";
-            this.tabBuildupDeposit.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabBuildupDeposit.Padding = new System.Windows.Forms.Padding(2);
             this.tabBuildupDeposit.Size = new System.Drawing.Size(816, 83);
             this.tabBuildupDeposit.TabIndex = 2;
             this.tabBuildupDeposit.Text = "Deposit";
@@ -1592,7 +1592,7 @@
             this.panel15.Controls.Add(this.label25);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel15.Location = new System.Drawing.Point(2, 2);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(219, 79);
             this.panel15.TabIndex = 2;
@@ -1603,7 +1603,7 @@
             this.panel17.Controls.Add(this.dtSampBuildDepDateTo);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(0, 56);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(219, 22);
             this.panel17.TabIndex = 4;
@@ -1613,7 +1613,7 @@
             this.dtSampBuildDepTimeTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtSampBuildDepTimeTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtSampBuildDepTimeTo.Location = new System.Drawing.Point(116, 0);
-            this.dtSampBuildDepTimeTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildDepTimeTo.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildDepTimeTo.Name = "dtSampBuildDepTimeTo";
             this.dtSampBuildDepTimeTo.ShowUpDown = true;
             this.dtSampBuildDepTimeTo.Size = new System.Drawing.Size(103, 20);
@@ -1624,7 +1624,7 @@
             this.dtSampBuildDepDateTo.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtSampBuildDepDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtSampBuildDepDateTo.Location = new System.Drawing.Point(0, 0);
-            this.dtSampBuildDepDateTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildDepDateTo.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildDepDateTo.Name = "dtSampBuildDepDateTo";
             this.dtSampBuildDepDateTo.Size = new System.Drawing.Size(116, 20);
             this.dtSampBuildDepDateTo.TabIndex = 0;
@@ -1647,7 +1647,7 @@
             this.panel18.Controls.Add(this.dtSampBuildDepDateFrom);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 17);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(219, 22);
             this.panel18.TabIndex = 3;
@@ -1657,7 +1657,7 @@
             this.dtSampBuildDepTimeFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtSampBuildDepTimeFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtSampBuildDepTimeFrom.Location = new System.Drawing.Point(116, 0);
-            this.dtSampBuildDepTimeFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildDepTimeFrom.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildDepTimeFrom.Name = "dtSampBuildDepTimeFrom";
             this.dtSampBuildDepTimeFrom.ShowUpDown = true;
             this.dtSampBuildDepTimeFrom.Size = new System.Drawing.Size(103, 20);
@@ -1668,7 +1668,7 @@
             this.dtSampBuildDepDateFrom.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtSampBuildDepDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtSampBuildDepDateFrom.Location = new System.Drawing.Point(0, 0);
-            this.dtSampBuildDepDateFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtSampBuildDepDateFrom.Margin = new System.Windows.Forms.Padding(2);
             this.dtSampBuildDepDateFrom.Name = "dtSampBuildDepDateFrom";
             this.dtSampBuildDepDateFrom.Size = new System.Drawing.Size(116, 20);
             this.dtSampBuildDepDateFrom.TabIndex = 0;
@@ -1690,10 +1690,10 @@
             this.tabSamplesAdvancedParams.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabSamplesAdvancedParams.Controls.Add(this.layoutSamplesAdvanced);
             this.tabSamplesAdvancedParams.Location = new System.Drawing.Point(4, 22);
-            this.tabSamplesAdvancedParams.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSamplesAdvancedParams.Margin = new System.Windows.Forms.Padding(2);
             this.tabSamplesAdvancedParams.Name = "tabSamplesAdvancedParams";
-            this.tabSamplesAdvancedParams.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabSamplesAdvancedParams.Size = new System.Drawing.Size(830, 331);
+            this.tabSamplesAdvancedParams.Padding = new System.Windows.Forms.Padding(2);
+            this.tabSamplesAdvancedParams.Size = new System.Drawing.Size(828, 321);
             this.tabSamplesAdvancedParams.TabIndex = 1;
             this.tabSamplesAdvancedParams.Text = "Preset Parametere";
             // 
@@ -1714,12 +1714,12 @@
             this.layoutSamplesAdvanced.Controls.Add(this.panel10, 5, 0);
             this.layoutSamplesAdvanced.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutSamplesAdvanced.Location = new System.Drawing.Point(2, 2);
-            this.layoutSamplesAdvanced.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutSamplesAdvanced.Margin = new System.Windows.Forms.Padding(2);
             this.layoutSamplesAdvanced.Name = "layoutSamplesAdvanced";
             this.layoutSamplesAdvanced.RowCount = 1;
             this.layoutSamplesAdvanced.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layoutSamplesAdvanced.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 332F));
-            this.layoutSamplesAdvanced.Size = new System.Drawing.Size(826, 327);
+            this.layoutSamplesAdvanced.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 317F));
+            this.layoutSamplesAdvanced.Size = new System.Drawing.Size(824, 317);
             this.layoutSamplesAdvanced.TabIndex = 0;
             // 
             // panel5
@@ -1729,9 +1729,9 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(2, 2);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(87, 323);
+            this.panel5.Size = new System.Drawing.Size(87, 313);
             this.panel5.TabIndex = 0;
             // 
             // label13
@@ -1777,16 +1777,16 @@
             this.panel6.Controls.Add(this.cboxSampAdvCal);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(93, 2);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(179, 323);
+            this.panel6.Size = new System.Drawing.Size(179, 313);
             this.panel6.TabIndex = 1;
             // 
             // tbSampAdvSystErr
             // 
             this.tbSampAdvSystErr.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampAdvSystErr.Location = new System.Drawing.Point(0, 41);
-            this.tbSampAdvSystErr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAdvSystErr.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAdvSystErr.MaxLength = 16;
             this.tbSampAdvSystErr.Name = "tbSampAdvSystErr";
             this.tbSampAdvSystErr.Size = new System.Drawing.Size(179, 20);
@@ -1797,7 +1797,7 @@
             // 
             this.tbSampAdvRandErr.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampAdvRandErr.Location = new System.Drawing.Point(0, 21);
-            this.tbSampAdvRandErr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAdvRandErr.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAdvRandErr.MaxLength = 16;
             this.tbSampAdvRandErr.Name = "tbSampAdvRandErr";
             this.tbSampAdvRandErr.Size = new System.Drawing.Size(179, 20);
@@ -1810,7 +1810,7 @@
             this.cboxSampAdvCal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxSampAdvCal.FormattingEnabled = true;
             this.cboxSampAdvCal.Location = new System.Drawing.Point(0, 0);
-            this.cboxSampAdvCal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampAdvCal.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampAdvCal.Name = "cboxSampAdvCal";
             this.cboxSampAdvCal.Size = new System.Drawing.Size(179, 21);
             this.cboxSampAdvCal.TabIndex = 0;
@@ -1823,9 +1823,9 @@
             this.panel7.Controls.Add(this.label14);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(276, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(87, 323);
+            this.panel7.Size = new System.Drawing.Size(87, 313);
             this.panel7.TabIndex = 2;
             // 
             // label17
@@ -1884,16 +1884,16 @@
             this.panel8.Controls.Add(this.cboxSampAdvPreArea);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(367, 2);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(179, 323);
+            this.panel8.Size = new System.Drawing.Size(179, 313);
             this.panel8.TabIndex = 3;
             // 
             // tbSampAdvPreAreaChanTo
             // 
             this.tbSampAdvPreAreaChanTo.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampAdvPreAreaChanTo.Location = new System.Drawing.Point(0, 61);
-            this.tbSampAdvPreAreaChanTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAdvPreAreaChanTo.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAdvPreAreaChanTo.MaxLength = 16;
             this.tbSampAdvPreAreaChanTo.Name = "tbSampAdvPreAreaChanTo";
             this.tbSampAdvPreAreaChanTo.Size = new System.Drawing.Size(179, 20);
@@ -1904,7 +1904,7 @@
             // 
             this.tbSampAdvPreAreaChanFrom.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampAdvPreAreaChanFrom.Location = new System.Drawing.Point(0, 41);
-            this.tbSampAdvPreAreaChanFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAdvPreAreaChanFrom.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAdvPreAreaChanFrom.MaxLength = 16;
             this.tbSampAdvPreAreaChanFrom.Name = "tbSampAdvPreAreaChanFrom";
             this.tbSampAdvPreAreaChanFrom.Size = new System.Drawing.Size(179, 20);
@@ -1915,7 +1915,7 @@
             // 
             this.tbSampAdvPreAreaValue.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampAdvPreAreaValue.Location = new System.Drawing.Point(0, 21);
-            this.tbSampAdvPreAreaValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAdvPreAreaValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAdvPreAreaValue.MaxLength = 16;
             this.tbSampAdvPreAreaValue.Name = "tbSampAdvPreAreaValue";
             this.tbSampAdvPreAreaValue.Size = new System.Drawing.Size(179, 20);
@@ -1933,7 +1933,7 @@
             "AREAPRESET",
             "CNTSPRESET"});
             this.cboxSampAdvPreArea.Location = new System.Drawing.Point(0, 0);
-            this.cboxSampAdvPreArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampAdvPreArea.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampAdvPreArea.Name = "cboxSampAdvPreArea";
             this.cboxSampAdvPreArea.Size = new System.Drawing.Size(179, 21);
             this.cboxSampAdvPreArea.TabIndex = 0;
@@ -1945,9 +1945,9 @@
             this.panel9.Controls.Add(this.label18);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(550, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(87, 323);
+            this.panel9.Size = new System.Drawing.Size(87, 313);
             this.panel9.TabIndex = 4;
             // 
             // label20
@@ -1993,9 +1993,9 @@
             this.panel10.Controls.Add(this.cboxSampAdvPreTime);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(641, 2);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(183, 323);
+            this.panel10.Size = new System.Drawing.Size(181, 313);
             this.panel10.TabIndex = 5;
             // 
             // cboxSampAdvPreTimeUnit
@@ -2008,19 +2008,19 @@
             "Minutter",
             "Timer"});
             this.cboxSampAdvPreTimeUnit.Location = new System.Drawing.Point(0, 41);
-            this.cboxSampAdvPreTimeUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampAdvPreTimeUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampAdvPreTimeUnit.Name = "cboxSampAdvPreTimeUnit";
-            this.cboxSampAdvPreTimeUnit.Size = new System.Drawing.Size(183, 21);
+            this.cboxSampAdvPreTimeUnit.Size = new System.Drawing.Size(181, 21);
             this.cboxSampAdvPreTimeUnit.TabIndex = 2;
             // 
             // tbSampAdvPreTimeValue
             // 
             this.tbSampAdvPreTimeValue.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbSampAdvPreTimeValue.Location = new System.Drawing.Point(0, 21);
-            this.tbSampAdvPreTimeValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAdvPreTimeValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAdvPreTimeValue.MaxLength = 16;
             this.tbSampAdvPreTimeValue.Name = "tbSampAdvPreTimeValue";
-            this.tbSampAdvPreTimeValue.Size = new System.Drawing.Size(183, 20);
+            this.tbSampAdvPreTimeValue.Size = new System.Drawing.Size(181, 20);
             this.tbSampAdvPreTimeValue.TabIndex = 1;
             this.tbSampAdvPreTimeValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
@@ -2034,9 +2034,9 @@
             "REALPRESET",
             "LIVEPRESET"});
             this.cboxSampAdvPreTime.Location = new System.Drawing.Point(0, 0);
-            this.cboxSampAdvPreTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampAdvPreTime.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampAdvPreTime.Name = "cboxSampAdvPreTime";
-            this.cboxSampAdvPreTime.Size = new System.Drawing.Size(183, 21);
+            this.cboxSampAdvPreTime.Size = new System.Drawing.Size(181, 21);
             this.cboxSampAdvPreTime.TabIndex = 0;
             // 
             // tabSamplesAnalParams
@@ -2045,8 +2045,8 @@
             this.tabSamplesAnalParams.Controls.Add(this.tableLayoutPanel3);
             this.tabSamplesAnalParams.Location = new System.Drawing.Point(4, 22);
             this.tabSamplesAnalParams.Name = "tabSamplesAnalParams";
-            this.tabSamplesAnalParams.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabSamplesAnalParams.Size = new System.Drawing.Size(830, 331);
+            this.tabSamplesAnalParams.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSamplesAnalParams.Size = new System.Drawing.Size(828, 321);
             this.tabSamplesAnalParams.TabIndex = 2;
             this.tabSamplesAnalParams.Text = "Analyse Parametere";
             // 
@@ -2098,7 +2098,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label67, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 11;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -2113,7 +2113,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(824, 325);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(822, 315);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // label68
@@ -2132,7 +2132,7 @@
             this.tbSampAnalTolerance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalTolerance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalTolerance.Location = new System.Drawing.Point(330, 2);
-            this.tbSampAnalTolerance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalTolerance.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalTolerance.MaxLength = 16;
             this.tbSampAnalTolerance.Name = "tbSampAnalTolerance";
             this.tbSampAnalTolerance.Size = new System.Drawing.Size(160, 20);
@@ -2155,10 +2155,10 @@
             this.tbSampAnalSigThresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalSigThresh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalSigThresh.Location = new System.Drawing.Point(658, 2);
-            this.tbSampAnalSigThresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalSigThresh.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalSigThresh.MaxLength = 16;
             this.tbSampAnalSigThresh.Name = "tbSampAnalSigThresh";
-            this.tbSampAnalSigThresh.Size = new System.Drawing.Size(164, 20);
+            this.tbSampAnalSigThresh.Size = new System.Drawing.Size(162, 20);
             this.tbSampAnalSigThresh.TabIndex = 9;
             this.tbSampAnalSigThresh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Decimal_KeyPress);
             // 
@@ -2178,7 +2178,7 @@
             this.tbSampAnalContinuum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalContinuum.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalContinuum.Location = new System.Drawing.Point(330, 25);
-            this.tbSampAnalContinuum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalContinuum.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalContinuum.MaxLength = 16;
             this.tbSampAnalContinuum.Name = "tbSampAnalContinuum";
             this.tbSampAnalContinuum.Size = new System.Drawing.Size(160, 20);
@@ -2205,16 +2205,16 @@
             "STEP",
             "LINEAR"});
             this.cboxSampAnalContinuumFunc.Location = new System.Drawing.Point(658, 25);
-            this.cboxSampAnalContinuumFunc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampAnalContinuumFunc.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampAnalContinuumFunc.Name = "cboxSampAnalContinuumFunc";
-            this.cboxSampAnalContinuumFunc.Size = new System.Drawing.Size(164, 21);
+            this.cboxSampAnalContinuumFunc.Size = new System.Drawing.Size(162, 21);
             this.cboxSampAnalContinuumFunc.TabIndex = 17;
             // 
             // cbSampAnalCritLev
             // 
             this.cbSampAnalCritLev.AutoSize = true;
             this.cbSampAnalCritLev.Location = new System.Drawing.Point(166, 48);
-            this.cbSampAnalCritLev.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalCritLev.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalCritLev.Name = "cbSampAnalCritLev";
             this.cbSampAnalCritLev.Size = new System.Drawing.Size(109, 17);
             this.cbSampAnalCritLev.TabIndex = 18;
@@ -2225,7 +2225,7 @@
             // 
             this.cbSampAnalFitSinglets.AutoSize = true;
             this.cbSampAnalFitSinglets.Location = new System.Drawing.Point(330, 48);
-            this.cbSampAnalFitSinglets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalFitSinglets.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalFitSinglets.Name = "cbSampAnalFitSinglets";
             this.cbSampAnalFitSinglets.Size = new System.Drawing.Size(77, 17);
             this.cbSampAnalFitSinglets.TabIndex = 19;
@@ -2236,7 +2236,7 @@
             // 
             this.cbSampAnalDispRois.AutoSize = true;
             this.cbSampAnalDispRois.Location = new System.Drawing.Point(494, 48);
-            this.cbSampAnalDispRois.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalDispRois.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalDispRois.Name = "cbSampAnalDispRois";
             this.cbSampAnalDispRois.Size = new System.Drawing.Size(87, 17);
             this.cbSampAnalDispRois.TabIndex = 20;
@@ -2247,7 +2247,7 @@
             // 
             this.cbSampAnalUseFixed.AutoSize = true;
             this.cbSampAnalUseFixed.Location = new System.Drawing.Point(658, 48);
-            this.cbSampAnalUseFixed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalUseFixed.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalUseFixed.Name = "cbSampAnalUseFixed";
             this.cbSampAnalUseFixed.Size = new System.Drawing.Size(144, 17);
             this.cbSampAnalUseFixed.TabIndex = 21;
@@ -2258,7 +2258,7 @@
             // 
             this.cbSampAnalRejectZero.AutoSize = true;
             this.cbSampAnalRejectZero.Location = new System.Drawing.Point(166, 71);
-            this.cbSampAnalRejectZero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalRejectZero.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalRejectZero.Name = "cbSampAnalRejectZero";
             this.cbSampAnalRejectZero.Size = new System.Drawing.Size(140, 17);
             this.cbSampAnalRejectZero.TabIndex = 22;
@@ -2269,7 +2269,7 @@
             // 
             this.cbSampAnalFixedFWHM.AutoSize = true;
             this.cbSampAnalFixedFWHM.Location = new System.Drawing.Point(330, 71);
-            this.cbSampAnalFixedFWHM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalFixedFWHM.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalFixedFWHM.Name = "cbSampAnalFixedFWHM";
             this.cbSampAnalFixedFWHM.Size = new System.Drawing.Size(115, 17);
             this.cbSampAnalFixedFWHM.TabIndex = 23;
@@ -2298,9 +2298,9 @@
             "DUAL",
             "LINEAR"});
             this.cboxSampAnalEffCal.Location = new System.Drawing.Point(658, 71);
-            this.cboxSampAnalEffCal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxSampAnalEffCal.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampAnalEffCal.Name = "cboxSampAnalEffCal";
-            this.cboxSampAnalEffCal.Size = new System.Drawing.Size(164, 21);
+            this.cboxSampAnalEffCal.Size = new System.Drawing.Size(162, 21);
             this.cboxSampAnalEffCal.TabIndex = 25;
             // 
             // label74
@@ -2319,7 +2319,7 @@
             this.tbSampAnalMaxFWHMBetween.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalMaxFWHMBetween.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalMaxFWHMBetween.Location = new System.Drawing.Point(330, 94);
-            this.tbSampAnalMaxFWHMBetween.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalMaxFWHMBetween.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalMaxFWHMBetween.MaxLength = 16;
             this.tbSampAnalMaxFWHMBetween.Name = "tbSampAnalMaxFWHMBetween";
             this.tbSampAnalMaxFWHMBetween.Size = new System.Drawing.Size(160, 20);
@@ -2341,10 +2341,10 @@
             this.tbSampAnalMaxFWHMRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalMaxFWHMRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalMaxFWHMRight.Location = new System.Drawing.Point(658, 117);
-            this.tbSampAnalMaxFWHMRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalMaxFWHMRight.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalMaxFWHMRight.MaxLength = 16;
             this.tbSampAnalMaxFWHMRight.Name = "tbSampAnalMaxFWHMRight";
-            this.tbSampAnalMaxFWHMRight.Size = new System.Drawing.Size(164, 20);
+            this.tbSampAnalMaxFWHMRight.Size = new System.Drawing.Size(162, 20);
             this.tbSampAnalMaxFWHMRight.TabIndex = 31;
             // 
             // label78
@@ -2363,7 +2363,7 @@
             this.tbSampAnalMaxFWHMLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalMaxFWHMLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalMaxFWHMLeft.Location = new System.Drawing.Point(330, 117);
-            this.tbSampAnalMaxFWHMLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalMaxFWHMLeft.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalMaxFWHMLeft.MaxLength = 16;
             this.tbSampAnalMaxFWHMLeft.Name = "tbSampAnalMaxFWHMLeft";
             this.tbSampAnalMaxFWHMLeft.Size = new System.Drawing.Size(160, 20);
@@ -2387,7 +2387,7 @@
             this.tbSampAnalBkgSub.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalBkgSub.Enabled = false;
             this.tbSampAnalBkgSub.Location = new System.Drawing.Point(330, 140);
-            this.tbSampAnalBkgSub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalBkgSub.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalBkgSub.MaxLength = 1024;
             this.tbSampAnalBkgSub.Name = "tbSampAnalBkgSub";
             this.tbSampAnalBkgSub.Size = new System.Drawing.Size(324, 20);
@@ -2398,9 +2398,9 @@
             this.btnSampAnalBkgSub.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSampAnalBkgSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSampAnalBkgSub.Location = new System.Drawing.Point(658, 140);
-            this.btnSampAnalBkgSub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSampAnalBkgSub.Margin = new System.Windows.Forms.Padding(2);
             this.btnSampAnalBkgSub.Name = "btnSampAnalBkgSub";
-            this.btnSampAnalBkgSub.Size = new System.Drawing.Size(164, 19);
+            this.btnSampAnalBkgSub.Size = new System.Drawing.Size(162, 19);
             this.btnSampAnalBkgSub.TabIndex = 34;
             this.btnSampAnalBkgSub.Text = "...";
             this.btnSampAnalBkgSub.UseVisualStyleBackColor = true;
@@ -2435,7 +2435,7 @@
             this.tbSampAnalNIDLib.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalNIDLib.Enabled = false;
             this.tbSampAnalNIDLib.Location = new System.Drawing.Point(330, 163);
-            this.tbSampAnalNIDLib.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalNIDLib.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalNIDLib.MaxLength = 1024;
             this.tbSampAnalNIDLib.Name = "tbSampAnalNIDLib";
             this.tbSampAnalNIDLib.Size = new System.Drawing.Size(324, 20);
@@ -2446,9 +2446,9 @@
             this.btnSampAnalNIDLib.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSampAnalNIDLib.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSampAnalNIDLib.Location = new System.Drawing.Point(658, 163);
-            this.btnSampAnalNIDLib.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSampAnalNIDLib.Margin = new System.Windows.Forms.Padding(2);
             this.btnSampAnalNIDLib.Name = "btnSampAnalNIDLib";
-            this.btnSampAnalNIDLib.Size = new System.Drawing.Size(164, 19);
+            this.btnSampAnalNIDLib.Size = new System.Drawing.Size(162, 19);
             this.btnSampAnalNIDLib.TabIndex = 38;
             this.btnSampAnalNIDLib.Text = "...";
             this.btnSampAnalNIDLib.UseVisualStyleBackColor = true;
@@ -2470,7 +2470,7 @@
             this.tbSampAnalNIDConfThresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalNIDConfThresh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalNIDConfThresh.Location = new System.Drawing.Point(330, 186);
-            this.tbSampAnalNIDConfThresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalNIDConfThresh.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalNIDConfThresh.MaxLength = 16;
             this.tbSampAnalNIDConfThresh.Name = "tbSampAnalNIDConfThresh";
             this.tbSampAnalNIDConfThresh.Size = new System.Drawing.Size(160, 20);
@@ -2492,17 +2492,17 @@
             this.tbSampAnalMDAConfFac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tbSampAnalMDAConfFac.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSampAnalMDAConfFac.Location = new System.Drawing.Point(658, 186);
-            this.tbSampAnalMDAConfFac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSampAnalMDAConfFac.Margin = new System.Windows.Forms.Padding(2);
             this.tbSampAnalMDAConfFac.MaxLength = 16;
             this.tbSampAnalMDAConfFac.Name = "tbSampAnalMDAConfFac";
-            this.tbSampAnalMDAConfFac.Size = new System.Drawing.Size(164, 20);
+            this.tbSampAnalMDAConfFac.Size = new System.Drawing.Size(162, 20);
             this.tbSampAnalMDAConfFac.TabIndex = 42;
             // 
             // cbSampAnalInhibitATD
             // 
             this.cbSampAnalInhibitATD.AutoSize = true;
             this.cbSampAnalInhibitATD.Location = new System.Drawing.Point(166, 209);
-            this.cbSampAnalInhibitATD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalInhibitATD.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalInhibitATD.Name = "cbSampAnalInhibitATD";
             this.cbSampAnalInhibitATD.Size = new System.Drawing.Size(104, 17);
             this.cbSampAnalInhibitATD.TabIndex = 43;
@@ -2513,7 +2513,7 @@
             // 
             this.cbSampAnalUseStoredLib.AutoSize = true;
             this.cbSampAnalUseStoredLib.Location = new System.Drawing.Point(330, 209);
-            this.cbSampAnalUseStoredLib.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalUseStoredLib.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalUseStoredLib.Name = "cbSampAnalUseStoredLib";
             this.cbSampAnalUseStoredLib.Size = new System.Drawing.Size(113, 17);
             this.cbSampAnalUseStoredLib.TabIndex = 44;
@@ -2524,7 +2524,7 @@
             // 
             this.cbSampAnalPerformMDA.AutoSize = true;
             this.cbSampAnalPerformMDA.Location = new System.Drawing.Point(494, 209);
-            this.cbSampAnalPerformMDA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbSampAnalPerformMDA.Margin = new System.Windows.Forms.Padding(2);
             this.cbSampAnalPerformMDA.Name = "cbSampAnalPerformMDA";
             this.cbSampAnalPerformMDA.Size = new System.Drawing.Size(113, 17);
             this.cbSampAnalPerformMDA.TabIndex = 45;
@@ -2578,7 +2578,7 @@
             this.panel24.Controls.Add(this.lblSampAnalType);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(2, 2);
-            this.panel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel24.Margin = new System.Windows.Forms.Padding(2);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(836, 26);
             this.panel24.TabIndex = 1;
@@ -2600,7 +2600,7 @@
             // 
             this.btnSampReadBarcode.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSampReadBarcode.Location = new System.Drawing.Point(727, 0);
-            this.btnSampReadBarcode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSampReadBarcode.Margin = new System.Windows.Forms.Padding(2);
             this.btnSampReadBarcode.Name = "btnSampReadBarcode";
             this.btnSampReadBarcode.Size = new System.Drawing.Size(109, 26);
             this.btnSampReadBarcode.TabIndex = 0;
@@ -2625,9 +2625,9 @@
             this.tabAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabAdmin.Controls.Add(this.tabsAdmin);
             this.tabAdmin.Location = new System.Drawing.Point(4, 23);
-            this.tabAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdmin.Name = "tabAdmin";
-            this.tabAdmin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdmin.Padding = new System.Windows.Forms.Padding(2);
             this.tabAdmin.Size = new System.Drawing.Size(840, 400);
             this.tabAdmin.TabIndex = 4;
             this.tabAdmin.Text = "Administrasjon";
@@ -2640,7 +2640,7 @@
             this.tabsAdmin.Controls.Add(this.tabAdminQA);
             this.tabsAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabsAdmin.Location = new System.Drawing.Point(2, 2);
-            this.tabsAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabsAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.tabsAdmin.Name = "tabsAdmin";
             this.tabsAdmin.SelectedIndex = 0;
             this.tabsAdmin.Size = new System.Drawing.Size(836, 396);
@@ -2652,9 +2652,9 @@
             this.tabAdminGeneral.Controls.Add(this.tabsAdminGeneral);
             this.tabAdminGeneral.Controls.Add(this.panel25);
             this.tabAdminGeneral.Location = new System.Drawing.Point(4, 22);
-            this.tabAdminGeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdminGeneral.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdminGeneral.Name = "tabAdminGeneral";
-            this.tabAdminGeneral.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdminGeneral.Padding = new System.Windows.Forms.Padding(2);
             this.tabAdminGeneral.Size = new System.Drawing.Size(828, 370);
             this.tabAdminGeneral.TabIndex = 0;
             this.tabAdminGeneral.Text = "Generelt";
@@ -2675,7 +2675,7 @@
             this.tabAdminGeneral1.Controls.Add(this.layoutAdminGeneral);
             this.tabAdminGeneral1.Location = new System.Drawing.Point(4, 22);
             this.tabAdminGeneral1.Name = "tabAdminGeneral1";
-            this.tabAdminGeneral1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAdminGeneral1.Padding = new System.Windows.Forms.Padding(3);
             this.tabAdminGeneral1.Size = new System.Drawing.Size(816, 317);
             this.tabAdminGeneral1.TabIndex = 0;
             this.tabAdminGeneral1.Text = "Generelle innstillinger";
@@ -2712,7 +2712,7 @@
             this.layoutAdminGeneral.Controls.Add(this.cboxAdmPlotScaleX, 2, 7);
             this.layoutAdminGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutAdminGeneral.Location = new System.Drawing.Point(3, 3);
-            this.layoutAdminGeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutAdminGeneral.Margin = new System.Windows.Forms.Padding(2);
             this.layoutAdminGeneral.Name = "layoutAdminGeneral";
             this.layoutAdminGeneral.RowCount = 12;
             this.layoutAdminGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -2832,7 +2832,7 @@
             "ALL",
             "HEADER"});
             this.cboxAdmSection.Location = new System.Drawing.Point(285, 117);
-            this.cboxAdmSection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmSection.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmSection.Name = "cboxAdmSection";
             this.cboxAdmSection.Size = new System.Drawing.Size(127, 21);
             this.cboxAdmSection.TabIndex = 9;
@@ -2841,7 +2841,7 @@
             // 
             this.tbAdmSigma.Dock = System.Windows.Forms.DockStyle.Left;
             this.tbAdmSigma.Location = new System.Drawing.Point(285, 48);
-            this.tbAdmSigma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmSigma.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmSigma.MaxLength = 16;
             this.tbAdmSigma.Name = "tbAdmSigma";
             this.tbAdmSigma.Size = new System.Drawing.Size(127, 20);
@@ -2853,7 +2853,7 @@
             this.tbAdmGenieFolder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmGenieFolder.Enabled = false;
             this.tbAdmGenieFolder.Location = new System.Drawing.Point(285, 25);
-            this.tbAdmGenieFolder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmGenieFolder.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmGenieFolder.MaxLength = 1024;
             this.tbAdmGenieFolder.Name = "tbAdmGenieFolder";
             this.tbAdmGenieFolder.Size = new System.Drawing.Size(441, 20);
@@ -2864,7 +2864,7 @@
             this.tbAdmTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmTemplate.Enabled = false;
             this.tbAdmTemplate.Location = new System.Drawing.Point(285, 94);
-            this.tbAdmTemplate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmTemplate.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmTemplate.MaxLength = 1024;
             this.tbAdmTemplate.Name = "tbAdmTemplate";
             this.tbAdmTemplate.Size = new System.Drawing.Size(441, 20);
@@ -2875,7 +2875,7 @@
             this.tbAdmLIMSImport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmLIMSImport.Enabled = false;
             this.tbAdmLIMSImport.Location = new System.Drawing.Point(285, 209);
-            this.tbAdmLIMSImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmLIMSImport.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmLIMSImport.MaxLength = 1024;
             this.tbAdmLIMSImport.Name = "tbAdmLIMSImport";
             this.tbAdmLIMSImport.Size = new System.Drawing.Size(441, 20);
@@ -2886,7 +2886,7 @@
             this.tbAdmLIMSExport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmLIMSExport.Enabled = false;
             this.tbAdmLIMSExport.Location = new System.Drawing.Point(285, 232);
-            this.tbAdmLIMSExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmLIMSExport.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmLIMSExport.MaxLength = 1024;
             this.tbAdmLIMSExport.Name = "tbAdmLIMSExport";
             this.tbAdmLIMSExport.Size = new System.Drawing.Size(441, 20);
@@ -2897,7 +2897,7 @@
             this.btnAdmGenieFolder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmGenieFolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmGenieFolder.Location = new System.Drawing.Point(730, 25);
-            this.btnAdmGenieFolder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmGenieFolder.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmGenieFolder.Name = "btnAdmGenieFolder";
             this.btnAdmGenieFolder.Size = new System.Drawing.Size(78, 19);
             this.btnAdmGenieFolder.TabIndex = 15;
@@ -2910,7 +2910,7 @@
             this.btnAdmTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmTemplate.Location = new System.Drawing.Point(730, 94);
-            this.btnAdmTemplate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmTemplate.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmTemplate.Name = "btnAdmTemplate";
             this.btnAdmTemplate.Size = new System.Drawing.Size(78, 19);
             this.btnAdmTemplate.TabIndex = 16;
@@ -2923,7 +2923,7 @@
             this.btnAdmLIMSImport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmLIMSImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmLIMSImport.Location = new System.Drawing.Point(730, 209);
-            this.btnAdmLIMSImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmLIMSImport.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmLIMSImport.Name = "btnAdmLIMSImport";
             this.btnAdmLIMSImport.Size = new System.Drawing.Size(78, 19);
             this.btnAdmLIMSImport.TabIndex = 17;
@@ -2936,7 +2936,7 @@
             this.btnAdmLIMSExport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmLIMSExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmLIMSExport.Location = new System.Drawing.Point(730, 232);
-            this.btnAdmLIMSExport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmLIMSExport.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmLIMSExport.Name = "btnAdmLIMSExport";
             this.btnAdmLIMSExport.Size = new System.Drawing.Size(78, 19);
             this.btnAdmLIMSExport.TabIndex = 18;
@@ -3011,10 +3011,10 @@
             this.tabAdminDet.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabAdminDet.Controls.Add(this.splitAdmDet);
             this.tabAdminDet.Location = new System.Drawing.Point(4, 22);
-            this.tabAdminDet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdminDet.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdminDet.Name = "tabAdminDet";
-            this.tabAdminDet.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabAdminDet.Size = new System.Drawing.Size(830, 379);
+            this.tabAdminDet.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAdminDet.Size = new System.Drawing.Size(828, 370);
             this.tabAdminDet.TabIndex = 1;
             this.tabAdminDet.Text = "Detektorer";
             // 
@@ -3022,21 +3022,21 @@
             // 
             this.splitAdmDet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitAdmDet.Location = new System.Drawing.Point(2, 2);
-            this.splitAdmDet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitAdmDet.Margin = new System.Windows.Forms.Padding(2);
             this.splitAdmDet.Name = "splitAdmDet";
             // 
             // splitAdmDet.Panel1
             // 
             this.splitAdmDet.Panel1.Controls.Add(this.lbAdmDetList);
-            this.splitAdmDet.Panel1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitAdmDet.Panel1.Padding = new System.Windows.Forms.Padding(4);
             // 
             // splitAdmDet.Panel2
             // 
             this.splitAdmDet.Panel2.Controls.Add(this.tabsAdmDetPages);
             this.splitAdmDet.Panel2.Controls.Add(this.panel21);
             this.splitAdmDet.Panel2.Enabled = false;
-            this.splitAdmDet.Size = new System.Drawing.Size(826, 375);
-            this.splitAdmDet.SplitterDistance = 79;
+            this.splitAdmDet.Size = new System.Drawing.Size(824, 366);
+            this.splitAdmDet.SplitterDistance = 78;
             this.splitAdmDet.SplitterWidth = 3;
             this.splitAdmDet.TabIndex = 0;
             // 
@@ -3047,9 +3047,9 @@
             this.lbAdmDetList.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdmDetList.FormattingEnabled = true;
             this.lbAdmDetList.Location = new System.Drawing.Point(4, 4);
-            this.lbAdmDetList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbAdmDetList.Margin = new System.Windows.Forms.Padding(2);
             this.lbAdmDetList.Name = "lbAdmDetList";
-            this.lbAdmDetList.Size = new System.Drawing.Size(71, 367);
+            this.lbAdmDetList.Size = new System.Drawing.Size(70, 358);
             this.lbAdmDetList.TabIndex = 0;
             this.lbAdmDetList.SelectedIndexChanged += new System.EventHandler(this.lbAdmDetList_SelectedIndexChanged);
             // 
@@ -3060,10 +3060,10 @@
             this.tabsAdmDetPages.Controls.Add(this.tabAdmDetPage3);
             this.tabsAdmDetPages.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabsAdmDetPages.Location = new System.Drawing.Point(0, 0);
-            this.tabsAdmDetPages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabsAdmDetPages.Margin = new System.Windows.Forms.Padding(2);
             this.tabsAdmDetPages.Name = "tabsAdmDetPages";
             this.tabsAdmDetPages.SelectedIndex = 0;
-            this.tabsAdmDetPages.Size = new System.Drawing.Size(744, 352);
+            this.tabsAdmDetPages.Size = new System.Drawing.Size(743, 343);
             this.tabsAdmDetPages.TabIndex = 1;
             // 
             // tabAdmDetPage1
@@ -3071,10 +3071,10 @@
             this.tabAdmDetPage1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabAdmDetPage1.Controls.Add(this.layoutAdmDet);
             this.tabAdmDetPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabAdmDetPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdmDetPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdmDetPage1.Name = "tabAdmDetPage1";
-            this.tabAdmDetPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabAdmDetPage1.Size = new System.Drawing.Size(736, 326);
+            this.tabAdmDetPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAdmDetPage1.Size = new System.Drawing.Size(735, 317);
             this.tabAdmDetPage1.TabIndex = 0;
             this.tabAdmDetPage1.Text = "Side 1";
             // 
@@ -3134,7 +3134,7 @@
             this.layoutAdmDet.Controls.Add(this.cbAdmDetPerfMDATest, 3, 12);
             this.layoutAdmDet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutAdmDet.Location = new System.Drawing.Point(2, 2);
-            this.layoutAdmDet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutAdmDet.Margin = new System.Windows.Forms.Padding(2);
             this.layoutAdmDet.Name = "layoutAdmDet";
             this.layoutAdmDet.RowCount = 14;
             this.layoutAdmDet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -3152,7 +3152,7 @@
             this.layoutAdmDet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.layoutAdmDet.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.layoutAdmDet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.layoutAdmDet.Size = new System.Drawing.Size(732, 322);
+            this.layoutAdmDet.Size = new System.Drawing.Size(731, 313);
             this.layoutAdmDet.TabIndex = 1;
             // 
             // label35
@@ -3181,7 +3181,7 @@
             // 
             this.tbAdmDetSearchRegionFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetSearchRegionFrom.Location = new System.Drawing.Point(294, 25);
-            this.tbAdmDetSearchRegionFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetSearchRegionFrom.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetSearchRegionFrom.MaxLength = 16;
             this.tbAdmDetSearchRegionFrom.Name = "tbAdmDetSearchRegionFrom";
             this.tbAdmDetSearchRegionFrom.Size = new System.Drawing.Size(142, 20);
@@ -3192,7 +3192,7 @@
             // 
             this.tbAdmDetSearchRegionTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetSearchRegionTo.Location = new System.Drawing.Point(440, 25);
-            this.tbAdmDetSearchRegionTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetSearchRegionTo.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetSearchRegionTo.MaxLength = 16;
             this.tbAdmDetSearchRegionTo.Name = "tbAdmDetSearchRegionTo";
             this.tbAdmDetSearchRegionTo.Size = new System.Drawing.Size(142, 20);
@@ -3214,7 +3214,7 @@
             // 
             this.tbAdmDetTolerance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetTolerance.Location = new System.Drawing.Point(294, 48);
-            this.tbAdmDetTolerance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetTolerance.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetTolerance.MaxLength = 16;
             this.tbAdmDetTolerance.Name = "tbAdmDetTolerance";
             this.tbAdmDetTolerance.Size = new System.Drawing.Size(142, 20);
@@ -3236,10 +3236,10 @@
             // 
             this.tbAdmDetSignThresh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetSignThresh.Location = new System.Drawing.Point(586, 48);
-            this.tbAdmDetSignThresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetSignThresh.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetSignThresh.MaxLength = 16;
             this.tbAdmDetSignThresh.Name = "tbAdmDetSignThresh";
-            this.tbAdmDetSignThresh.Size = new System.Drawing.Size(144, 20);
+            this.tbAdmDetSignThresh.Size = new System.Drawing.Size(143, 20);
             this.tbAdmDetSignThresh.TabIndex = 9;
             this.tbAdmDetSignThresh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Decimal_KeyPress);
             // 
@@ -3258,7 +3258,7 @@
             // 
             this.tbAdmDetPeakAreaRegionFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetPeakAreaRegionFrom.Location = new System.Drawing.Point(294, 71);
-            this.tbAdmDetPeakAreaRegionFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetPeakAreaRegionFrom.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetPeakAreaRegionFrom.MaxLength = 16;
             this.tbAdmDetPeakAreaRegionFrom.Name = "tbAdmDetPeakAreaRegionFrom";
             this.tbAdmDetPeakAreaRegionFrom.Size = new System.Drawing.Size(142, 20);
@@ -3269,7 +3269,7 @@
             // 
             this.tbAdmDetPeakAreaRegionTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetPeakAreaRegionTo.Location = new System.Drawing.Point(440, 71);
-            this.tbAdmDetPeakAreaRegionTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetPeakAreaRegionTo.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetPeakAreaRegionTo.MaxLength = 16;
             this.tbAdmDetPeakAreaRegionTo.Name = "tbAdmDetPeakAreaRegionTo";
             this.tbAdmDetPeakAreaRegionTo.Size = new System.Drawing.Size(142, 20);
@@ -3291,7 +3291,7 @@
             // 
             this.tbAdmDetContinuum.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetContinuum.Location = new System.Drawing.Point(294, 94);
-            this.tbAdmDetContinuum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetContinuum.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetContinuum.MaxLength = 16;
             this.tbAdmDetContinuum.Name = "tbAdmDetContinuum";
             this.tbAdmDetContinuum.Size = new System.Drawing.Size(142, 20);
@@ -3318,16 +3318,16 @@
             "STEP",
             "LINEAR"});
             this.cboxAdmDetContinuumFunc.Location = new System.Drawing.Point(586, 94);
-            this.cboxAdmDetContinuumFunc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetContinuumFunc.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetContinuumFunc.Name = "cboxAdmDetContinuumFunc";
-            this.cboxAdmDetContinuumFunc.Size = new System.Drawing.Size(144, 21);
+            this.cboxAdmDetContinuumFunc.Size = new System.Drawing.Size(143, 21);
             this.cboxAdmDetContinuumFunc.TabIndex = 17;
             // 
             // cbAdmDetCriticalLevel
             // 
             this.cbAdmDetCriticalLevel.AutoSize = true;
             this.cbAdmDetCriticalLevel.Location = new System.Drawing.Point(148, 117);
-            this.cbAdmDetCriticalLevel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetCriticalLevel.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetCriticalLevel.Name = "cbAdmDetCriticalLevel";
             this.cbAdmDetCriticalLevel.Size = new System.Drawing.Size(109, 17);
             this.cbAdmDetCriticalLevel.TabIndex = 18;
@@ -3338,7 +3338,7 @@
             // 
             this.cbAdmDetFitSinglets.AutoSize = true;
             this.cbAdmDetFitSinglets.Location = new System.Drawing.Point(294, 117);
-            this.cbAdmDetFitSinglets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetFitSinglets.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetFitSinglets.Name = "cbAdmDetFitSinglets";
             this.cbAdmDetFitSinglets.Size = new System.Drawing.Size(77, 17);
             this.cbAdmDetFitSinglets.TabIndex = 19;
@@ -3349,7 +3349,7 @@
             // 
             this.cbAdmDetDisplayROIs.AutoSize = true;
             this.cbAdmDetDisplayROIs.Location = new System.Drawing.Point(440, 117);
-            this.cbAdmDetDisplayROIs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetDisplayROIs.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetDisplayROIs.Name = "cbAdmDetDisplayROIs";
             this.cbAdmDetDisplayROIs.Size = new System.Drawing.Size(87, 17);
             this.cbAdmDetDisplayROIs.TabIndex = 20;
@@ -3360,9 +3360,9 @@
             // 
             this.cbAdmDetUseFixedTailParam.AutoSize = true;
             this.cbAdmDetUseFixedTailParam.Location = new System.Drawing.Point(586, 117);
-            this.cbAdmDetUseFixedTailParam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetUseFixedTailParam.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetUseFixedTailParam.Name = "cbAdmDetUseFixedTailParam";
-            this.cbAdmDetUseFixedTailParam.Size = new System.Drawing.Size(144, 17);
+            this.cbAdmDetUseFixedTailParam.Size = new System.Drawing.Size(143, 17);
             this.cbAdmDetUseFixedTailParam.TabIndex = 21;
             this.cbAdmDetUseFixedTailParam.Text = "Use Fixed Tail Parameter";
             this.cbAdmDetUseFixedTailParam.UseVisualStyleBackColor = true;
@@ -3371,7 +3371,7 @@
             // 
             this.cbAdmDetRejectZeroAreaPeaks.AutoSize = true;
             this.cbAdmDetRejectZeroAreaPeaks.Location = new System.Drawing.Point(148, 140);
-            this.cbAdmDetRejectZeroAreaPeaks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetRejectZeroAreaPeaks.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetRejectZeroAreaPeaks.Name = "cbAdmDetRejectZeroAreaPeaks";
             this.cbAdmDetRejectZeroAreaPeaks.Size = new System.Drawing.Size(140, 17);
             this.cbAdmDetRejectZeroAreaPeaks.TabIndex = 22;
@@ -3382,7 +3382,7 @@
             // 
             this.cbAdmDetUseFixedFWHM.AutoSize = true;
             this.cbAdmDetUseFixedFWHM.Location = new System.Drawing.Point(294, 140);
-            this.cbAdmDetUseFixedFWHM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetUseFixedFWHM.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetUseFixedFWHM.Name = "cbAdmDetUseFixedFWHM";
             this.cbAdmDetUseFixedFWHM.Size = new System.Drawing.Size(115, 17);
             this.cbAdmDetUseFixedFWHM.TabIndex = 23;
@@ -3411,9 +3411,9 @@
             "DUAL",
             "LINEAR"});
             this.cboxAdmDetEffCalType.Location = new System.Drawing.Point(586, 140);
-            this.cboxAdmDetEffCalType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetEffCalType.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetEffCalType.Name = "cboxAdmDetEffCalType";
-            this.cboxAdmDetEffCalType.Size = new System.Drawing.Size(144, 21);
+            this.cboxAdmDetEffCalType.Size = new System.Drawing.Size(143, 21);
             this.cboxAdmDetEffCalType.TabIndex = 25;
             // 
             // label45
@@ -3431,7 +3431,7 @@
             // 
             this.tbAdmDetMaxFHWMBetPeaks.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetMaxFHWMBetPeaks.Location = new System.Drawing.Point(294, 163);
-            this.tbAdmDetMaxFHWMBetPeaks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetMaxFHWMBetPeaks.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetMaxFHWMBetPeaks.MaxLength = 16;
             this.tbAdmDetMaxFHWMBetPeaks.Name = "tbAdmDetMaxFHWMBetPeaks";
             this.tbAdmDetMaxFHWMBetPeaks.Size = new System.Drawing.Size(142, 20);
@@ -3442,7 +3442,7 @@
             // 
             this.cbAdmDetInUse.AutoSize = true;
             this.cbAdmDetInUse.Location = new System.Drawing.Point(148, 2);
-            this.cbAdmDetInUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetInUse.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetInUse.Name = "cbAdmDetInUse";
             this.cbAdmDetInUse.Size = new System.Drawing.Size(53, 17);
             this.cbAdmDetInUse.TabIndex = 1;
@@ -3486,10 +3486,10 @@
             // 
             this.tbAdmDetMaxFHWMRightLim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetMaxFHWMRightLim.Location = new System.Drawing.Point(586, 186);
-            this.tbAdmDetMaxFHWMRightLim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetMaxFHWMRightLim.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetMaxFHWMRightLim.MaxLength = 16;
             this.tbAdmDetMaxFHWMRightLim.Name = "tbAdmDetMaxFHWMRightLim";
-            this.tbAdmDetMaxFHWMRightLim.Size = new System.Drawing.Size(144, 20);
+            this.tbAdmDetMaxFHWMRightLim.Size = new System.Drawing.Size(143, 20);
             this.tbAdmDetMaxFHWMRightLim.TabIndex = 31;
             this.tbAdmDetMaxFHWMRightLim.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Decimal_KeyPress);
             // 
@@ -3508,7 +3508,7 @@
             // 
             this.tbAdmDetMaxFHWMLeftLim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetMaxFHWMLeftLim.Location = new System.Drawing.Point(294, 186);
-            this.tbAdmDetMaxFHWMLeftLim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetMaxFHWMLeftLim.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetMaxFHWMLeftLim.MaxLength = 16;
             this.tbAdmDetMaxFHWMLeftLim.Name = "tbAdmDetMaxFHWMLeftLim";
             this.tbAdmDetMaxFHWMLeftLim.Size = new System.Drawing.Size(142, 20);
@@ -3532,7 +3532,7 @@
             this.tbAdmDetBkgSub.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetBkgSub.Enabled = false;
             this.tbAdmDetBkgSub.Location = new System.Drawing.Point(294, 209);
-            this.tbAdmDetBkgSub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetBkgSub.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetBkgSub.MaxLength = 1024;
             this.tbAdmDetBkgSub.Name = "tbAdmDetBkgSub";
             this.tbAdmDetBkgSub.Size = new System.Drawing.Size(288, 20);
@@ -3543,9 +3543,9 @@
             this.btnAdmDetBkgSub.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmDetBkgSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmDetBkgSub.Location = new System.Drawing.Point(586, 209);
-            this.btnAdmDetBkgSub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmDetBkgSub.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmDetBkgSub.Name = "btnAdmDetBkgSub";
-            this.btnAdmDetBkgSub.Size = new System.Drawing.Size(144, 19);
+            this.btnAdmDetBkgSub.Size = new System.Drawing.Size(143, 19);
             this.btnAdmDetBkgSub.TabIndex = 34;
             this.btnAdmDetBkgSub.Text = "...";
             this.btnAdmDetBkgSub.UseVisualStyleBackColor = true;
@@ -3579,7 +3579,7 @@
             this.tbAdmDetNIDLib.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetNIDLib.Enabled = false;
             this.tbAdmDetNIDLib.Location = new System.Drawing.Point(294, 232);
-            this.tbAdmDetNIDLib.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetNIDLib.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetNIDLib.MaxLength = 1024;
             this.tbAdmDetNIDLib.Name = "tbAdmDetNIDLib";
             this.tbAdmDetNIDLib.Size = new System.Drawing.Size(288, 20);
@@ -3590,9 +3590,9 @@
             this.btnAdmDetNIDLib.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmDetNIDLib.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmDetNIDLib.Location = new System.Drawing.Point(586, 232);
-            this.btnAdmDetNIDLib.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmDetNIDLib.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmDetNIDLib.Name = "btnAdmDetNIDLib";
-            this.btnAdmDetNIDLib.Size = new System.Drawing.Size(144, 19);
+            this.btnAdmDetNIDLib.Size = new System.Drawing.Size(143, 19);
             this.btnAdmDetNIDLib.TabIndex = 38;
             this.btnAdmDetNIDLib.Text = "...";
             this.btnAdmDetNIDLib.UseVisualStyleBackColor = true;
@@ -3613,7 +3613,7 @@
             // 
             this.tbAdmDetNIDConfThresh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetNIDConfThresh.Location = new System.Drawing.Point(294, 255);
-            this.tbAdmDetNIDConfThresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetNIDConfThresh.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetNIDConfThresh.MaxLength = 16;
             this.tbAdmDetNIDConfThresh.Name = "tbAdmDetNIDConfThresh";
             this.tbAdmDetNIDConfThresh.Size = new System.Drawing.Size(142, 20);
@@ -3635,10 +3635,10 @@
             // 
             this.tbAdmDetMDAConfFac.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetMDAConfFac.Location = new System.Drawing.Point(586, 255);
-            this.tbAdmDetMDAConfFac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetMDAConfFac.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetMDAConfFac.MaxLength = 16;
             this.tbAdmDetMDAConfFac.Name = "tbAdmDetMDAConfFac";
-            this.tbAdmDetMDAConfFac.Size = new System.Drawing.Size(144, 20);
+            this.tbAdmDetMDAConfFac.Size = new System.Drawing.Size(143, 20);
             this.tbAdmDetMDAConfFac.TabIndex = 42;
             this.tbAdmDetMDAConfFac.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Decimal_KeyPress);
             // 
@@ -3646,7 +3646,7 @@
             // 
             this.cbAdmDetInhibitATDCorr.AutoSize = true;
             this.cbAdmDetInhibitATDCorr.Location = new System.Drawing.Point(148, 278);
-            this.cbAdmDetInhibitATDCorr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetInhibitATDCorr.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetInhibitATDCorr.Name = "cbAdmDetInhibitATDCorr";
             this.cbAdmDetInhibitATDCorr.Size = new System.Drawing.Size(104, 17);
             this.cbAdmDetInhibitATDCorr.TabIndex = 43;
@@ -3657,7 +3657,7 @@
             // 
             this.cbAdmDetUseStoredLib.AutoSize = true;
             this.cbAdmDetUseStoredLib.Location = new System.Drawing.Point(294, 278);
-            this.cbAdmDetUseStoredLib.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetUseStoredLib.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetUseStoredLib.Name = "cbAdmDetUseStoredLib";
             this.cbAdmDetUseStoredLib.Size = new System.Drawing.Size(113, 17);
             this.cbAdmDetUseStoredLib.TabIndex = 44;
@@ -3668,7 +3668,7 @@
             // 
             this.cbAdmDetPerfMDATest.AutoSize = true;
             this.cbAdmDetPerfMDATest.Location = new System.Drawing.Point(440, 278);
-            this.cbAdmDetPerfMDATest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmDetPerfMDATest.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmDetPerfMDATest.Name = "cbAdmDetPerfMDATest";
             this.cbAdmDetPerfMDATest.Size = new System.Drawing.Size(113, 17);
             this.cbAdmDetPerfMDATest.TabIndex = 45;
@@ -3681,10 +3681,10 @@
             this.tabAdmDetPage2.Controls.Add(this.panel19);
             this.tabAdmDetPage2.Controls.Add(this.layoutAdmDetPage2);
             this.tabAdmDetPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabAdmDetPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdmDetPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdmDetPage2.Name = "tabAdmDetPage2";
-            this.tabAdmDetPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabAdmDetPage2.Size = new System.Drawing.Size(737, 332);
+            this.tabAdmDetPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAdmDetPage2.Size = new System.Drawing.Size(735, 317);
             this.tabAdmDetPage2.TabIndex = 1;
             this.tabAdmDetPage2.Text = "Side 2";
             // 
@@ -3694,9 +3694,9 @@
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(2, 179);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(733, 151);
+            this.panel19.Size = new System.Drawing.Size(731, 136);
             this.panel19.TabIndex = 1;
             // 
             // gridAdmDetGeomCalQA
@@ -3718,7 +3718,7 @@
             this.gridAdmDetGeomCalQA.RowHeadersVisible = false;
             this.gridAdmDetGeomCalQA.RowHeadersWidth = 60;
             this.gridAdmDetGeomCalQA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridAdmDetGeomCalQA.Size = new System.Drawing.Size(641, 151);
+            this.gridAdmDetGeomCalQA.Size = new System.Drawing.Size(639, 136);
             this.gridAdmDetGeomCalQA.TabIndex = 1;
             // 
             // Geom
@@ -3752,17 +3752,17 @@
             this.panel20.Controls.Add(this.btnAdmDetGeomCalEdit);
             this.panel20.Controls.Add(this.btnAdmDetGeomCalAdd);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel20.Location = new System.Drawing.Point(641, 0);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel20.Location = new System.Drawing.Point(639, 0);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(92, 151);
+            this.panel20.Size = new System.Drawing.Size(92, 136);
             this.panel20.TabIndex = 0;
             // 
             // btnAdmDetGeomCalDelete
             // 
             this.btnAdmDetGeomCalDelete.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAdmDetGeomCalDelete.Location = new System.Drawing.Point(0, 46);
-            this.btnAdmDetGeomCalDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmDetGeomCalDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmDetGeomCalDelete.Name = "btnAdmDetGeomCalDelete";
             this.btnAdmDetGeomCalDelete.Size = new System.Drawing.Size(92, 23);
             this.btnAdmDetGeomCalDelete.TabIndex = 2;
@@ -3774,7 +3774,7 @@
             // 
             this.btnAdmDetGeomCalEdit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAdmDetGeomCalEdit.Location = new System.Drawing.Point(0, 23);
-            this.btnAdmDetGeomCalEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmDetGeomCalEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmDetGeomCalEdit.Name = "btnAdmDetGeomCalEdit";
             this.btnAdmDetGeomCalEdit.Size = new System.Drawing.Size(92, 23);
             this.btnAdmDetGeomCalEdit.TabIndex = 1;
@@ -3786,7 +3786,7 @@
             // 
             this.btnAdmDetGeomCalAdd.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAdmDetGeomCalAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdmDetGeomCalAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmDetGeomCalAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmDetGeomCalAdd.Name = "btnAdmDetGeomCalAdd";
             this.btnAdmDetGeomCalAdd.Size = new System.Drawing.Size(92, 23);
             this.btnAdmDetGeomCalAdd.TabIndex = 0;
@@ -3819,7 +3819,7 @@
             this.layoutAdmDetPage2.Controls.Add(this.tbAdmDetSysErr, 4, 4);
             this.layoutAdmDetPage2.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutAdmDetPage2.Location = new System.Drawing.Point(2, 2);
-            this.layoutAdmDetPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutAdmDetPage2.Margin = new System.Windows.Forms.Padding(2);
             this.layoutAdmDetPage2.Name = "layoutAdmDetPage2";
             this.layoutAdmDetPage2.RowCount = 6;
             this.layoutAdmDetPage2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -3829,7 +3829,7 @@
             this.layoutAdmDetPage2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.layoutAdmDetPage2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.layoutAdmDetPage2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.layoutAdmDetPage2.Size = new System.Drawing.Size(733, 177);
+            this.layoutAdmDetPage2.Size = new System.Drawing.Size(731, 177);
             this.layoutAdmDetPage2.TabIndex = 0;
             // 
             // label53
@@ -3854,7 +3854,7 @@
             "AREAPRESET",
             "CNTSPRESET"});
             this.cboxAdmDetPresetArea.Location = new System.Drawing.Point(294, 25);
-            this.cboxAdmDetPresetArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetPresetArea.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetPresetArea.Name = "cboxAdmDetPresetArea";
             this.cboxAdmDetPresetArea.Size = new System.Drawing.Size(142, 21);
             this.cboxAdmDetPresetArea.TabIndex = 2;
@@ -3880,7 +3880,7 @@
             "LIVEPRESET",
             "REALPRESET"});
             this.cboxAdmDetPresetTime.Location = new System.Drawing.Point(294, 71);
-            this.cboxAdmDetPresetTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetPresetTime.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetPresetTime.Name = "cboxAdmDetPresetTime";
             this.cboxAdmDetPresetTime.Size = new System.Drawing.Size(142, 21);
             this.cboxAdmDetPresetTime.TabIndex = 4;
@@ -3889,7 +3889,7 @@
             // 
             this.tbAdmDetPresetAreaValue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetPresetAreaValue.Location = new System.Drawing.Point(440, 25);
-            this.tbAdmDetPresetAreaValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetPresetAreaValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetPresetAreaValue.MaxLength = 16;
             this.tbAdmDetPresetAreaValue.Name = "tbAdmDetPresetAreaValue";
             this.tbAdmDetPresetAreaValue.Size = new System.Drawing.Size(142, 20);
@@ -3900,7 +3900,7 @@
             // 
             this.tbAdmDetPresetTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetPresetTimeValue.Location = new System.Drawing.Point(440, 71);
-            this.tbAdmDetPresetTimeValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetPresetTimeValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetPresetTimeValue.MaxLength = 16;
             this.tbAdmDetPresetTimeValue.Name = "tbAdmDetPresetTimeValue";
             this.tbAdmDetPresetTimeValue.Size = new System.Drawing.Size(142, 20);
@@ -3917,9 +3917,9 @@
             "Minutter",
             "Timer"});
             this.cboxAdmDetPresetTimeUnit.Location = new System.Drawing.Point(586, 71);
-            this.cboxAdmDetPresetTimeUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetPresetTimeUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetPresetTimeUnit.Name = "cboxAdmDetPresetTimeUnit";
-            this.cboxAdmDetPresetTimeUnit.Size = new System.Drawing.Size(145, 21);
+            this.cboxAdmDetPresetTimeUnit.Size = new System.Drawing.Size(143, 21);
             this.cboxAdmDetPresetTimeUnit.TabIndex = 7;
             // 
             // label54
@@ -3948,7 +3948,7 @@
             // 
             this.tbAdmDetPresetAreaChanFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetPresetAreaChanFrom.Location = new System.Drawing.Point(294, 48);
-            this.tbAdmDetPresetAreaChanFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetPresetAreaChanFrom.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetPresetAreaChanFrom.MaxLength = 16;
             this.tbAdmDetPresetAreaChanFrom.Name = "tbAdmDetPresetAreaChanFrom";
             this.tbAdmDetPresetAreaChanFrom.Size = new System.Drawing.Size(142, 20);
@@ -3959,7 +3959,7 @@
             // 
             this.tbAdmDetPresetAreaChanTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetPresetAreaChanTo.Location = new System.Drawing.Point(440, 48);
-            this.tbAdmDetPresetAreaChanTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetPresetAreaChanTo.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetPresetAreaChanTo.MaxLength = 16;
             this.tbAdmDetPresetAreaChanTo.Name = "tbAdmDetPresetAreaChanTo";
             this.tbAdmDetPresetAreaChanTo.Size = new System.Drawing.Size(142, 20);
@@ -3981,7 +3981,7 @@
             // 
             this.tbAdmDetRandErr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetRandErr.Location = new System.Drawing.Point(294, 94);
-            this.tbAdmDetRandErr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetRandErr.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetRandErr.MaxLength = 16;
             this.tbAdmDetRandErr.Name = "tbAdmDetRandErr";
             this.tbAdmDetRandErr.Size = new System.Drawing.Size(142, 20);
@@ -4003,10 +4003,10 @@
             // 
             this.tbAdmDetSysErr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmDetSysErr.Location = new System.Drawing.Point(586, 94);
-            this.tbAdmDetSysErr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetSysErr.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetSysErr.MaxLength = 16;
             this.tbAdmDetSysErr.Name = "tbAdmDetSysErr";
-            this.tbAdmDetSysErr.Size = new System.Drawing.Size(145, 20);
+            this.tbAdmDetSysErr.Size = new System.Drawing.Size(143, 20);
             this.tbAdmDetSysErr.TabIndex = 14;
             this.tbAdmDetSysErr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Decimal_KeyPress);
             // 
@@ -4017,8 +4017,8 @@
             this.tabAdmDetPage3.Controls.Add(this.tableLayoutPanel1);
             this.tabAdmDetPage3.Location = new System.Drawing.Point(4, 22);
             this.tabAdmDetPage3.Name = "tabAdmDetPage3";
-            this.tabAdmDetPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabAdmDetPage3.Size = new System.Drawing.Size(737, 332);
+            this.tabAdmDetPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAdmDetPage3.Size = new System.Drawing.Size(735, 317);
             this.tabAdmDetPage3.TabIndex = 2;
             this.tabAdmDetPage3.Text = "Side 3";
             // 
@@ -4043,7 +4043,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tbAdmDetBkgPresetAreaChanTo, 3, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 118);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -4055,7 +4055,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(731, 115);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(729, 115);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // label5
@@ -4079,17 +4079,17 @@
             "INTPRESET",
             "AREAPRESET",
             "CNTSPRESET"});
-            this.cboxAdmDetBkgPresetArea.Location = new System.Drawing.Point(294, 25);
-            this.cboxAdmDetBkgPresetArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetBkgPresetArea.Location = new System.Drawing.Point(292, 25);
+            this.cboxAdmDetBkgPresetArea.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetBkgPresetArea.Name = "cboxAdmDetBkgPresetArea";
-            this.cboxAdmDetBkgPresetArea.Size = new System.Drawing.Size(142, 21);
+            this.cboxAdmDetBkgPresetArea.Size = new System.Drawing.Size(141, 21);
             this.cboxAdmDetBkgPresetArea.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(148, 79);
+            this.label6.Location = new System.Drawing.Point(147, 79);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 13);
@@ -4105,31 +4105,31 @@
             "",
             "LIVEPRESET",
             "REALPRESET"});
-            this.cboxAdmDetBkgPresetTime.Location = new System.Drawing.Point(294, 71);
-            this.cboxAdmDetBkgPresetTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetBkgPresetTime.Location = new System.Drawing.Point(292, 71);
+            this.cboxAdmDetBkgPresetTime.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetBkgPresetTime.Name = "cboxAdmDetBkgPresetTime";
-            this.cboxAdmDetBkgPresetTime.Size = new System.Drawing.Size(142, 21);
+            this.cboxAdmDetBkgPresetTime.Size = new System.Drawing.Size(141, 21);
             this.cboxAdmDetBkgPresetTime.TabIndex = 4;
             // 
             // tbAdmDetBkgPresetAreaValue
             // 
             this.tbAdmDetBkgPresetAreaValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetBkgPresetAreaValue.Location = new System.Drawing.Point(440, 25);
-            this.tbAdmDetBkgPresetAreaValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetBkgPresetAreaValue.Location = new System.Drawing.Point(437, 25);
+            this.tbAdmDetBkgPresetAreaValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetBkgPresetAreaValue.MaxLength = 16;
             this.tbAdmDetBkgPresetAreaValue.Name = "tbAdmDetBkgPresetAreaValue";
-            this.tbAdmDetBkgPresetAreaValue.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetBkgPresetAreaValue.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetBkgPresetAreaValue.TabIndex = 5;
             this.tbAdmDetBkgPresetAreaValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
             // tbAdmDetBkgPresetTimeValue
             // 
             this.tbAdmDetBkgPresetTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetBkgPresetTimeValue.Location = new System.Drawing.Point(440, 71);
-            this.tbAdmDetBkgPresetTimeValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetBkgPresetTimeValue.Location = new System.Drawing.Point(437, 71);
+            this.tbAdmDetBkgPresetTimeValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetBkgPresetTimeValue.MaxLength = 16;
             this.tbAdmDetBkgPresetTimeValue.Name = "tbAdmDetBkgPresetTimeValue";
-            this.tbAdmDetBkgPresetTimeValue.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetBkgPresetTimeValue.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetBkgPresetTimeValue.TabIndex = 6;
             this.tbAdmDetBkgPresetTimeValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
@@ -4142,17 +4142,17 @@
             "Sekunder",
             "Minutter",
             "Timer"});
-            this.cboxAdmDetBkgPresetTimeUnit.Location = new System.Drawing.Point(586, 71);
-            this.cboxAdmDetBkgPresetTimeUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetBkgPresetTimeUnit.Location = new System.Drawing.Point(582, 71);
+            this.cboxAdmDetBkgPresetTimeUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetBkgPresetTimeUnit.Name = "cboxAdmDetBkgPresetTimeUnit";
-            this.cboxAdmDetBkgPresetTimeUnit.Size = new System.Drawing.Size(143, 21);
+            this.cboxAdmDetBkgPresetTimeUnit.Size = new System.Drawing.Size(145, 21);
             this.cboxAdmDetBkgPresetTimeUnit.TabIndex = 7;
             // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(148, 33);
+            this.label8.Location = new System.Drawing.Point(147, 33);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 13);
@@ -4163,7 +4163,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(148, 56);
+            this.label9.Location = new System.Drawing.Point(147, 56);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(109, 13);
@@ -4173,22 +4173,22 @@
             // tbAdmDetBkgPresetAreaChanFrom
             // 
             this.tbAdmDetBkgPresetAreaChanFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetBkgPresetAreaChanFrom.Location = new System.Drawing.Point(294, 48);
-            this.tbAdmDetBkgPresetAreaChanFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetBkgPresetAreaChanFrom.Location = new System.Drawing.Point(292, 48);
+            this.tbAdmDetBkgPresetAreaChanFrom.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetBkgPresetAreaChanFrom.MaxLength = 16;
             this.tbAdmDetBkgPresetAreaChanFrom.Name = "tbAdmDetBkgPresetAreaChanFrom";
-            this.tbAdmDetBkgPresetAreaChanFrom.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetBkgPresetAreaChanFrom.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetBkgPresetAreaChanFrom.TabIndex = 9;
             this.tbAdmDetBkgPresetAreaChanFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
             // tbAdmDetBkgPresetAreaChanTo
             // 
             this.tbAdmDetBkgPresetAreaChanTo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetBkgPresetAreaChanTo.Location = new System.Drawing.Point(440, 48);
-            this.tbAdmDetBkgPresetAreaChanTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetBkgPresetAreaChanTo.Location = new System.Drawing.Point(437, 48);
+            this.tbAdmDetBkgPresetAreaChanTo.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetBkgPresetAreaChanTo.MaxLength = 16;
             this.tbAdmDetBkgPresetAreaChanTo.Name = "tbAdmDetBkgPresetAreaChanTo";
-            this.tbAdmDetBkgPresetAreaChanTo.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetBkgPresetAreaChanTo.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetBkgPresetAreaChanTo.TabIndex = 10;
             this.tbAdmDetBkgPresetAreaChanTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
@@ -4213,7 +4213,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tbAdmDetQAPresetAreaChanTo, 3, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -4225,7 +4225,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(731, 115);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(729, 115);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // label1
@@ -4249,17 +4249,17 @@
             "INTPRESET",
             "AREAPRESET",
             "CNTSPRESET"});
-            this.cboxAdmDetQAPresetArea.Location = new System.Drawing.Point(294, 25);
-            this.cboxAdmDetQAPresetArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetQAPresetArea.Location = new System.Drawing.Point(292, 25);
+            this.cboxAdmDetQAPresetArea.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetQAPresetArea.Name = "cboxAdmDetQAPresetArea";
-            this.cboxAdmDetQAPresetArea.Size = new System.Drawing.Size(142, 21);
+            this.cboxAdmDetQAPresetArea.Size = new System.Drawing.Size(141, 21);
             this.cboxAdmDetQAPresetArea.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 79);
+            this.label2.Location = new System.Drawing.Point(147, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
@@ -4275,31 +4275,31 @@
             "",
             "LIVEPRESET",
             "REALPRESET"});
-            this.cboxAdmDetQAPresetTime.Location = new System.Drawing.Point(294, 71);
-            this.cboxAdmDetQAPresetTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetQAPresetTime.Location = new System.Drawing.Point(292, 71);
+            this.cboxAdmDetQAPresetTime.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetQAPresetTime.Name = "cboxAdmDetQAPresetTime";
-            this.cboxAdmDetQAPresetTime.Size = new System.Drawing.Size(142, 21);
+            this.cboxAdmDetQAPresetTime.Size = new System.Drawing.Size(141, 21);
             this.cboxAdmDetQAPresetTime.TabIndex = 4;
             // 
             // tbAdmDetQAPresetAreaValue
             // 
             this.tbAdmDetQAPresetAreaValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetQAPresetAreaValue.Location = new System.Drawing.Point(440, 25);
-            this.tbAdmDetQAPresetAreaValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetQAPresetAreaValue.Location = new System.Drawing.Point(437, 25);
+            this.tbAdmDetQAPresetAreaValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetQAPresetAreaValue.MaxLength = 16;
             this.tbAdmDetQAPresetAreaValue.Name = "tbAdmDetQAPresetAreaValue";
-            this.tbAdmDetQAPresetAreaValue.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetQAPresetAreaValue.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetQAPresetAreaValue.TabIndex = 5;
             this.tbAdmDetQAPresetAreaValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
             // tbAdmDetQAPresetTimeValue
             // 
             this.tbAdmDetQAPresetTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetQAPresetTimeValue.Location = new System.Drawing.Point(440, 71);
-            this.tbAdmDetQAPresetTimeValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetQAPresetTimeValue.Location = new System.Drawing.Point(437, 71);
+            this.tbAdmDetQAPresetTimeValue.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetQAPresetTimeValue.MaxLength = 16;
             this.tbAdmDetQAPresetTimeValue.Name = "tbAdmDetQAPresetTimeValue";
-            this.tbAdmDetQAPresetTimeValue.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetQAPresetTimeValue.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetQAPresetTimeValue.TabIndex = 6;
             this.tbAdmDetQAPresetTimeValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
@@ -4312,17 +4312,17 @@
             "Sekunder",
             "Minutter",
             "Timer"});
-            this.cboxAdmDetQAPresetTimeUnit.Location = new System.Drawing.Point(586, 71);
-            this.cboxAdmDetQAPresetTimeUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmDetQAPresetTimeUnit.Location = new System.Drawing.Point(582, 71);
+            this.cboxAdmDetQAPresetTimeUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmDetQAPresetTimeUnit.Name = "cboxAdmDetQAPresetTimeUnit";
-            this.cboxAdmDetQAPresetTimeUnit.Size = new System.Drawing.Size(143, 21);
+            this.cboxAdmDetQAPresetTimeUnit.Size = new System.Drawing.Size(145, 21);
             this.cboxAdmDetQAPresetTimeUnit.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 33);
+            this.label3.Location = new System.Drawing.Point(147, 33);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
@@ -4333,7 +4333,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 56);
+            this.label4.Location = new System.Drawing.Point(147, 56);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 13);
@@ -4343,22 +4343,22 @@
             // tbAdmDetQAPresetAreaChanFrom
             // 
             this.tbAdmDetQAPresetAreaChanFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetQAPresetAreaChanFrom.Location = new System.Drawing.Point(294, 48);
-            this.tbAdmDetQAPresetAreaChanFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetQAPresetAreaChanFrom.Location = new System.Drawing.Point(292, 48);
+            this.tbAdmDetQAPresetAreaChanFrom.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetQAPresetAreaChanFrom.MaxLength = 16;
             this.tbAdmDetQAPresetAreaChanFrom.Name = "tbAdmDetQAPresetAreaChanFrom";
-            this.tbAdmDetQAPresetAreaChanFrom.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetQAPresetAreaChanFrom.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetQAPresetAreaChanFrom.TabIndex = 9;
             this.tbAdmDetQAPresetAreaChanFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
             // tbAdmDetQAPresetAreaChanTo
             // 
             this.tbAdmDetQAPresetAreaChanTo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAdmDetQAPresetAreaChanTo.Location = new System.Drawing.Point(440, 48);
-            this.tbAdmDetQAPresetAreaChanTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmDetQAPresetAreaChanTo.Location = new System.Drawing.Point(437, 48);
+            this.tbAdmDetQAPresetAreaChanTo.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmDetQAPresetAreaChanTo.MaxLength = 16;
             this.tbAdmDetQAPresetAreaChanTo.Name = "tbAdmDetQAPresetAreaChanTo";
-            this.tbAdmDetQAPresetAreaChanTo.Size = new System.Drawing.Size(142, 20);
+            this.tbAdmDetQAPresetAreaChanTo.Size = new System.Drawing.Size(141, 20);
             this.tbAdmDetQAPresetAreaChanTo.TabIndex = 10;
             this.tbAdmDetQAPresetAreaChanTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Integer_KeyPress);
             // 
@@ -4366,17 +4366,17 @@
             // 
             this.panel21.Controls.Add(this.btnAdmDetSave);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel21.Location = new System.Drawing.Point(0, 352);
-            this.panel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel21.Location = new System.Drawing.Point(0, 343);
+            this.panel21.Margin = new System.Windows.Forms.Padding(2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(744, 23);
+            this.panel21.Size = new System.Drawing.Size(743, 23);
             this.panel21.TabIndex = 2;
             // 
             // btnAdmDetSave
             // 
             this.btnAdmDetSave.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAdmDetSave.Location = new System.Drawing.Point(664, 0);
-            this.btnAdmDetSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmDetSave.Location = new System.Drawing.Point(663, 0);
+            this.btnAdmDetSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmDetSave.Name = "btnAdmDetSave";
             this.btnAdmDetSave.Size = new System.Drawing.Size(80, 23);
             this.btnAdmDetSave.TabIndex = 0;
@@ -4389,10 +4389,10 @@
             this.tabAdminGeom.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabAdminGeom.Controls.Add(this.splitAdmGeom);
             this.tabAdminGeom.Location = new System.Drawing.Point(4, 22);
-            this.tabAdminGeom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdminGeom.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdminGeom.Name = "tabAdminGeom";
-            this.tabAdminGeom.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabAdminGeom.Size = new System.Drawing.Size(830, 379);
+            this.tabAdminGeom.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAdminGeom.Size = new System.Drawing.Size(828, 370);
             this.tabAdminGeom.TabIndex = 2;
             this.tabAdminGeom.Text = "Geometrier";
             // 
@@ -4400,21 +4400,21 @@
             // 
             this.splitAdmGeom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitAdmGeom.Location = new System.Drawing.Point(2, 2);
-            this.splitAdmGeom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitAdmGeom.Margin = new System.Windows.Forms.Padding(2);
             this.splitAdmGeom.Name = "splitAdmGeom";
             // 
             // splitAdmGeom.Panel1
             // 
             this.splitAdmGeom.Panel1.Controls.Add(this.lbAdmGeomList);
-            this.splitAdmGeom.Panel1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitAdmGeom.Panel1.Padding = new System.Windows.Forms.Padding(4);
             // 
             // splitAdmGeom.Panel2
             // 
             this.splitAdmGeom.Panel2.Controls.Add(this.layoutAdmGeom);
             this.splitAdmGeom.Panel2.Controls.Add(this.panel22);
             this.splitAdmGeom.Panel2.Enabled = false;
-            this.splitAdmGeom.Size = new System.Drawing.Size(826, 375);
-            this.splitAdmGeom.SplitterDistance = 87;
+            this.splitAdmGeom.Size = new System.Drawing.Size(824, 366);
+            this.splitAdmGeom.SplitterDistance = 86;
             this.splitAdmGeom.SplitterWidth = 3;
             this.splitAdmGeom.TabIndex = 0;
             // 
@@ -4425,9 +4425,9 @@
             this.lbAdmGeomList.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdmGeomList.FormattingEnabled = true;
             this.lbAdmGeomList.Location = new System.Drawing.Point(4, 4);
-            this.lbAdmGeomList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbAdmGeomList.Margin = new System.Windows.Forms.Padding(2);
             this.lbAdmGeomList.Name = "lbAdmGeomList";
-            this.lbAdmGeomList.Size = new System.Drawing.Size(79, 367);
+            this.lbAdmGeomList.Size = new System.Drawing.Size(78, 358);
             this.lbAdmGeomList.TabIndex = 0;
             this.lbAdmGeomList.SelectedIndexChanged += new System.EventHandler(this.lbAdmGeomList_SelectedIndexChanged);
             // 
@@ -4443,13 +4443,13 @@
             this.layoutAdmGeom.Controls.Add(this.cbAdmGeomInUse, 1, 1);
             this.layoutAdmGeom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutAdmGeom.Location = new System.Drawing.Point(0, 0);
-            this.layoutAdmGeom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutAdmGeom.Margin = new System.Windows.Forms.Padding(2);
             this.layoutAdmGeom.Name = "layoutAdmGeom";
             this.layoutAdmGeom.RowCount = 3;
             this.layoutAdmGeom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.layoutAdmGeom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.layoutAdmGeom.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.layoutAdmGeom.Size = new System.Drawing.Size(736, 352);
+            this.layoutAdmGeom.Size = new System.Drawing.Size(735, 343);
             this.layoutAdmGeom.TabIndex = 0;
             // 
             // label59
@@ -4468,7 +4468,7 @@
             this.layoutAdmGeom.SetColumnSpan(this.tbAdmGeomManufacturer, 2);
             this.tbAdmGeomManufacturer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmGeomManufacturer.Location = new System.Drawing.Point(149, 2);
-            this.tbAdmGeomManufacturer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmGeomManufacturer.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmGeomManufacturer.MaxLength = 256;
             this.tbAdmGeomManufacturer.Name = "tbAdmGeomManufacturer";
             this.tbAdmGeomManufacturer.Size = new System.Drawing.Size(290, 20);
@@ -4479,7 +4479,7 @@
             this.cbAdmGeomInUse.AutoSize = true;
             this.cbAdmGeomInUse.Enabled = false;
             this.cbAdmGeomInUse.Location = new System.Drawing.Point(149, 25);
-            this.cbAdmGeomInUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmGeomInUse.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmGeomInUse.Name = "cbAdmGeomInUse";
             this.cbAdmGeomInUse.Size = new System.Drawing.Size(54, 17);
             this.cbAdmGeomInUse.TabIndex = 2;
@@ -4490,17 +4490,17 @@
             // 
             this.panel22.Controls.Add(this.btnAdmGeomSave);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel22.Location = new System.Drawing.Point(0, 352);
-            this.panel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel22.Location = new System.Drawing.Point(0, 343);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(736, 23);
+            this.panel22.Size = new System.Drawing.Size(735, 23);
             this.panel22.TabIndex = 1;
             // 
             // btnAdmGeomSave
             // 
             this.btnAdmGeomSave.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAdmGeomSave.Location = new System.Drawing.Point(654, 0);
-            this.btnAdmGeomSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmGeomSave.Location = new System.Drawing.Point(653, 0);
+            this.btnAdmGeomSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmGeomSave.Name = "btnAdmGeomSave";
             this.btnAdmGeomSave.Size = new System.Drawing.Size(82, 23);
             this.btnAdmGeomSave.TabIndex = 0;
@@ -4513,10 +4513,10 @@
             this.tabAdminQA.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabAdminQA.Controls.Add(this.splitAdmQA);
             this.tabAdminQA.Location = new System.Drawing.Point(4, 22);
-            this.tabAdminQA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAdminQA.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdminQA.Name = "tabAdminQA";
-            this.tabAdminQA.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabAdminQA.Size = new System.Drawing.Size(830, 379);
+            this.tabAdminQA.Padding = new System.Windows.Forms.Padding(2);
+            this.tabAdminQA.Size = new System.Drawing.Size(828, 370);
             this.tabAdminQA.TabIndex = 3;
             this.tabAdminQA.Text = "QA bokser";
             // 
@@ -4524,21 +4524,21 @@
             // 
             this.splitAdmQA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitAdmQA.Location = new System.Drawing.Point(2, 2);
-            this.splitAdmQA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitAdmQA.Margin = new System.Windows.Forms.Padding(2);
             this.splitAdmQA.Name = "splitAdmQA";
             // 
             // splitAdmQA.Panel1
             // 
             this.splitAdmQA.Panel1.Controls.Add(this.lbAdmQAList);
-            this.splitAdmQA.Panel1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitAdmQA.Panel1.Padding = new System.Windows.Forms.Padding(4);
             // 
             // splitAdmQA.Panel2
             // 
             this.splitAdmQA.Panel2.Controls.Add(this.layoutAdmQA);
             this.splitAdmQA.Panel2.Controls.Add(this.panel23);
             this.splitAdmQA.Panel2.Enabled = false;
-            this.splitAdmQA.Size = new System.Drawing.Size(826, 375);
-            this.splitAdmQA.SplitterDistance = 141;
+            this.splitAdmQA.Size = new System.Drawing.Size(824, 366);
+            this.splitAdmQA.SplitterDistance = 140;
             this.splitAdmQA.SplitterWidth = 3;
             this.splitAdmQA.TabIndex = 0;
             // 
@@ -4549,9 +4549,9 @@
             this.lbAdmQAList.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdmQAList.FormattingEnabled = true;
             this.lbAdmQAList.Location = new System.Drawing.Point(4, 4);
-            this.lbAdmQAList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbAdmQAList.Margin = new System.Windows.Forms.Padding(2);
             this.lbAdmQAList.Name = "lbAdmQAList";
-            this.lbAdmQAList.Size = new System.Drawing.Size(133, 367);
+            this.lbAdmQAList.Size = new System.Drawing.Size(132, 358);
             this.lbAdmQAList.TabIndex = 0;
             this.lbAdmQAList.SelectedIndexChanged += new System.EventHandler(this.lbAdmQAList_SelectedIndexChanged);
             // 
@@ -4578,7 +4578,7 @@
             this.layoutAdmQA.Controls.Add(this.tbAdmQASampUnc, 1, 6);
             this.layoutAdmQA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutAdmQA.Location = new System.Drawing.Point(0, 0);
-            this.layoutAdmQA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutAdmQA.Margin = new System.Windows.Forms.Padding(2);
             this.layoutAdmQA.Name = "layoutAdmQA";
             this.layoutAdmQA.RowCount = 8;
             this.layoutAdmQA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -4589,7 +4589,7 @@
             this.layoutAdmQA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.layoutAdmQA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.layoutAdmQA.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.layoutAdmQA.Size = new System.Drawing.Size(682, 352);
+            this.layoutAdmQA.Size = new System.Drawing.Size(681, 343);
             this.layoutAdmQA.TabIndex = 0;
             // 
             // cbAdmQAInUse
@@ -4597,7 +4597,7 @@
             this.cbAdmQAInUse.AutoSize = true;
             this.cbAdmQAInUse.Enabled = false;
             this.cbAdmQAInUse.Location = new System.Drawing.Point(138, 2);
-            this.cbAdmQAInUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAdmQAInUse.Margin = new System.Windows.Forms.Padding(2);
             this.cbAdmQAInUse.Name = "cbAdmQAInUse";
             this.cbAdmQAInUse.Size = new System.Drawing.Size(54, 17);
             this.cbAdmQAInUse.TabIndex = 0;
@@ -4611,7 +4611,7 @@
             this.cboxAdmQABeaker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxAdmQABeaker.FormattingEnabled = true;
             this.cboxAdmQABeaker.Location = new System.Drawing.Point(138, 25);
-            this.cboxAdmQABeaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmQABeaker.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmQABeaker.Name = "cboxAdmQABeaker";
             this.cboxAdmQABeaker.Size = new System.Drawing.Size(268, 21);
             this.cboxAdmQABeaker.TabIndex = 1;
@@ -4641,7 +4641,7 @@
             this.dtAdmQARefDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtAdmQARefDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtAdmQARefDate.Location = new System.Drawing.Point(138, 48);
-            this.dtAdmQARefDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtAdmQARefDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtAdmQARefDate.Name = "dtAdmQARefDate";
             this.dtAdmQARefDate.Size = new System.Drawing.Size(132, 20);
             this.dtAdmQARefDate.TabIndex = 4;
@@ -4651,7 +4651,7 @@
             this.dtAdmQARefTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtAdmQARefTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtAdmQARefTime.Location = new System.Drawing.Point(274, 48);
-            this.dtAdmQARefTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtAdmQARefTime.Margin = new System.Windows.Forms.Padding(2);
             this.dtAdmQARefTime.Name = "dtAdmQARefTime";
             this.dtAdmQARefTime.ShowUpDown = true;
             this.dtAdmQARefTime.Size = new System.Drawing.Size(132, 20);
@@ -4672,7 +4672,7 @@
             this.layoutAdmQA.SetColumnSpan(this.tbAdmQASampType, 2);
             this.tbAdmQASampType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmQASampType.Location = new System.Drawing.Point(138, 71);
-            this.tbAdmQASampType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmQASampType.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmQASampType.MaxLength = 16;
             this.tbAdmQASampType.Name = "tbAdmQASampType";
             this.tbAdmQASampType.Size = new System.Drawing.Size(268, 20);
@@ -4693,7 +4693,7 @@
             this.layoutAdmQA.SetColumnSpan(this.tbAdmQASampQuant, 2);
             this.tbAdmQASampQuant.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmQASampQuant.Location = new System.Drawing.Point(138, 94);
-            this.tbAdmQASampQuant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmQASampQuant.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmQASampQuant.MaxLength = 16;
             this.tbAdmQASampQuant.Name = "tbAdmQASampQuant";
             this.tbAdmQASampQuant.Size = new System.Drawing.Size(268, 20);
@@ -4720,7 +4720,7 @@
             "g",
             "Kg"});
             this.cboxAdmQASampUnit.Location = new System.Drawing.Point(138, 117);
-            this.cboxAdmQASampUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAdmQASampUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAdmQASampUnit.Name = "cboxAdmQASampUnit";
             this.cboxAdmQASampUnit.Size = new System.Drawing.Size(268, 21);
             this.cboxAdmQASampUnit.TabIndex = 11;
@@ -4740,7 +4740,7 @@
             this.layoutAdmQA.SetColumnSpan(this.tbAdmQASampUnc, 2);
             this.tbAdmQASampUnc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAdmQASampUnc.Location = new System.Drawing.Point(138, 140);
-            this.tbAdmQASampUnc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdmQASampUnc.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdmQASampUnc.MaxLength = 16;
             this.tbAdmQASampUnc.Name = "tbAdmQASampUnc";
             this.tbAdmQASampUnc.Size = new System.Drawing.Size(268, 20);
@@ -4751,17 +4751,17 @@
             // 
             this.panel23.Controls.Add(this.btnAdmQASave);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel23.Location = new System.Drawing.Point(0, 352);
-            this.panel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel23.Location = new System.Drawing.Point(0, 343);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(682, 23);
+            this.panel23.Size = new System.Drawing.Size(681, 23);
             this.panel23.TabIndex = 1;
             // 
             // btnAdmQASave
             // 
             this.btnAdmQASave.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAdmQASave.Location = new System.Drawing.Point(600, 0);
-            this.btnAdmQASave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmQASave.Location = new System.Drawing.Point(599, 0);
+            this.btnAdmQASave.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmQASave.Name = "btnAdmQASave";
             this.btnAdmQASave.Size = new System.Drawing.Size(82, 23);
             this.btnAdmQASave.TabIndex = 0;
@@ -4774,9 +4774,9 @@
             this.tabArchive.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabArchive.Controls.Add(this.splitArchive);
             this.tabArchive.Location = new System.Drawing.Point(4, 23);
-            this.tabArchive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabArchive.Margin = new System.Windows.Forms.Padding(2);
             this.tabArchive.Name = "tabArchive";
-            this.tabArchive.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabArchive.Padding = new System.Windows.Forms.Padding(2);
             this.tabArchive.Size = new System.Drawing.Size(840, 400);
             this.tabArchive.TabIndex = 5;
             this.tabArchive.Text = "Arkiv";
@@ -4785,7 +4785,7 @@
             // 
             this.splitArchive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitArchive.Location = new System.Drawing.Point(2, 2);
-            this.splitArchive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitArchive.Margin = new System.Windows.Forms.Padding(2);
             this.splitArchive.Name = "splitArchive";
             // 
             // splitArchive.Panel1
@@ -4806,7 +4806,7 @@
             this.tvArchive.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tvArchive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvArchive.Location = new System.Drawing.Point(0, 0);
-            this.tvArchive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tvArchive.Margin = new System.Windows.Forms.Padding(2);
             this.tvArchive.Name = "tvArchive";
             this.tvArchive.Size = new System.Drawing.Size(130, 396);
             this.tvArchive.TabIndex = 0;
@@ -4830,13 +4830,13 @@
             this.gridArchive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridArchive.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.gridArchive.Location = new System.Drawing.Point(0, 0);
-            this.gridArchive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridArchive.Margin = new System.Windows.Forms.Padding(2);
             this.gridArchive.MultiSelect = false;
             this.gridArchive.Name = "gridArchive";
             this.gridArchive.ReadOnly = true;
             this.gridArchive.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.gridArchive.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gridArchive.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridArchive.RowTemplate.Height = 24;
             this.gridArchive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridArchive.Size = new System.Drawing.Size(578, 396);
@@ -4885,7 +4885,7 @@
             this.panel29.Controls.Add(this.btnArchivePrint);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel29.Location = new System.Drawing.Point(578, 0);
-            this.panel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel29.Margin = new System.Windows.Forms.Padding(2);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(125, 396);
             this.panel29.TabIndex = 1;
@@ -4916,7 +4916,7 @@
             // 
             this.btnArchiveReanal.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnArchiveReanal.Location = new System.Drawing.Point(0, 96);
-            this.btnArchiveReanal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnArchiveReanal.Margin = new System.Windows.Forms.Padding(2);
             this.btnArchiveReanal.Name = "btnArchiveReanal";
             this.btnArchiveReanal.Size = new System.Drawing.Size(123, 25);
             this.btnArchiveReanal.TabIndex = 2;
@@ -4928,7 +4928,7 @@
             // 
             this.btnOpenQAPlot.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOpenQAPlot.Location = new System.Drawing.Point(0, 71);
-            this.btnOpenQAPlot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOpenQAPlot.Margin = new System.Windows.Forms.Padding(2);
             this.btnOpenQAPlot.Name = "btnOpenQAPlot";
             this.btnOpenQAPlot.Size = new System.Drawing.Size(123, 25);
             this.btnOpenQAPlot.TabIndex = 1;
@@ -4940,7 +4940,7 @@
             // 
             this.btnArchiveShowReport.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnArchiveShowReport.Location = new System.Drawing.Point(0, 46);
-            this.btnArchiveShowReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnArchiveShowReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnArchiveShowReport.Name = "btnArchiveShowReport";
             this.btnArchiveShowReport.Size = new System.Drawing.Size(123, 25);
             this.btnArchiveShowReport.TabIndex = 0;
@@ -4981,11 +4981,11 @@
             this.Controls.Add(this.menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(758, 498);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Scintilab - 1.2";
+            this.Text = "Scintilab 1.3";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.status.ResumeLayout(false);

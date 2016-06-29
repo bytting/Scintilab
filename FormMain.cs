@@ -401,29 +401,29 @@ namespace Scintilab
 
                 Config.SysFile = Config.ScintilabDir + "SYSTEM.XML";
                 if (!File.Exists(Config.SysFile))
-                    File.Copy(Config.TemplDir + Path.DirectorySeparatorChar + "TEMPLATE-SYSTEM.XML", Config.SysFile); 
+                    File.WriteAllText(Config.SysFile, Properties.Resources.TEMPLATE_SYSTEM);
                 Config.DetFile = Config.ScintilabDir + "DETECTORS.XML";
                 if (!File.Exists(Config.DetFile))
-                    File.Copy(Config.TemplDir + Path.DirectorySeparatorChar + "TEMPLATE-DETECTORS.XML", Config.DetFile); 
+                    File.WriteAllText(Config.DetFile, Properties.Resources.TEMPLATE_DETECTORS);
                 Config.BeakerFile = Config.ScintilabDir + "BEAKERS.XML";
                 if (!File.Exists(Config.BeakerFile))
-                    File.Copy(Config.TemplDir + Path.DirectorySeparatorChar + "TEMPLATE-BEAKERS.XML", Config.BeakerFile); 
+                    File.WriteAllText(Config.BeakerFile, Properties.Resources.TEMPLATE_BEAKERS);
                 Config.QABeakerFile = Config.ScintilabDir + "QABEAKERS.XML";
                 if (!File.Exists(Config.QABeakerFile))
-                    File.Copy(Config.TemplDir + Path.DirectorySeparatorChar + "TEMPLATE-QABEAKERS.XML", Config.QABeakerFile); 
+                    File.WriteAllText(Config.QABeakerFile, Properties.Resources.TEMPLATE_QABEAKERS);
                 Config.DefaultBkgQAFFile = Config.ScintilabDir + "DEFAULT-BKG.QAF";
                 if (!File.Exists(Config.DefaultBkgQAFFile))
-                    File.Copy(Config.TemplDir + Path.DirectorySeparatorChar + "TEMPLATE-DEFAULT-BKG.QAF", Config.DefaultBkgQAFFile);
+                    File.WriteAllBytes(Config.DefaultBkgQAFFile, Properties.Resources.TEMPLATE_DEFAULT_BKG);                    
 
                 Config.LogFile = Config.ScintilabDir + "runlog.txt";
 
                 // Opprett REPORT.TPL basert på TEMPLATE-REPORT.TPL hvis den ikke finnes fra før under arbeidskatalogen
                 if (!File.Exists(Config.TemplateDir + "REPORT.TPL"))
-                    File.Copy(Config.TemplDir + "TEMPLATE-REPORT.TPL", Config.TemplateDir + "REPORT.TPL");
+                    File.WriteAllBytes(Config.TemplateDir + "REPORT.TPL", Properties.Resources.TEMPLATE_REPORT);
 
                 // Opprett LIBRARY.NLB basert på TEMPLATE-LIBRARY.NLB hvis den ikke finnes fra før under arbeidskatalogen
                 if (!File.Exists(Config.LibDir + "LIBRARY.NLB"))
-                    File.Copy(Config.TemplDir + "TEMPLATE-LIBRARY.NLB", Config.LibDir + "LIBRARY.NLB");
+                    File.WriteAllBytes(Config.LibDir + "LIBRARY.NLB", Properties.Resources.TEMPLATE_LIBRARY);                    
 
                 // Last inn systemparametere fra fil
                 SysPar = Utils.DeserializeSysPar();
@@ -463,7 +463,7 @@ namespace Scintilab
 
                 // Kopier programmet mcainfo.exe fra "template" instalasjonskatalogen hvis den ikke finnes fra før
                 if (!File.Exists(Config.ExeDir + "mcainfo.exe"))
-                    File.Copy(Config.TemplDir + "TEMPLATE-MCAINFO.EXE", Config.ExeDir + "mcainfo.exe");
+                    File.WriteAllBytes(Config.ExeDir + "mcainfo.exe", Properties.Resources.TEMPLATE_MCAINFO);                                        
 
                 // Last inn detektor definisjoner fra fil
                 Detectors = Utils.DeserializeDetectors();

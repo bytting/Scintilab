@@ -1,0 +1,503 @@
+\hypertarget{class_scintilab_1_1_detector}{\section{Scintilab.\+Detector Klasse Referanse}
+\label{class_scintilab_1_1_detector}\index{Scintilab.\+Detector@{Scintilab.\+Detector}}
+}
+
+
+Datastruktur for detektor.  
+
+
+\subsection*{Public attributter}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}{Name}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_aef0a8b33c3daf31ab0dcb374625e4c30}{In\+Use}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ac146023ebad60cb211ae8845c0477c16}{Search\+Region\+From}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a8ae7ae2c5777ca6ab94e9940979f9b88}{Search\+Region\+To}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a4641161eb001c1de9b81e5681f489acf}{Tolerance}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a47d61c404bffea0634c018b1eb394689}{Significance\+Threshold}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a13b0edf1a6c0daa1b656ef2c0f80be3b}{Peak\+Area\+Region\+From}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a818975b79ec85722917ea173ec185d5b}{Peak\+Area\+Region\+To}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a989e067403b2aff60db811ca0a3338b4}{Continuum}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a93e4175d688c37df65977e8e8ccc9b0c}{Continuum\+Function}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_abab4c22c4ed6af134af2029a8e9b848e}{Critical\+Level}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_a58aec3021d18afed051a50a18999a2d2}{Fit\+Singlets}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_ac96f9499ed6b860c9d64d7767801fae4}{Display\+R\+O\+Is}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_a2c25fcf9cf3fdab6e7cba6b76775d322}{Use\+Fixed\+Tail\+Parameter}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_a9587339739ef2fb6a5a813ac49cf8025}{Reject\+Zero\+Area\+Peaks}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_a291b690d9f2ec1266fad776c5418bf08}{Use\+Fixed\+F\+W\+H\+M}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a54469032972e274893df0654113c2e10}{Max\+F\+W\+H\+M\+S\+Between\+Peaks}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a2cb757183e87f6350f473d1b9c569ca5}{Max\+F\+W\+H\+M\+S\+For\+Left\+Limit}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a6aa0a6c4d52a5651ba1ed2c52d07b65b}{Max\+F\+W\+H\+M\+S\+For\+Right\+Limit}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a57164b66f6f92c0443d9c9aad2bd327b}{Background\+Subtract}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a796c310b6aeedbce374b9386f910a499}{Efficiency\+Calibration\+Type}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a707e92eaf7866c8f8559fae65d82a500}{N\+I\+D\+Library}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a44eef95ccfd5a66543e42d9e3f3dabd2}{N\+I\+D\+Confidence\+Threshold}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_ad50504bdff73cd41a3e5ba9baefbf968}{M\+D\+A\+Confidence\+Factor}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_a2439ae55b919de48bade665495af4204}{Inhibit\+A\+T\+D\+Correction}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_a190207abf3f03edb5868c178c3957a29}{Use\+Stored\+Library}
+\item 
+bool \hyperlink{class_scintilab_1_1_detector_af85caf543049c7e1be4cfc050c8982b3}{Perform\+M\+D\+A\+Test}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a68bb937831fda468f20adeea6e8b94ea}{Preset\+Count}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ab0732d0c890144b9cefd26d4ebb0949a}{Preset\+Count\+Value}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a5ce2bf264c5973c9203a339260b0ac1b}{Preset\+Count\+Chan\+From}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a8c6bbd8aa7b67aca463d5f82c5933357}{Preset\+Count\+Chan\+To}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a8d3d6f5bd3c9e99dd5b20a34b2bcb6cf}{Preset\+Time}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_aa68a1c461c3f964591f67d409463fb86}{Preset\+Time\+Value}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a958e4c02e11a81e23684e08789f648d7}{Preset\+Time\+Unit}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_a6f60db064b575425d4e4fd161a8d7a99}{Random\+Error}
+\item 
+double \hyperlink{class_scintilab_1_1_detector_aff4481284f02b788607bbcf9d55f3880}{Systematic\+Error}
+\item 
+List$<$ \hyperlink{class_scintilab_1_1_beaker_info}{Beaker\+Info} $>$ \hyperlink{class_scintilab_1_1_detector_a2f6a3c3e640fe73d7bf19650b5f967ee}{Beaker\+Info\+List} = new List$<$\hyperlink{class_scintilab_1_1_beaker_info}{Beaker\+Info}$>$()
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a94d125f00803b002bc7b6be2c3fe2bd1}{Spectrum\+Counter}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a3292810e6f1dd86ceeb6e11da3389657}{Max\+Channels}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_afb02ab8b47ade4b8d4eb807e7097a503}{Q\+A\+Ref\+Preset\+Area}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ab82ce8a7a4a8e4e0db88b373242b5363}{Q\+A\+Ref\+Preset\+Area\+Value}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ab2e5f6f0e3e6e575e9165235f83b4ee6}{Q\+A\+Ref\+Preset\+Area\+Chan\+From}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ac6eb4aa3048ab3c3647b4c7e9780e6e8}{Q\+A\+Ref\+Preset\+Area\+Chan\+To}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_ace8481fd14039fef7f3a57994006d8dd}{Q\+A\+Ref\+Preset\+Time}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a500c172c5f373324cde145a6b80ec565}{Q\+A\+Ref\+Preset\+Time\+Value}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a18c26c628f016362d684ec53dec7b415}{Q\+A\+Ref\+Preset\+Time\+Unit}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a4546f591a7c043c96940efb203952d45}{Q\+A\+Bkg\+Preset\+Area}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a74d16a56156ecaaf450858cedabb932a}{Q\+A\+Bkg\+Preset\+Area\+Value}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ab6cf1a2a475e8c9f128885a1223028d4}{Q\+A\+Bkg\+Preset\+Area\+Chan\+From}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_ab75478024ed32ab66838877d8a6f5f17}{Q\+A\+Bkg\+Preset\+Area\+Chan\+To}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_a081ff00dc519d8d2a48865d01603add0}{Q\+A\+Bkg\+Preset\+Time}
+\item 
+int \hyperlink{class_scintilab_1_1_detector_a0ee122a2ce4420ce23973b03adae4834}{Q\+A\+Bkg\+Preset\+Time\+Value}
+\item 
+string \hyperlink{class_scintilab_1_1_detector_af4c9b86bde9d34e8bfdd70155f6b72a1}{Q\+A\+Bkg\+Preset\+Time\+Unit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Datastruktur for detektor. 
+
+Definisjon på linje 61 i filen Types.\+cs.
+
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_detector_a57164b66f6f92c0443d9c9aad2bd327b}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Background\+Subtract@{Background\+Subtract}}
+\index{Background\+Subtract@{Background\+Subtract}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Background\+Subtract}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Background\+Subtract}}\label{class_scintilab_1_1_detector_a57164b66f6f92c0443d9c9aad2bd327b}
+
+
+Definisjon på linje 84 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a2f6a3c3e640fe73d7bf19650b5f967ee}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Beaker\+Info\+List@{Beaker\+Info\+List}}
+\index{Beaker\+Info\+List@{Beaker\+Info\+List}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Beaker\+Info\+List}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Beaker\+Info}$>$ Scintilab.\+Detector.\+Beaker\+Info\+List = new List$<${\bf Beaker\+Info}$>$()}}\label{class_scintilab_1_1_detector_a2f6a3c3e640fe73d7bf19650b5f967ee}
+Liste med gyldige beger for detektor 
+
+Definisjon på linje 102 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a989e067403b2aff60db811ca0a3338b4}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Continuum@{Continuum}}
+\index{Continuum@{Continuum}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Continuum}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Continuum}}\label{class_scintilab_1_1_detector_a989e067403b2aff60db811ca0a3338b4}
+
+
+Definisjon på linje 73 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a93e4175d688c37df65977e8e8ccc9b0c}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Continuum\+Function@{Continuum\+Function}}
+\index{Continuum\+Function@{Continuum\+Function}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Continuum\+Function}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Continuum\+Function}}\label{class_scintilab_1_1_detector_a93e4175d688c37df65977e8e8ccc9b0c}
+
+
+Definisjon på linje 74 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_abab4c22c4ed6af134af2029a8e9b848e}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Critical\+Level@{Critical\+Level}}
+\index{Critical\+Level@{Critical\+Level}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Critical\+Level}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Critical\+Level}}\label{class_scintilab_1_1_detector_abab4c22c4ed6af134af2029a8e9b848e}
+
+
+Definisjon på linje 75 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ac96f9499ed6b860c9d64d7767801fae4}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Display\+R\+O\+Is@{Display\+R\+O\+Is}}
+\index{Display\+R\+O\+Is@{Display\+R\+O\+Is}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Display\+R\+O\+Is}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Display\+R\+O\+Is}}\label{class_scintilab_1_1_detector_ac96f9499ed6b860c9d64d7767801fae4}
+
+
+Definisjon på linje 77 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a796c310b6aeedbce374b9386f910a499}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Efficiency\+Calibration\+Type@{Efficiency\+Calibration\+Type}}
+\index{Efficiency\+Calibration\+Type@{Efficiency\+Calibration\+Type}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Efficiency\+Calibration\+Type}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Efficiency\+Calibration\+Type}}\label{class_scintilab_1_1_detector_a796c310b6aeedbce374b9386f910a499}
+
+
+Definisjon på linje 85 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a58aec3021d18afed051a50a18999a2d2}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Fit\+Singlets@{Fit\+Singlets}}
+\index{Fit\+Singlets@{Fit\+Singlets}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Fit\+Singlets}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Fit\+Singlets}}\label{class_scintilab_1_1_detector_a58aec3021d18afed051a50a18999a2d2}
+
+
+Definisjon på linje 76 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a2439ae55b919de48bade665495af4204}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Inhibit\+A\+T\+D\+Correction@{Inhibit\+A\+T\+D\+Correction}}
+\index{Inhibit\+A\+T\+D\+Correction@{Inhibit\+A\+T\+D\+Correction}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Inhibit\+A\+T\+D\+Correction}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Inhibit\+A\+T\+D\+Correction}}\label{class_scintilab_1_1_detector_a2439ae55b919de48bade665495af4204}
+
+
+Definisjon på linje 89 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_aef0a8b33c3daf31ab0dcb374625e4c30}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!In\+Use@{In\+Use}}
+\index{In\+Use@{In\+Use}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{In\+Use}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+In\+Use}}\label{class_scintilab_1_1_detector_aef0a8b33c3daf31ab0dcb374625e4c30}
+Om detektor er i bruk 
+
+Definisjon på linje 66 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a3292810e6f1dd86ceeb6e11da3389657}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Max\+Channels@{Max\+Channels}}
+\index{Max\+Channels@{Max\+Channels}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Max\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Max\+Channels}}\label{class_scintilab_1_1_detector_a3292810e6f1dd86ceeb6e11da3389657}
+Max antall kanaler for denne detektoren 
+
+Definisjon på linje 106 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a54469032972e274893df0654113c2e10}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Max\+F\+W\+H\+M\+S\+Between\+Peaks@{Max\+F\+W\+H\+M\+S\+Between\+Peaks}}
+\index{Max\+F\+W\+H\+M\+S\+Between\+Peaks@{Max\+F\+W\+H\+M\+S\+Between\+Peaks}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Max\+F\+W\+H\+M\+S\+Between\+Peaks}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Max\+F\+W\+H\+M\+S\+Between\+Peaks}}\label{class_scintilab_1_1_detector_a54469032972e274893df0654113c2e10}
+
+
+Definisjon på linje 81 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a2cb757183e87f6350f473d1b9c569ca5}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Max\+F\+W\+H\+M\+S\+For\+Left\+Limit@{Max\+F\+W\+H\+M\+S\+For\+Left\+Limit}}
+\index{Max\+F\+W\+H\+M\+S\+For\+Left\+Limit@{Max\+F\+W\+H\+M\+S\+For\+Left\+Limit}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Max\+F\+W\+H\+M\+S\+For\+Left\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Max\+F\+W\+H\+M\+S\+For\+Left\+Limit}}\label{class_scintilab_1_1_detector_a2cb757183e87f6350f473d1b9c569ca5}
+
+
+Definisjon på linje 82 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a6aa0a6c4d52a5651ba1ed2c52d07b65b}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Max\+F\+W\+H\+M\+S\+For\+Right\+Limit@{Max\+F\+W\+H\+M\+S\+For\+Right\+Limit}}
+\index{Max\+F\+W\+H\+M\+S\+For\+Right\+Limit@{Max\+F\+W\+H\+M\+S\+For\+Right\+Limit}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Max\+F\+W\+H\+M\+S\+For\+Right\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Max\+F\+W\+H\+M\+S\+For\+Right\+Limit}}\label{class_scintilab_1_1_detector_a6aa0a6c4d52a5651ba1ed2c52d07b65b}
+
+
+Definisjon på linje 83 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ad50504bdff73cd41a3e5ba9baefbf968}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!M\+D\+A\+Confidence\+Factor@{M\+D\+A\+Confidence\+Factor}}
+\index{M\+D\+A\+Confidence\+Factor@{M\+D\+A\+Confidence\+Factor}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{M\+D\+A\+Confidence\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+M\+D\+A\+Confidence\+Factor}}\label{class_scintilab_1_1_detector_ad50504bdff73cd41a3e5ba9baefbf968}
+
+
+Definisjon på linje 88 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Name@{Name}}
+\index{Name@{Name}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Name}}\label{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}
+Navn på detektor 
+
+Definisjon på linje 64 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a44eef95ccfd5a66543e42d9e3f3dabd2}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!N\+I\+D\+Confidence\+Threshold@{N\+I\+D\+Confidence\+Threshold}}
+\index{N\+I\+D\+Confidence\+Threshold@{N\+I\+D\+Confidence\+Threshold}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{N\+I\+D\+Confidence\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+N\+I\+D\+Confidence\+Threshold}}\label{class_scintilab_1_1_detector_a44eef95ccfd5a66543e42d9e3f3dabd2}
+
+
+Definisjon på linje 87 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a707e92eaf7866c8f8559fae65d82a500}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!N\+I\+D\+Library@{N\+I\+D\+Library}}
+\index{N\+I\+D\+Library@{N\+I\+D\+Library}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{N\+I\+D\+Library}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+N\+I\+D\+Library}}\label{class_scintilab_1_1_detector_a707e92eaf7866c8f8559fae65d82a500}
+
+
+Definisjon på linje 86 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a13b0edf1a6c0daa1b656ef2c0f80be3b}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Peak\+Area\+Region\+From@{Peak\+Area\+Region\+From}}
+\index{Peak\+Area\+Region\+From@{Peak\+Area\+Region\+From}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Peak\+Area\+Region\+From}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Peak\+Area\+Region\+From}}\label{class_scintilab_1_1_detector_a13b0edf1a6c0daa1b656ef2c0f80be3b}
+
+
+Definisjon på linje 71 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a818975b79ec85722917ea173ec185d5b}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Peak\+Area\+Region\+To@{Peak\+Area\+Region\+To}}
+\index{Peak\+Area\+Region\+To@{Peak\+Area\+Region\+To}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Peak\+Area\+Region\+To}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Peak\+Area\+Region\+To}}\label{class_scintilab_1_1_detector_a818975b79ec85722917ea173ec185d5b}
+
+
+Definisjon på linje 72 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_af85caf543049c7e1be4cfc050c8982b3}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Perform\+M\+D\+A\+Test@{Perform\+M\+D\+A\+Test}}
+\index{Perform\+M\+D\+A\+Test@{Perform\+M\+D\+A\+Test}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Perform\+M\+D\+A\+Test}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Perform\+M\+D\+A\+Test}}\label{class_scintilab_1_1_detector_af85caf543049c7e1be4cfc050c8982b3}
+
+
+Definisjon på linje 91 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a68bb937831fda468f20adeea6e8b94ea}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Count@{Preset\+Count}}
+\index{Preset\+Count@{Preset\+Count}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Count}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Preset\+Count}}\label{class_scintilab_1_1_detector_a68bb937831fda468f20adeea6e8b94ea}
+
+
+Definisjon på linje 92 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a5ce2bf264c5973c9203a339260b0ac1b}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Count\+Chan\+From@{Preset\+Count\+Chan\+From}}
+\index{Preset\+Count\+Chan\+From@{Preset\+Count\+Chan\+From}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Count\+Chan\+From}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Preset\+Count\+Chan\+From}}\label{class_scintilab_1_1_detector_a5ce2bf264c5973c9203a339260b0ac1b}
+
+
+Definisjon på linje 94 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a8c6bbd8aa7b67aca463d5f82c5933357}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Count\+Chan\+To@{Preset\+Count\+Chan\+To}}
+\index{Preset\+Count\+Chan\+To@{Preset\+Count\+Chan\+To}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Count\+Chan\+To}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Preset\+Count\+Chan\+To}}\label{class_scintilab_1_1_detector_a8c6bbd8aa7b67aca463d5f82c5933357}
+
+
+Definisjon på linje 95 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ab0732d0c890144b9cefd26d4ebb0949a}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Count\+Value@{Preset\+Count\+Value}}
+\index{Preset\+Count\+Value@{Preset\+Count\+Value}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Count\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Preset\+Count\+Value}}\label{class_scintilab_1_1_detector_ab0732d0c890144b9cefd26d4ebb0949a}
+
+
+Definisjon på linje 93 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a8d3d6f5bd3c9e99dd5b20a34b2bcb6cf}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Time@{Preset\+Time}}
+\index{Preset\+Time@{Preset\+Time}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Time}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Preset\+Time}}\label{class_scintilab_1_1_detector_a8d3d6f5bd3c9e99dd5b20a34b2bcb6cf}
+
+
+Definisjon på linje 96 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a958e4c02e11a81e23684e08789f648d7}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Time\+Unit@{Preset\+Time\+Unit}}
+\index{Preset\+Time\+Unit@{Preset\+Time\+Unit}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Time\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Preset\+Time\+Unit}}\label{class_scintilab_1_1_detector_a958e4c02e11a81e23684e08789f648d7}
+
+
+Definisjon på linje 98 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_aa68a1c461c3f964591f67d409463fb86}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Preset\+Time\+Value@{Preset\+Time\+Value}}
+\index{Preset\+Time\+Value@{Preset\+Time\+Value}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Preset\+Time\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Preset\+Time\+Value}}\label{class_scintilab_1_1_detector_aa68a1c461c3f964591f67d409463fb86}
+
+
+Definisjon på linje 97 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a4546f591a7c043c96940efb203952d45}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Area@{Q\+A\+Bkg\+Preset\+Area}}
+\index{Q\+A\+Bkg\+Preset\+Area@{Q\+A\+Bkg\+Preset\+Area}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Area}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Area}}\label{class_scintilab_1_1_detector_a4546f591a7c043c96940efb203952d45}
+
+
+Definisjon på linje 116 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ab6cf1a2a475e8c9f128885a1223028d4}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Area\+Chan\+From@{Q\+A\+Bkg\+Preset\+Area\+Chan\+From}}
+\index{Q\+A\+Bkg\+Preset\+Area\+Chan\+From@{Q\+A\+Bkg\+Preset\+Area\+Chan\+From}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Area\+Chan\+From}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Area\+Chan\+From}}\label{class_scintilab_1_1_detector_ab6cf1a2a475e8c9f128885a1223028d4}
+
+
+Definisjon på linje 118 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ab75478024ed32ab66838877d8a6f5f17}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Area\+Chan\+To@{Q\+A\+Bkg\+Preset\+Area\+Chan\+To}}
+\index{Q\+A\+Bkg\+Preset\+Area\+Chan\+To@{Q\+A\+Bkg\+Preset\+Area\+Chan\+To}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Area\+Chan\+To}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Area\+Chan\+To}}\label{class_scintilab_1_1_detector_ab75478024ed32ab66838877d8a6f5f17}
+
+
+Definisjon på linje 119 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a74d16a56156ecaaf450858cedabb932a}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Area\+Value@{Q\+A\+Bkg\+Preset\+Area\+Value}}
+\index{Q\+A\+Bkg\+Preset\+Area\+Value@{Q\+A\+Bkg\+Preset\+Area\+Value}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Area\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Area\+Value}}\label{class_scintilab_1_1_detector_a74d16a56156ecaaf450858cedabb932a}
+
+
+Definisjon på linje 117 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a081ff00dc519d8d2a48865d01603add0}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Time@{Q\+A\+Bkg\+Preset\+Time}}
+\index{Q\+A\+Bkg\+Preset\+Time@{Q\+A\+Bkg\+Preset\+Time}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Time}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Time}}\label{class_scintilab_1_1_detector_a081ff00dc519d8d2a48865d01603add0}
+
+
+Definisjon på linje 120 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_af4c9b86bde9d34e8bfdd70155f6b72a1}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Time\+Unit@{Q\+A\+Bkg\+Preset\+Time\+Unit}}
+\index{Q\+A\+Bkg\+Preset\+Time\+Unit@{Q\+A\+Bkg\+Preset\+Time\+Unit}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Time\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Time\+Unit}}\label{class_scintilab_1_1_detector_af4c9b86bde9d34e8bfdd70155f6b72a1}
+
+
+Definisjon på linje 122 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a0ee122a2ce4420ce23973b03adae4834}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Bkg\+Preset\+Time\+Value@{Q\+A\+Bkg\+Preset\+Time\+Value}}
+\index{Q\+A\+Bkg\+Preset\+Time\+Value@{Q\+A\+Bkg\+Preset\+Time\+Value}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Bkg\+Preset\+Time\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Bkg\+Preset\+Time\+Value}}\label{class_scintilab_1_1_detector_a0ee122a2ce4420ce23973b03adae4834}
+
+
+Definisjon på linje 121 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_afb02ab8b47ade4b8d4eb807e7097a503}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Area@{Q\+A\+Ref\+Preset\+Area}}
+\index{Q\+A\+Ref\+Preset\+Area@{Q\+A\+Ref\+Preset\+Area}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Area}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Area}}\label{class_scintilab_1_1_detector_afb02ab8b47ade4b8d4eb807e7097a503}
+
+
+Definisjon på linje 108 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ab2e5f6f0e3e6e575e9165235f83b4ee6}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Area\+Chan\+From@{Q\+A\+Ref\+Preset\+Area\+Chan\+From}}
+\index{Q\+A\+Ref\+Preset\+Area\+Chan\+From@{Q\+A\+Ref\+Preset\+Area\+Chan\+From}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Area\+Chan\+From}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Area\+Chan\+From}}\label{class_scintilab_1_1_detector_ab2e5f6f0e3e6e575e9165235f83b4ee6}
+
+
+Definisjon på linje 110 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ac6eb4aa3048ab3c3647b4c7e9780e6e8}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Area\+Chan\+To@{Q\+A\+Ref\+Preset\+Area\+Chan\+To}}
+\index{Q\+A\+Ref\+Preset\+Area\+Chan\+To@{Q\+A\+Ref\+Preset\+Area\+Chan\+To}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Area\+Chan\+To}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Area\+Chan\+To}}\label{class_scintilab_1_1_detector_ac6eb4aa3048ab3c3647b4c7e9780e6e8}
+
+
+Definisjon på linje 111 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ab82ce8a7a4a8e4e0db88b373242b5363}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Area\+Value@{Q\+A\+Ref\+Preset\+Area\+Value}}
+\index{Q\+A\+Ref\+Preset\+Area\+Value@{Q\+A\+Ref\+Preset\+Area\+Value}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Area\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Area\+Value}}\label{class_scintilab_1_1_detector_ab82ce8a7a4a8e4e0db88b373242b5363}
+
+
+Definisjon på linje 109 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ace8481fd14039fef7f3a57994006d8dd}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Time@{Q\+A\+Ref\+Preset\+Time}}
+\index{Q\+A\+Ref\+Preset\+Time@{Q\+A\+Ref\+Preset\+Time}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Time}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Time}}\label{class_scintilab_1_1_detector_ace8481fd14039fef7f3a57994006d8dd}
+
+
+Definisjon på linje 112 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a18c26c628f016362d684ec53dec7b415}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Time\+Unit@{Q\+A\+Ref\+Preset\+Time\+Unit}}
+\index{Q\+A\+Ref\+Preset\+Time\+Unit@{Q\+A\+Ref\+Preset\+Time\+Unit}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Time\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Time\+Unit}}\label{class_scintilab_1_1_detector_a18c26c628f016362d684ec53dec7b415}
+
+
+Definisjon på linje 114 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a500c172c5f373324cde145a6b80ec565}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Q\+A\+Ref\+Preset\+Time\+Value@{Q\+A\+Ref\+Preset\+Time\+Value}}
+\index{Q\+A\+Ref\+Preset\+Time\+Value@{Q\+A\+Ref\+Preset\+Time\+Value}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Q\+A\+Ref\+Preset\+Time\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Q\+A\+Ref\+Preset\+Time\+Value}}\label{class_scintilab_1_1_detector_a500c172c5f373324cde145a6b80ec565}
+
+
+Definisjon på linje 113 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a6f60db064b575425d4e4fd161a8d7a99}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Random\+Error@{Random\+Error}}
+\index{Random\+Error@{Random\+Error}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Random\+Error}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Random\+Error}}\label{class_scintilab_1_1_detector_a6f60db064b575425d4e4fd161a8d7a99}
+
+
+Definisjon på linje 99 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a9587339739ef2fb6a5a813ac49cf8025}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Reject\+Zero\+Area\+Peaks@{Reject\+Zero\+Area\+Peaks}}
+\index{Reject\+Zero\+Area\+Peaks@{Reject\+Zero\+Area\+Peaks}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Reject\+Zero\+Area\+Peaks}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Reject\+Zero\+Area\+Peaks}}\label{class_scintilab_1_1_detector_a9587339739ef2fb6a5a813ac49cf8025}
+
+
+Definisjon på linje 79 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_ac146023ebad60cb211ae8845c0477c16}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Search\+Region\+From@{Search\+Region\+From}}
+\index{Search\+Region\+From@{Search\+Region\+From}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Search\+Region\+From}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Search\+Region\+From}}\label{class_scintilab_1_1_detector_ac146023ebad60cb211ae8845c0477c16}
+
+
+Definisjon på linje 67 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a8ae7ae2c5777ca6ab94e9940979f9b88}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Search\+Region\+To@{Search\+Region\+To}}
+\index{Search\+Region\+To@{Search\+Region\+To}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Search\+Region\+To}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Search\+Region\+To}}\label{class_scintilab_1_1_detector_a8ae7ae2c5777ca6ab94e9940979f9b88}
+
+
+Definisjon på linje 68 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a47d61c404bffea0634c018b1eb394689}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Significance\+Threshold@{Significance\+Threshold}}
+\index{Significance\+Threshold@{Significance\+Threshold}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Significance\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Significance\+Threshold}}\label{class_scintilab_1_1_detector_a47d61c404bffea0634c018b1eb394689}
+
+
+Definisjon på linje 70 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a94d125f00803b002bc7b6be2c3fe2bd1}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Spectrum\+Counter@{Spectrum\+Counter}}
+\index{Spectrum\+Counter@{Spectrum\+Counter}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Spectrum\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}int Scintilab.\+Detector.\+Spectrum\+Counter}}\label{class_scintilab_1_1_detector_a94d125f00803b002bc7b6be2c3fe2bd1}
+Teller for spektere kjørt med denne detektoren 
+
+Definisjon på linje 104 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_aff4481284f02b788607bbcf9d55f3880}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Systematic\+Error@{Systematic\+Error}}
+\index{Systematic\+Error@{Systematic\+Error}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Systematic\+Error}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Systematic\+Error}}\label{class_scintilab_1_1_detector_aff4481284f02b788607bbcf9d55f3880}
+
+
+Definisjon på linje 100 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a4641161eb001c1de9b81e5681f489acf}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Tolerance@{Tolerance}}
+\index{Tolerance@{Tolerance}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Tolerance}]{\setlength{\rightskip}{0pt plus 5cm}double Scintilab.\+Detector.\+Tolerance}}\label{class_scintilab_1_1_detector_a4641161eb001c1de9b81e5681f489acf}
+
+
+Definisjon på linje 69 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a291b690d9f2ec1266fad776c5418bf08}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Use\+Fixed\+F\+W\+H\+M@{Use\+Fixed\+F\+W\+H\+M}}
+\index{Use\+Fixed\+F\+W\+H\+M@{Use\+Fixed\+F\+W\+H\+M}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Use\+Fixed\+F\+W\+H\+M}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Use\+Fixed\+F\+W\+H\+M}}\label{class_scintilab_1_1_detector_a291b690d9f2ec1266fad776c5418bf08}
+
+
+Definisjon på linje 80 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a2c25fcf9cf3fdab6e7cba6b76775d322}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Use\+Fixed\+Tail\+Parameter@{Use\+Fixed\+Tail\+Parameter}}
+\index{Use\+Fixed\+Tail\+Parameter@{Use\+Fixed\+Tail\+Parameter}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Use\+Fixed\+Tail\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Use\+Fixed\+Tail\+Parameter}}\label{class_scintilab_1_1_detector_a2c25fcf9cf3fdab6e7cba6b76775d322}
+
+
+Definisjon på linje 78 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_detector_a190207abf3f03edb5868c178c3957a29}{\index{Scintilab\+::\+Detector@{Scintilab\+::\+Detector}!Use\+Stored\+Library@{Use\+Stored\+Library}}
+\index{Use\+Stored\+Library@{Use\+Stored\+Library}!Scintilab\+::\+Detector@{Scintilab\+::\+Detector}}
+\subsubsection[{Use\+Stored\+Library}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Detector.\+Use\+Stored\+Library}}\label{class_scintilab_1_1_detector_a190207abf3f03edb5868c178c3957a29}
+
+
+Definisjon på linje 90 i filen Types.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_types_8cs}{Types.\+cs}\end{DoxyCompactItemize}

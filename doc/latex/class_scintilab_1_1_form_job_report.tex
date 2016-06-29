@@ -1,0 +1,392 @@
+\hypertarget{class_scintilab_1_1_form_job_report}{\section{Scintilab.\+Form\+Job\+Report Klasse Referanse}
+\label{class_scintilab_1_1_form_job_report}\index{Scintilab.\+Form\+Job\+Report@{Scintilab.\+Form\+Job\+Report}}
+}
+
+
+Klasse for visning av jobb rapport.  
+
+
+Arvediagram for Scintilab.\+Form\+Job\+Report\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scintilab_1_1_form_job_report}
+\end{center}
+\end{figure}
+\subsection*{Public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scintilab_1_1_form_job_report_a2c7a3cd347504010eeb239fc2be05b11}{Form\+Job\+Report} (string base\+Name, string archive\+Name, bool is\+Reanal, ref \hyperlink{class_scintilab_1_1_detector}{Detector} detector, \hyperlink{class_scintilab_1_1_system_parameters}{System\+Parameters} sys\+Par)
+\end{DoxyCompactItemize}
+\subsection*{Public attributter}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_scintilab_1_1_form_job_report_a03fca1552c0a65c4e526318e880941ff}{Update\+Detectors}
+\end{DoxyCompactItemize}
+\subsection*{Private medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_scintilab_1_1_form_job_report_a786144f69092cec36454726fdae09776}{Form\+Job\+Report\+\_\+\+Load} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_job_report_a964b60494d05610029c4844d4712e0e6}{btn\+Delete\+\_\+\+Click} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_job_report_a2b84afe1ef77debb1f31e8e8e129ebd6}{btn\+Store\+\_\+\+Click} (object sender, Event\+Args e)
+\end{DoxyCompactItemize}
+\subsection*{Private attributter}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{Base\+Name}
+\item 
+string \hyperlink{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}{Archive\+Name}
+\item 
+bool \hyperlink{class_scintilab_1_1_form_job_report_ad6eadf59048ecf2909b4e6c0fd48751f}{Is\+Reanal}
+\item 
+bool \hyperlink{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}{has\+Error}
+\item 
+\hyperlink{class_scintilab_1_1_detector}{Detector} \hyperlink{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{Detector}
+\item 
+\hyperlink{class_scintilab_1_1_system_parameters}{System\+Parameters} \hyperlink{class_scintilab_1_1_form_job_report_a9d69b66d54f46318d0cd060dd22ef920}{Sys\+Par}
+\item 
+\hyperlink{class_scintilab_1_1_job_params}{Job\+Params} \hyperlink{class_scintilab_1_1_form_job_report_abf5ab85e5b06729f1494a9e1c6877d7e}{jp} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for visning av jobb rapport. 
+
+Definisjon på linje 16 i filen Form\+Job\+Report.\+cs.
+
+
+
+\subsection{Konstruktør-\/ \& destruktør-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_job_report_a2c7a3cd347504010eeb239fc2be05b11}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Form\+Job\+Report@{Form\+Job\+Report}}
+\index{Form\+Job\+Report@{Form\+Job\+Report}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Form\+Job\+Report}]{\setlength{\rightskip}{0pt plus 5cm}Scintilab.\+Form\+Job\+Report.\+Form\+Job\+Report (
+\begin{DoxyParamCaption}
+\item[{string}]{base\+Name, }
+\item[{string}]{archive\+Name, }
+\item[{bool}]{is\+Reanal, }
+\item[{ref {\bf Detector}}]{detector, }
+\item[{{\bf System\+Parameters}}]{sys\+Par}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scintilab_1_1_form_job_report_a2c7a3cd347504010eeb239fc2be05b11}
+Konstruktør 
+
+Definisjon på linje 29 i filen Form\+Job\+Report.\+cs.
+
+
+\begin{DoxyCode}
+30         \{
+31             InitializeComponent();
+32             \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} = baseName;
+33             \hyperlink{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}{ArchiveName} = archiveName;
+34             \hyperlink{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{Detector} = detector;
+35             \hyperlink{class_scintilab_1_1_form_job_report_a9d69b66d54f46318d0cd060dd22ef920}{SysPar} = sysPar;
+36             \hyperlink{class_scintilab_1_1_form_job_report_ad6eadf59048ecf2909b4e6c0fd48751f}{IsReanal} = isReanal;
+37             \hyperlink{class_scintilab_1_1_form_job_report_a03fca1552c0a65c4e526318e880941ff}{UpdateDetectors} = \textcolor{keyword}{false};
+38         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_job_report_a964b60494d05610029c4844d4712e0e6}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!btn\+Delete\+\_\+\+Click@{btn\+Delete\+\_\+\+Click}}
+\index{btn\+Delete\+\_\+\+Click@{btn\+Delete\+\_\+\+Click}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{btn\+Delete\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Job\+Report.\+btn\+Delete\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_a964b60494d05610029c4844d4712e0e6}
+Hendelse for sletting av jobb 
+
+Definisjon på linje 87 i filen Form\+Job\+Report.\+cs.
+
+
+\begin{DoxyCode}
+88         \{
+89             \textcolor{keywordflow}{if} (MessageBox.Show(\textcolor{stringliteral}{"Vil du slette denne jobben?"}, \textcolor{stringliteral}{"Konfirmasjon"}) != 
+      System.Windows.Forms.DialogResult.OK)
+90                 \textcolor{keywordflow}{return};
+91 
+92             \textcolor{keywordflow}{if} (File.Exists(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".BAT"}))
+93                 File.Delete(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".BAT"});
+94             \textcolor{keywordflow}{if} (File.Exists(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".RPT"}))
+95                 File.Delete(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".RPT"});
+96             \textcolor{keywordflow}{if} (File.Exists(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".CNF"}))
+97                 File.Delete(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".CNF"});
+98             \textcolor{keywordflow}{if} (File.Exists(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".PAR"}))
+99                 File.Delete(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".PAR"});
+100             \textcolor{keywordflow}{if} (File.Exists(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".OUT"}))
+101                 File.Delete(\hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".OUT"});
+102 
+103             Close();
+104         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_job_report_a2b84afe1ef77debb1f31e8e8e129ebd6}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!btn\+Store\+\_\+\+Click@{btn\+Store\+\_\+\+Click}}
+\index{btn\+Store\+\_\+\+Click@{btn\+Store\+\_\+\+Click}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{btn\+Store\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Job\+Report.\+btn\+Store\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_a2b84afe1ef77debb1f31e8e8e129ebd6}
+Hendelse for arkivering av jobb 
+
+Definisjon på linje 109 i filen Form\+Job\+Report.\+cs.
+
+
+\begin{DoxyCode}
+110         \{
+111             \textcolor{keywordflow}{if} (\hyperlink{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}{hasError})
+112             \{
+113                 DialogResult dialogresult = MessageBox.Show(\textcolor{stringliteral}{"NB! Denne analysen ble fullført med
+       feilmelding fra Genie-2000!"} + Environment.NewLine + \textcolor{stringliteral}{"Vil du lagre allikevel?"}, \textcolor{stringliteral}{"Advarsel"}, MessageBoxButtons.YesNo, 
+      MessageBoxIcon.Warning);
+114                 \textcolor{keywordflow}{if} (dialogresult != DialogResult.Yes)
+115                     \textcolor{keywordflow}{return};
+116             \}
+117 
+118             \textcolor{keywordtype}{string} rptFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".RPT"};
+119             \textcolor{keywordtype}{string} cnfFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".CNF"};
+120             \textcolor{keywordtype}{string} parFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".PAR"};
+121             \textcolor{keywordtype}{string} outFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".OUT"};
+122             \textcolor{keywordtype}{string} batFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".BAT"};
+123 
+124             \textcolor{keywordflow}{if} (File.Exists(rptFile) && File.Exists(cnfFile) && File.Exists(parFile))
+125             \{
+126                 \textcolor{keywordflow}{if} (\hyperlink{class_scintilab_1_1_form_job_report_ad6eadf59048ecf2909b4e6c0fd48751f}{IsReanal})
+127                 \{
+128                     \textcolor{keywordtype}{string} year = \textcolor{stringliteral}{"20"} + jp.SpecRef.Substring(2, 2);
+129 
+130                     \textcolor{keywordtype}{string} newRpt = Config.ArchiveDir + jp.DetectorName + Path.DirectorySeparatorChar + 
+      year + Path.DirectorySeparatorChar + jp.SpecRef + \textcolor{stringliteral}{"-"} + jp.SampleID + \textcolor{stringliteral}{"-"} + jp.Operation + \textcolor{stringliteral}{"-"} + 
+      jp.CollectorName + \textcolor{stringliteral}{".RPT"};
+131                     \textcolor{keywordtype}{string} newPar = Config.ArchiveDir + jp.DetectorName + Path.DirectorySeparatorChar + 
+      year + Path.DirectorySeparatorChar + jp.SpecRef + \textcolor{stringliteral}{"-"} + jp.SampleID + \textcolor{stringliteral}{"-"} + jp.Operation + \textcolor{stringliteral}{"-"} + 
+      jp.CollectorName + \textcolor{stringliteral}{".PAR"};
+132                     \textcolor{keywordtype}{string} newCnf = Config.ArchiveDir + jp.DetectorName + Path.DirectorySeparatorChar + 
+      year + Path.DirectorySeparatorChar + jp.SpecRef + \textcolor{stringliteral}{"-"} + jp.SampleID + \textcolor{stringliteral}{"-"} + jp.Operation + \textcolor{stringliteral}{"-"} + 
+      jp.CollectorName + \textcolor{stringliteral}{".CNF"};
+133 
+134                     \textcolor{keywordtype}{string} oldRpt = \hyperlink{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}{ArchiveName} + \textcolor{stringliteral}{".RPT"};
+135                     \textcolor{keywordtype}{string} oldPar = \hyperlink{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}{ArchiveName} + \textcolor{stringliteral}{".PAR"};
+136                     \textcolor{keywordtype}{string} oldCnf = \hyperlink{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}{ArchiveName} + \textcolor{stringliteral}{".CNF"};
+137 
+138                     File.Copy(rptFile, newRpt, \textcolor{keyword}{true});
+139                     File.Copy(cnfFile, newCnf, \textcolor{keyword}{true});
+140                     File.Copy(parFile, newPar, \textcolor{keyword}{true});
+141 
+142                     \textcolor{keywordflow}{if} (newRpt != oldRpt)
+143                         File.Delete(oldRpt);
+144                     \textcolor{keywordflow}{if} (newPar != oldPar)
+145                         File.Delete(oldPar);
+146                     \textcolor{keywordflow}{if} (newCnf != oldCnf)
+147                         File.Delete(oldCnf);
+148 
+149                     \textcolor{keywordflow}{if} (cbExportLIMS.Checked)
+150                         File.Copy(rptFile, SysPar.LimsImport + jp.SampleID + \textcolor{stringliteral}{".NAI.RES"}, \textcolor{keyword}{true});
+151 
+152                     File.Delete(batFile);
+153                     File.Delete(outFile);
+154                     lblStatus.Text = \textcolor{stringliteral}{"Reanalyse av spekter "} + jp.SpecRef + \textcolor{stringliteral}{" ble lagret"};
+155 
+156                     \textcolor{keywordflow}{if} (cbPrint.Checked)
+157                     \{
+158                         PrintDialog pd = \textcolor{keyword}{new} PrintDialog();
+159                         pd.PrinterSettings = \textcolor{keyword}{new} PrinterSettings();
+160                         \hyperlink{class_multipad_print_document}{MultipadPrintDocument} printDoc = \textcolor{keyword}{new} 
+      \hyperlink{class_multipad_print_document}{MultipadPrintDocument}();
+161                         printDoc.PrinterSettings = pd.PrinterSettings;
+162                         printDoc.Font = \textcolor{keyword}{new} Font(\textcolor{stringliteral}{"Courier New"}, 9, FontStyle.Regular);
+163                         printDoc.Text = File.ReadAllText(rptFile);
+164                         printDoc.Print();
+165 
+166                         \textcolor{comment}{//string cout1;}
+167                         \textcolor{comment}{//Utils.RunCommand("REPORT", cnfFile + " /PRINT", out cout1, true);}
+168 
+169                         \textcolor{keywordtype}{string} cout;
+170                         Utils.RunCommand(\textcolor{stringliteral}{"DATAPLOT"}, cnfFile + \textcolor{stringliteral}{" /SCALE="} + SysPar.ReportScaleY + \textcolor{stringliteral}{"
+       /XSCALE="} + SysPar.ReportScaleX + \textcolor{stringliteral}{" /ENHPLOT"}, out cout, \textcolor{keyword}{false});
+171                     \}
+172 
+173                     File.Delete(rptFile);
+174                     File.Delete(cnfFile);
+175                     File.Delete(parFile);
+176                 \}
+177                 \textcolor{keywordflow}{else}
+178                 \{
+179                     \textcolor{keywordtype}{string} year = \textcolor{stringliteral}{"20"} + jp.SpecRef.Substring(2, 2);
+180                     \textcolor{keywordtype}{string} archiveDir = Config.ArchiveDir + Detector.Name + Path.DirectorySeparatorChar + 
+      year + Path.DirectorySeparatorChar;
+181                     \textcolor{keywordtype}{string} baseName = jp.SpecRef + \textcolor{stringliteral}{"-"} + jp.SampleID + \textcolor{stringliteral}{"-"} + jp.Operation + \textcolor{stringliteral}{"-"} + 
+      jp.CollectorName;
+182                     \textcolor{keywordtype}{string} cnfFileDest = archiveDir + baseName + \textcolor{stringliteral}{".CNF"};
+183                     \textcolor{keywordtype}{string} rptFileDest = archiveDir + baseName + \textcolor{stringliteral}{".RPT"};
+184 
+185                     \textcolor{keywordflow}{if} (!Directory.Exists(Config.ArchiveDir + \hyperlink{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{Detector}.
+      \hyperlink{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}{Name}))
+186                         Directory.CreateDirectory(Config.ArchiveDir + \hyperlink{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{Detector}.
+      \hyperlink{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}{Name});
+187                     \textcolor{keywordflow}{if} (!Directory.Exists(Config.ArchiveDir + \hyperlink{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{Detector}.
+      \hyperlink{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}{Name} + Path.DirectorySeparatorChar + year))
+188                         Directory.CreateDirectory(Config.ArchiveDir + \hyperlink{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{Detector}.
+      \hyperlink{class_scintilab_1_1_detector_aeddbda805641ca8d8f8aaa30aea2f3e0}{Name} + Path.DirectorySeparatorChar + year);
+189 
+190                     \textcolor{keywordflow}{if} (cbExportLIMS.Checked)    
+191                         File.Copy(rptFile, SysPar.LimsImport + jp.SampleID + \textcolor{stringliteral}{".NAI.RES"}, \textcolor{keyword}{true});
+192 
+193                     File.Move(rptFile, rptFileDest);
+194                     File.Move(cnfFile, cnfFileDest);
+195                     File.Move(parFile, archiveDir + baseName + \textcolor{stringliteral}{".PAR"});
+196                     
+197                     File.Delete(batFile);
+198                     File.Delete(outFile);
+199                     Detector.SpectrumCounter++;
+200                     \hyperlink{class_scintilab_1_1_form_job_report_a03fca1552c0a65c4e526318e880941ff}{UpdateDetectors} = \textcolor{keyword}{true};
+201                     lblStatus.Text = \textcolor{stringliteral}{"Jobb for detektor "} + Detector.Name + \textcolor{stringliteral}{" ble arkivert som "} + baseName
+      ;
+202 
+203                     \textcolor{keywordflow}{if} (cbPrint.Checked)
+204                     \{
+205                         PrintDialog pd = \textcolor{keyword}{new} PrintDialog();
+206                         pd.PrinterSettings = \textcolor{keyword}{new} PrinterSettings();
+207                         \hyperlink{class_multipad_print_document}{MultipadPrintDocument} printDoc = \textcolor{keyword}{new} 
+      \hyperlink{class_multipad_print_document}{MultipadPrintDocument}();
+208 
+209                         printDoc.PrinterSettings = pd.PrinterSettings;
+210                         printDoc.Font = \textcolor{keyword}{new} Font(\textcolor{stringliteral}{"Courier New"}, 9, FontStyle.Regular);
+211                         \textcolor{comment}{//printDoc.Text = File.ReadAllText(rptFileDest, Encoding.GetEncoding(865));}
+212                         printDoc.Text = File.ReadAllText(rptFileDest, Encoding.GetEncoding(1252));
+213                         printDoc.Print();
+214 
+215                         \textcolor{keywordtype}{string} cout;
+216                         Utils.RunCommand(\textcolor{stringliteral}{"DATAPLOT"}, cnfFileDest + \textcolor{stringliteral}{" /SCALE="} + SysPar.ReportScaleY + \textcolor{stringliteral}{"
+       /XSCALE="} + SysPar.ReportScaleX + \textcolor{stringliteral}{" /ENHPLOT"}, out cout, \textcolor{keyword}{false});
+217                     \}
+218                 \}
+219             \}
+220             \textcolor{keywordflow}{else}
+221             \{
+222                 MessageBox.Show(\textcolor{stringliteral}{"En eller flere filer ble ikke funnet"});
+223             \}
+224 
+225             Close();
+226         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_job_report_a786144f69092cec36454726fdae09776}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Form\+Job\+Report\+\_\+\+Load@{Form\+Job\+Report\+\_\+\+Load}}
+\index{Form\+Job\+Report\+\_\+\+Load@{Form\+Job\+Report\+\_\+\+Load}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Form\+Job\+Report\+\_\+\+Load}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Job\+Report.\+Form\+Job\+Report\+\_\+\+Load (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_a786144f69092cec36454726fdae09776}
+Hendelse for lasting av dialog 
+
+Definisjon på linje 43 i filen Form\+Job\+Report.\+cs.
+
+
+\begin{DoxyCode}
+44         \{
+45             \textcolor{comment}{// Opprett filbaner}
+46             \textcolor{keywordtype}{string} parFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".PAR"};
+47             \textcolor{keywordtype}{string} rptFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".RPT"};
+48             \textcolor{keywordtype}{string} outFile = \hyperlink{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{BaseName} + \textcolor{stringliteral}{".OUT"};
+49 
+50             \textcolor{comment}{// Sjekk at filer finnes}
+51             \textcolor{keywordflow}{if} (File.Exists(parFile))
+52                 \hyperlink{class_scintilab_1_1_form_job_report_abf5ab85e5b06729f1494a9e1c6877d7e}{jp} = Utils.DeserializeJobParams(parFile);
+53 
+54             \textcolor{keywordflow}{if}(File.Exists(rptFile))
+55                 tbReport.Text= File.ReadAllText(rptFile, Encoding.GetEncoding(1252));
+56 
+57             \hyperlink{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}{hasError} = \textcolor{keyword}{false};
+58             \textcolor{keywordflow}{if} (File.Exists(outFile))
+59             \{
+60                 \textcolor{comment}{// Sjekk om standard output filen inneholder ordet "Error"}
+61                 tbLog.Text = File.ReadAllText(outFile, Encoding.GetEncoding(1252));
+62                 \hyperlink{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}{hasError} = tbLog.Text.Contains(\textcolor{stringliteral}{"> Error "});
+63             \}
+64 
+65             cbExportLIMS.Checked = \textcolor{keyword}{false};
+66             \textcolor{keywordflow}{if} (\hyperlink{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}{hasError})
+67             \{
+68                 tabs.SelectedTab = tabError;
+69                 cbPrint.Checked = \textcolor{keyword}{false};
+70             \}
+71             \textcolor{keywordflow}{else}
+72             \{
+73                 tabs.SelectedTab = tabReport;
+74                 cbPrint.Checked = \textcolor{keyword}{true};
+75                 \textcolor{keywordflow}{if}(\hyperlink{class_scintilab_1_1_form_job_report_abf5ab85e5b06729f1494a9e1c6877d7e}{jp}.\hyperlink{class_scintilab_1_1_job_params_af7aa58322a6e62ae3cc3bd5d216d389b}{Operation} == \textcolor{stringliteral}{"Sample"})
+76                     cbExportLIMS.Checked = \textcolor{keyword}{true};
+77             \}
+78 
+79             \textcolor{comment}{// Fjern selection fra inputfelter}
+80             tbReport.Select(0, 0);
+81             tbLog.Select(0, 0);
+82         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Archive\+Name@{Archive\+Name}}
+\index{Archive\+Name@{Archive\+Name}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Archive\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Form\+Job\+Report.\+Archive\+Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_a6befd8e22fc03d7db559bc5819b9001a}
+
+
+Definisjon på linje 19 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Base\+Name@{Base\+Name}}
+\index{Base\+Name@{Base\+Name}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Base\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Form\+Job\+Report.\+Base\+Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_ae2edaad73f9347d9cbc70299ea55c8e4}
+
+
+Definisjon på linje 19 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Detector@{Detector}}
+\index{Detector@{Detector}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detector} Scintilab.\+Form\+Job\+Report.\+Detector\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_acfd377f5214f1677dbfcee75e848fd3e}
+
+
+Definisjon på linje 21 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!has\+Error@{has\+Error}}
+\index{has\+Error@{has\+Error}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{has\+Error}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Form\+Job\+Report.\+has\+Error\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_aa9d718d9966b2d6263142d811c4690ef}
+
+
+Definisjon på linje 20 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_ad6eadf59048ecf2909b4e6c0fd48751f}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Is\+Reanal@{Is\+Reanal}}
+\index{Is\+Reanal@{Is\+Reanal}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Is\+Reanal}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Form\+Job\+Report.\+Is\+Reanal\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_ad6eadf59048ecf2909b4e6c0fd48751f}
+
+
+Definisjon på linje 20 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_abf5ab85e5b06729f1494a9e1c6877d7e}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!jp@{jp}}
+\index{jp@{jp}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{jp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Job\+Params} Scintilab.\+Form\+Job\+Report.\+jp = null\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_abf5ab85e5b06729f1494a9e1c6877d7e}
+
+
+Definisjon på linje 24 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_a9d69b66d54f46318d0cd060dd22ef920}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Sys\+Par@{Sys\+Par}}
+\index{Sys\+Par@{Sys\+Par}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Sys\+Par}]{\setlength{\rightskip}{0pt plus 5cm}{\bf System\+Parameters} Scintilab.\+Form\+Job\+Report.\+Sys\+Par\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scintilab_1_1_form_job_report_a9d69b66d54f46318d0cd060dd22ef920}
+
+
+Definisjon på linje 23 i filen Form\+Job\+Report.\+cs.
+
+\hypertarget{class_scintilab_1_1_form_job_report_a03fca1552c0a65c4e526318e880941ff}{\index{Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}!Update\+Detectors@{Update\+Detectors}}
+\index{Update\+Detectors@{Update\+Detectors}!Scintilab\+::\+Form\+Job\+Report@{Scintilab\+::\+Form\+Job\+Report}}
+\subsubsection[{Update\+Detectors}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Form\+Job\+Report.\+Update\+Detectors}}\label{class_scintilab_1_1_form_job_report_a03fca1552c0a65c4e526318e880941ff}
+
+
+Definisjon på linje 22 i filen Form\+Job\+Report.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_form_job_report_8cs}{Form\+Job\+Report.\+cs}\end{DoxyCompactItemize}

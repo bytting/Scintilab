@@ -1,0 +1,213 @@
+\hypertarget{class_scintilab_1_1_form_login}{\section{Scintilab.\+Form\+Login Klasse Referanse}
+\label{class_scintilab_1_1_form_login}\index{Scintilab.\+Form\+Login@{Scintilab.\+Form\+Login}}
+}
+
+
+Klasse for innlogging.  
+
+
+Arvediagram for Scintilab.\+Form\+Login\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scintilab_1_1_form_login}
+\end{center}
+\end{figure}
+\subsection*{Public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scintilab_1_1_form_login_a9824d4f0cf40072fcda58524b16c762d}{Form\+Login} ()
+\end{DoxyCompactItemize}
+\subsection*{Public attributter}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_scintilab_1_1_form_login_aba278938a868ca382a657e0c1572a02b}{Username}
+\end{DoxyCompactItemize}
+\subsection*{Private medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_scintilab_1_1_form_login_a90193599fc2c8ff5c7faee5851063aeb}{btn\+Cancel\+\_\+\+Click} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_login_a207ac68d96dbc96d570484f30f1d669d}{btn\+Login\+\_\+\+Click} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_login_aadaa84be09a645732d7beaf53abd6d89}{Form\+Login\+\_\+\+Load} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_login_a7d992418cc7243b752c826cb9515188e}{tb\+Username\+\_\+\+Key\+Press} (object sender, Key\+Press\+Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_login_a8c0c4b5c0c2994f179ff216893154fee}{tb\+Password\+\_\+\+Key\+Press} (object sender, Key\+Press\+Event\+Args e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for innlogging. 
+
+Definisjon på linje 15 i filen Form\+Login.\+cs.
+
+
+
+\subsection{Konstruktør-\/ \& destruktør-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_login_a9824d4f0cf40072fcda58524b16c762d}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!Form\+Login@{Form\+Login}}
+\index{Form\+Login@{Form\+Login}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{Form\+Login}]{\setlength{\rightskip}{0pt plus 5cm}Scintilab.\+Form\+Login.\+Form\+Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scintilab_1_1_form_login_a9824d4f0cf40072fcda58524b16c762d}
+Konstruktør 
+
+Definisjon på linje 23 i filen Form\+Login.\+cs.
+
+
+\begin{DoxyCode}
+24         \{
+25             InitializeComponent();
+26         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_login_a90193599fc2c8ff5c7faee5851063aeb}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!btn\+Cancel\+\_\+\+Click@{btn\+Cancel\+\_\+\+Click}}
+\index{btn\+Cancel\+\_\+\+Click@{btn\+Cancel\+\_\+\+Click}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{btn\+Cancel\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Login.\+btn\+Cancel\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_login_a90193599fc2c8ff5c7faee5851063aeb}
+Hendelse for å avbryte login 
+
+Definisjon på linje 31 i filen Form\+Login.\+cs.
+
+
+\begin{DoxyCode}
+32         \{
+33             \textcolor{comment}{// Sett dialogens resultat til "Cancel"}
+34             DialogResult = System.Windows.Forms.DialogResult.Cancel;
+35             \textcolor{comment}{// Avslutt Scintilab}
+36             Close();
+37         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_login_a207ac68d96dbc96d570484f30f1d669d}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!btn\+Login\+\_\+\+Click@{btn\+Login\+\_\+\+Click}}
+\index{btn\+Login\+\_\+\+Click@{btn\+Login\+\_\+\+Click}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{btn\+Login\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Login.\+btn\+Login\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_login_a207ac68d96dbc96d570484f30f1d669d}
+Hendelse for å logge inn 
+
+Definisjon på linje 42 i filen Form\+Login.\+cs.
+
+
+\begin{DoxyCode}
+43         \{
+44             PrincipalContext pc = null;
+45             \textcolor{keywordtype}{bool} isValid = \textcolor{keyword}{false};
+46             \textcolor{keywordflow}{try}
+47             \{
+48                 \textcolor{comment}{// Opprett kontekst}
+49                 pc = \textcolor{keyword}{new} PrincipalContext(ContextType.Domain, \textcolor{stringliteral}{"NRPA"});
+50                 \textcolor{comment}{// Valider brukernavn/passord mot AD}
+51                 isValid = pc.ValidateCredentials(tbUsername.Text, tbPassword.Text);
+52             \}
+53             \textcolor{keywordflow}{catch} (Exception ex)
+54             \{
+55                 \textcolor{comment}{// Noe gikk galt, rapporter til bruker}
+56                 MessageBox.Show(ex.Message);
+57                 Close(); \textcolor{comment}{// Avslutt Scintilab}
+58             \}
+59 
+60             \textcolor{keywordflow}{if}(!isValid)
+61             \{
+62                 \textcolor{comment}{// Brukernavn/Passord var ugyldige}
+63                 tbUsername.Text = \textcolor{stringliteral}{""};
+64                 tbPassword.Text = \textcolor{stringliteral}{""};
+65                 lblInfo.Text = \textcolor{stringliteral}{"Ugyldig innlogging"};
+66             \}
+67             \textcolor{keywordflow}{else}
+68             \{
+69                 \textcolor{comment}{// Brukernavn/Passord var gyldige}
+70                 \hyperlink{class_scintilab_1_1_form_login_aba278938a868ca382a657e0c1572a02b}{Username} = tbUsername.Text;
+71                 DialogResult = DialogResult.OK; \textcolor{comment}{// Sett dialogens resultat}
+72                 Close(); \textcolor{comment}{// Lukk vindu}
+73             \}
+74         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_login_aadaa84be09a645732d7beaf53abd6d89}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!Form\+Login\+\_\+\+Load@{Form\+Login\+\_\+\+Load}}
+\index{Form\+Login\+\_\+\+Load@{Form\+Login\+\_\+\+Load}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{Form\+Login\+\_\+\+Load}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Login.\+Form\+Login\+\_\+\+Load (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_login_aadaa84be09a645732d7beaf53abd6d89}
+Hendelse for lasting av dialog 
+
+Definisjon på linje 79 i filen Form\+Login.\+cs.
+
+
+\begin{DoxyCode}
+80         \{
+81             lblInfo.Text = \textcolor{stringliteral}{""};
+82             tbUsername.Select();
+83         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_login_a8c0c4b5c0c2994f179ff216893154fee}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!tb\+Password\+\_\+\+Key\+Press@{tb\+Password\+\_\+\+Key\+Press}}
+\index{tb\+Password\+\_\+\+Key\+Press@{tb\+Password\+\_\+\+Key\+Press}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{tb\+Password\+\_\+\+Key\+Press}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Login.\+tb\+Password\+\_\+\+Key\+Press (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Key\+Press\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_login_a8c0c4b5c0c2994f179ff216893154fee}
+Hendelse for inntasting av tegn i felt for passord 
+
+Definisjon på linje 100 i filen Form\+Login.\+cs.
+
+
+\begin{DoxyCode}
+101         \{
+102             \textcolor{keywordflow}{if} (e.KeyChar == \textcolor{charliteral}{'\(\backslash\)r'}) \textcolor{comment}{// Hvis tast er return}
+103             \{
+104                 e.Handled = \textcolor{keyword}{true}; \textcolor{comment}{// Dropp "default handler" for denne hendelsen}
+105                 \hyperlink{class_scintilab_1_1_form_login_a207ac68d96dbc96d570484f30f1d669d}{btnLogin\_Click}(sender, e); \textcolor{comment}{// Kjør samme kode som for innlogging}
+106             \}
+107         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_login_a7d992418cc7243b752c826cb9515188e}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!tb\+Username\+\_\+\+Key\+Press@{tb\+Username\+\_\+\+Key\+Press}}
+\index{tb\+Username\+\_\+\+Key\+Press@{tb\+Username\+\_\+\+Key\+Press}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{tb\+Username\+\_\+\+Key\+Press}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Login.\+tb\+Username\+\_\+\+Key\+Press (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Key\+Press\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_login_a7d992418cc7243b752c826cb9515188e}
+Hendelse for inntasting av tegn i felt for brukernavn 
+
+Definisjon på linje 88 i filen Form\+Login.\+cs.
+
+
+\begin{DoxyCode}
+89         \{
+90             \textcolor{keywordflow}{if} (e.KeyChar == \textcolor{charliteral}{'\(\backslash\)r'}) \textcolor{comment}{// Hvis tast er return}
+91             \{
+92                 e.Handled = \textcolor{keyword}{true}; \textcolor{comment}{// Dropp "default handler" for denne hendelsen}
+93                 tbPassword.Select(); \textcolor{comment}{// Sett felt for passord aktivt}
+94             \}
+95         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_login_aba278938a868ca382a657e0c1572a02b}{\index{Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}!Username@{Username}}
+\index{Username@{Username}!Scintilab\+::\+Form\+Login@{Scintilab\+::\+Form\+Login}}
+\subsubsection[{Username}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Form\+Login.\+Username}}\label{class_scintilab_1_1_form_login_aba278938a868ca382a657e0c1572a02b}
+Lagring av innskrevet brukernavn 
+
+Definisjon på linje 18 i filen Form\+Login.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_form_login_8cs}{Form\+Login.\+cs}\end{DoxyCompactItemize}

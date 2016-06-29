@@ -1,0 +1,67 @@
+\hypertarget{class_scintilab_1_1_media}{\section{Scintilab.\+Media Klasse Referanse}
+\label{class_scintilab_1_1_media}\index{Scintilab.\+Media@{Scintilab.\+Media}}
+}
+\subsection*{Statiske public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_scintilab_1_1_media_afc3f2e506d93f043cc082e4224b94713}{Play\+Wav} (string filename)
+\end{DoxyCompactItemize}
+\subsection*{Statiske private attributter}
+\begin{DoxyCompactItemize}
+\item 
+static System.\+Media.\+Sound\+Player \hyperlink{class_scintilab_1_1_media_a24bef6120f62f310fb31715fa05ad8d0}{player} = new System.\+Media.\+Sound\+Player()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for media avspilling. Denne klassen inneholder funksjoner for avspilling av .W\+A\+V filer. 
+
+Definisjon på linje 19 i filen Utils.\+cs.
+
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_media_afc3f2e506d93f043cc082e4224b94713}{\index{Scintilab\+::\+Media@{Scintilab\+::\+Media}!Play\+Wav@{Play\+Wav}}
+\index{Play\+Wav@{Play\+Wav}!Scintilab\+::\+Media@{Scintilab\+::\+Media}}
+\subsubsection[{Play\+Wav}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Media.\+Play\+Wav (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_media_afc3f2e506d93f043cc082e4224b94713}
+Avspill angitt .W\+A\+V fil.
+
+
+\begin{DoxyParams}{Parametre}
+{\em filename} & Navn på .W\+A\+V fil som skal avspilles \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 29 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+30         \{
+31             \textcolor{comment}{// Sett spillerens filbane for .WAV fil som skal avspilles}
+32             player.SoundLocation = Config.ExeDir + \textcolor{stringliteral}{"Resources"} + Path.DirectorySeparatorChar + filename;
+33 
+34             \textcolor{comment}{// Avspill filen hvis den finnes}
+35             \textcolor{keywordflow}{if}(File.Exists(\hyperlink{class_scintilab_1_1_media_a24bef6120f62f310fb31715fa05ad8d0}{player}.SoundLocation))
+36                 \hyperlink{class_scintilab_1_1_media_a24bef6120f62f310fb31715fa05ad8d0}{player}.Play();
+37         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_media_a24bef6120f62f310fb31715fa05ad8d0}{\index{Scintilab\+::\+Media@{Scintilab\+::\+Media}!player@{player}}
+\index{player@{player}!Scintilab\+::\+Media@{Scintilab\+::\+Media}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}System.\+Media.\+Sound\+Player Scintilab.\+Media.\+player = new System.\+Media.\+Sound\+Player()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_media_a24bef6120f62f310fb31715fa05ad8d0}
+Objekt for avspilling av media 
+
+Definisjon på linje 22 i filen Utils.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_utils_8cs}{Utils.\+cs}\end{DoxyCompactItemize}

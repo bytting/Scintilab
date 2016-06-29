@@ -1,0 +1,110 @@
+\hypertarget{class_scintilab_1_1_form_quick_view}{\section{Scintilab.\+Form\+Quick\+View Klasse Referanse}
+\label{class_scintilab_1_1_form_quick_view}\index{Scintilab.\+Form\+Quick\+View@{Scintilab.\+Form\+Quick\+View}}
+}
+
+
+Klasse for generisk visning av tekst.  
+
+
+Arvediagram for Scintilab.\+Form\+Quick\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scintilab_1_1_form_quick_view}
+\end{center}
+\end{figure}
+\subsection*{Public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scintilab_1_1_form_quick_view_abf21b337b509beb8c019afd6060debb6}{Form\+Quick\+View} (string content)
+\end{DoxyCompactItemize}
+\subsection*{Private medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_scintilab_1_1_form_quick_view_a6a301d86376c47fd9de9d9c372353121}{btn\+Close\+\_\+\+Click} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_quick_view_a710dbbd43f0f6af94cfe2fd9f5ff8b8b}{btn\+Print\+\_\+\+Click} (object sender, Event\+Args e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for generisk visning av tekst. 
+
+Definisjon på linje 16 i filen Form\+Quick\+View.\+cs.
+
+
+
+\subsection{Konstruktør-\/ \& destruktør-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_quick_view_abf21b337b509beb8c019afd6060debb6}{\index{Scintilab\+::\+Form\+Quick\+View@{Scintilab\+::\+Form\+Quick\+View}!Form\+Quick\+View@{Form\+Quick\+View}}
+\index{Form\+Quick\+View@{Form\+Quick\+View}!Scintilab\+::\+Form\+Quick\+View@{Scintilab\+::\+Form\+Quick\+View}}
+\subsubsection[{Form\+Quick\+View}]{\setlength{\rightskip}{0pt plus 5cm}Scintilab.\+Form\+Quick\+View.\+Form\+Quick\+View (
+\begin{DoxyParamCaption}
+\item[{string}]{content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scintilab_1_1_form_quick_view_abf21b337b509beb8c019afd6060debb6}
+Konstruktør 
+
+Definisjon på linje 21 i filen Form\+Quick\+View.\+cs.
+
+
+\begin{DoxyCode}
+22         \{
+23             InitializeComponent();
+24             tbContent.Text = content;
+25         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_quick_view_a6a301d86376c47fd9de9d9c372353121}{\index{Scintilab\+::\+Form\+Quick\+View@{Scintilab\+::\+Form\+Quick\+View}!btn\+Close\+\_\+\+Click@{btn\+Close\+\_\+\+Click}}
+\index{btn\+Close\+\_\+\+Click@{btn\+Close\+\_\+\+Click}!Scintilab\+::\+Form\+Quick\+View@{Scintilab\+::\+Form\+Quick\+View}}
+\subsubsection[{btn\+Close\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Quick\+View.\+btn\+Close\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_quick_view_a6a301d86376c47fd9de9d9c372353121}
+Hendelse for å avbryte dialog 
+
+Definisjon på linje 30 i filen Form\+Quick\+View.\+cs.
+
+
+\begin{DoxyCode}
+31         \{
+32             Close(); \textcolor{comment}{// Lukk vindu}
+33         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_quick_view_a710dbbd43f0f6af94cfe2fd9f5ff8b8b}{\index{Scintilab\+::\+Form\+Quick\+View@{Scintilab\+::\+Form\+Quick\+View}!btn\+Print\+\_\+\+Click@{btn\+Print\+\_\+\+Click}}
+\index{btn\+Print\+\_\+\+Click@{btn\+Print\+\_\+\+Click}!Scintilab\+::\+Form\+Quick\+View@{Scintilab\+::\+Form\+Quick\+View}}
+\subsubsection[{btn\+Print\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Quick\+View.\+btn\+Print\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_quick_view_a710dbbd43f0f6af94cfe2fd9f5ff8b8b}
+Hendelse for å printe tekst 
+
+Definisjon på linje 38 i filen Form\+Quick\+View.\+cs.
+
+
+\begin{DoxyCode}
+39         \{
+40             PrintDialog pd = \textcolor{keyword}{new} PrintDialog();
+41             pd.PrinterSettings = \textcolor{keyword}{new} PrinterSettings();
+42             \hyperlink{class_multipad_print_document}{MultipadPrintDocument} printDoc = \textcolor{keyword}{new} 
+      \hyperlink{class_multipad_print_document}{MultipadPrintDocument}();
+43 
+44             printDoc.PrinterSettings = pd.PrinterSettings;
+45             printDoc.Font = \textcolor{keyword}{new} Font(\textcolor{stringliteral}{"Courier New"}, 9, FontStyle.Regular);
+46             printDoc.Text = tbContent.Text;
+47             printDoc.Print();
+48 
+49             \textcolor{comment}{//string cout;}
+50             \textcolor{comment}{//Utils.RunCommand("DATAPLOT", cnfFile + " /SCALE=" + SysPar.ReportScaleY + " /XSCALE=" +
+       SysPar.ReportScaleX + " /ENHPLOT", out cout, false);}
+51         \}
+\end{DoxyCode}
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_form_quick_view_8cs}{Form\+Quick\+View.\+cs}\end{DoxyCompactItemize}

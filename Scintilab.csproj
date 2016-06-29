@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15ED6194-EF07-4B33-87A3-5E2EA0EFDBBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scintilab</RootNamespace>
+    <AssemblyName>Scintilab</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlWizard">
+      <HintPath>.\TabControlWizard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormEditGeomCalQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditGeomCalQA.Designer.cs">
+      <DependentUpon>FormEditGeomCalQA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBarcodeSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarcodeSample.Designer.cs">
+      <DependentUpon>FormBarcodeSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBarcodeSampleWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarcodeSampleWizard.Designer.cs">
+      <DependentUpon>FormBarcodeSampleWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateGeomCalQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateGeomCalQA.Designer.cs">
+      <DependentUpon>FormCreateGeomCalQA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputName.Designer.cs">
+      <DependentUpon>FormInputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJobReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJobReport.Designer.cs">
+      <DependentUpon>FormJobReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuickView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuickView.Designer.cs">
+      <DependentUpon>FormQuickView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultipadPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Types.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="FormEditGeomCalQA.resx">
+      <DependentUpon>FormEditGeomCalQA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBarcodeSample.resx">
+      <DependentUpon>FormBarcodeSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBarcodeSampleWizard.resx">
+      <DependentUpon>FormBarcodeSampleWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateGeomCalQA.resx">
+      <DependentUpon>FormCreateGeomCalQA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputName.resx">
+      <DependentUpon>FormInputName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJobReport.resx">
+      <DependentUpon>FormJobReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuickView.resx">
+      <DependentUpon>FormQuickView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,124 @@
+\hypertarget{class_scintilab_1_1_form_input_name}{\section{Scintilab.\+Form\+Input\+Name Klasse Referanse}
+\label{class_scintilab_1_1_form_input_name}\index{Scintilab.\+Form\+Input\+Name@{Scintilab.\+Form\+Input\+Name}}
+}
+
+
+Klasse for innlesing av et generisk navn fra bruker.  
+
+
+Arvediagram for Scintilab.\+Form\+Input\+Name\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scintilab_1_1_form_input_name}
+\end{center}
+\end{figure}
+\subsection*{Public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scintilab_1_1_form_input_name_a0dd3a62578332cfeb90a4fa212950a8d}{Form\+Input\+Name} (string caption)
+\end{DoxyCompactItemize}
+\subsection*{Public attributter}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_scintilab_1_1_form_input_name_aab6aee0df21ac4b5ae151806373b450c}{Selected\+Name}
+\end{DoxyCompactItemize}
+\subsection*{Private medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_scintilab_1_1_form_input_name_a7ba810a02a7b838eee75429c3c4bf7b1}{btn\+Ok\+\_\+\+Click} (object sender, Event\+Args e)
+\item 
+void \hyperlink{class_scintilab_1_1_form_input_name_ac25144763079c5cb49403059253bdfd4}{tb\+Name\+\_\+\+Key\+Press} (object sender, Key\+Press\+Event\+Args e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for innlesing av et generisk navn fra bruker. 
+
+Definisjon på linje 14 i filen Form\+Input\+Name.\+cs.
+
+
+
+\subsection{Konstruktør-\/ \& destruktør-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_input_name_a0dd3a62578332cfeb90a4fa212950a8d}{\index{Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}!Form\+Input\+Name@{Form\+Input\+Name}}
+\index{Form\+Input\+Name@{Form\+Input\+Name}!Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}}
+\subsubsection[{Form\+Input\+Name}]{\setlength{\rightskip}{0pt plus 5cm}Scintilab.\+Form\+Input\+Name.\+Form\+Input\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{caption}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scintilab_1_1_form_input_name_a0dd3a62578332cfeb90a4fa212950a8d}
+Konstruktør 
+
+Definisjon på linje 22 i filen Form\+Input\+Name.\+cs.
+
+
+\begin{DoxyCode}
+23         \{
+24             InitializeComponent();
+25             lblInfo.Text = caption;
+26         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_input_name_a7ba810a02a7b838eee75429c3c4bf7b1}{\index{Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}!btn\+Ok\+\_\+\+Click@{btn\+Ok\+\_\+\+Click}}
+\index{btn\+Ok\+\_\+\+Click@{btn\+Ok\+\_\+\+Click}!Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}}
+\subsubsection[{btn\+Ok\+\_\+\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Input\+Name.\+btn\+Ok\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_input_name_a7ba810a02a7b838eee75429c3c4bf7b1}
+Hendelse for O\+K knappen 
+
+Definisjon på linje 31 i filen Form\+Input\+Name.\+cs.
+
+
+\begin{DoxyCode}
+32         \{
+33             \textcolor{keywordflow}{if} (String.IsNullOrEmpty(tbName.Text))
+34             \{
+35                 MessageBox.Show(\textcolor{stringliteral}{"Du må velge et gyldig navn"});
+36                 \textcolor{keywordflow}{return};
+37             \}
+38             DialogResult = System.Windows.Forms.DialogResult.OK;
+39             \hyperlink{class_scintilab_1_1_form_input_name_aab6aee0df21ac4b5ae151806373b450c}{SelectedName} = tbName.Text;
+40             Close();
+41         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_form_input_name_ac25144763079c5cb49403059253bdfd4}{\index{Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}!tb\+Name\+\_\+\+Key\+Press@{tb\+Name\+\_\+\+Key\+Press}}
+\index{tb\+Name\+\_\+\+Key\+Press@{tb\+Name\+\_\+\+Key\+Press}!Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}}
+\subsubsection[{tb\+Name\+\_\+\+Key\+Press}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Form\+Input\+Name.\+tb\+Name\+\_\+\+Key\+Press (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Key\+Press\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_scintilab_1_1_form_input_name_ac25144763079c5cb49403059253bdfd4}
+Hendelse for innlesing av tegn 
+
+Definisjon på linje 46 i filen Form\+Input\+Name.\+cs.
+
+
+\begin{DoxyCode}
+47         \{
+48             \textcolor{keywordflow}{if} (e.KeyChar == \textcolor{charliteral}{'\(\backslash\)r'}) \textcolor{comment}{// Hvis tegnet er return}
+49             \{
+50                 e.Handled = \textcolor{keyword}{true}; \textcolor{comment}{// Dropp "default handler" for denne hendelsen}
+51                 \hyperlink{class_scintilab_1_1_form_input_name_a7ba810a02a7b838eee75429c3c4bf7b1}{btnOk\_Click}(sender, e); \textcolor{comment}{// Kjør kode for OK knappen}
+52             \}
+53         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_form_input_name_aab6aee0df21ac4b5ae151806373b450c}{\index{Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}!Selected\+Name@{Selected\+Name}}
+\index{Selected\+Name@{Selected\+Name}!Scintilab\+::\+Form\+Input\+Name@{Scintilab\+::\+Form\+Input\+Name}}
+\subsubsection[{Selected\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Form\+Input\+Name.\+Selected\+Name}}\label{class_scintilab_1_1_form_input_name_aab6aee0df21ac4b5ae151806373b450c}
+Lager for valgt navn 
+
+Definisjon på linje 17 i filen Form\+Input\+Name.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_form_input_name_8cs}{Form\+Input\+Name.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\hypertarget{class_scintilab_1_1_selection_info}{\section{Scintilab.\+Selection\+Info Klasse Referanse}
+\label{class_scintilab_1_1_selection_info}\index{Scintilab.\+Selection\+Info@{Scintilab.\+Selection\+Info}}
+}
+
+
+Klasse for parametere valgt av bruker gjennom grensesnitt.  
+
+
+\subsection*{Public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_scintilab_1_1_selection_info_a026a3024f472c5a40f805233fd8a82d7}{Init} ()
+\end{DoxyCompactItemize}
+\subsection*{Public attributter}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_scintilab_1_1_selection_info_aba3d0673e0d48ee2e2320fdb18179650}{Anal\+Type}
+\item 
+bool \hyperlink{class_scintilab_1_1_selection_info_a96e2aa901380fdaf56f62adb7ed4a7c8}{Is\+Wizard}
+\item 
+\hyperlink{class_scintilab_1_1_detector}{Detector} \hyperlink{class_scintilab_1_1_selection_info_aba0448eddbfd3ea7d133a4a7410e593a}{Selected\+Detector}
+\item 
+\hyperlink{class_scintilab_1_1_beaker_info}{Beaker\+Info} \hyperlink{class_scintilab_1_1_selection_info_a01bbabc09b9e8b503d1433b25d30c261}{Selected\+Beaker\+Info}
+\item 
+bool \hyperlink{class_scintilab_1_1_selection_info_a07ceb3649a622337e5f6f40cb63fc35a}{Do\+Start}
+\item 
+string \hyperlink{class_scintilab_1_1_selection_info_abb0c8ee7bd5b11a26c2d3faa2f358052}{Selected\+L\+I\+M\+S\+File}
+\item 
+List$<$ \hyperlink{class_scintilab_1_1_detector}{Detector} $>$ \hyperlink{class_scintilab_1_1_selection_info_a23c987113ffb2b75a7253ae95579901c}{All\+Detectors}
+\item 
+List$<$ \hyperlink{class_scintilab_1_1_beaker}{Beaker} $>$ \hyperlink{class_scintilab_1_1_selection_info_a48b525ccc458db1fbc75243378864922}{All\+Beakers}
+\item 
+List$<$ \hyperlink{class_scintilab_1_1_q_a_beaker}{Q\+A\+Beaker} $>$ \hyperlink{class_scintilab_1_1_selection_info_a524c6951cb71a220b5142cfd64f244cc}{All\+Q\+A\+Beakers}
+\item 
+\hyperlink{class_scintilab_1_1_system_parameters}{System\+Parameters} \hyperlink{class_scintilab_1_1_selection_info_a33bd5eca362c1934f22832481248d19d}{Sys\+Par}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for parametere valgt av bruker gjennom grensesnitt. 
+
+Definisjon på linje 189 i filen Types.\+cs.
+
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_selection_info_a026a3024f472c5a40f805233fd8a82d7}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Init@{Init}}
+\index{Init@{Init}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void Scintilab.\+Selection\+Info.\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_scintilab_1_1_selection_info_a026a3024f472c5a40f805233fd8a82d7}
+
+
+Definisjon på linje 191 i filen Types.\+cs.
+
+
+\begin{DoxyCode}
+192         \{
+193             \hyperlink{class_scintilab_1_1_selection_info_aba3d0673e0d48ee2e2320fdb18179650}{AnalType} = \textcolor{stringliteral}{"Sample"};
+194             \hyperlink{class_scintilab_1_1_selection_info_a96e2aa901380fdaf56f62adb7ed4a7c8}{IsWizard} = \textcolor{keyword}{false};
+195             \hyperlink{class_scintilab_1_1_selection_info_aba0448eddbfd3ea7d133a4a7410e593a}{SelectedDetector} = null;
+196             \hyperlink{class_scintilab_1_1_selection_info_a01bbabc09b9e8b503d1433b25d30c261}{SelectedBeakerInfo} = null;
+197             \textcolor{comment}{//SelectedBeaker = null;}
+198             \textcolor{comment}{//SelectedQABeaker = null;}
+199             \hyperlink{class_scintilab_1_1_selection_info_a07ceb3649a622337e5f6f40cb63fc35a}{DoStart} = \textcolor{keyword}{false};
+200             \hyperlink{class_scintilab_1_1_selection_info_abb0c8ee7bd5b11a26c2d3faa2f358052}{SelectedLIMSFile} = \textcolor{stringliteral}{""};
+201             \hyperlink{class_scintilab_1_1_selection_info_a23c987113ffb2b75a7253ae95579901c}{AllDetectors} = null;
+202             \hyperlink{class_scintilab_1_1_selection_info_a48b525ccc458db1fbc75243378864922}{AllBeakers} = null;
+203             \hyperlink{class_scintilab_1_1_selection_info_a524c6951cb71a220b5142cfd64f244cc}{AllQABeakers} = null;
+204             \hyperlink{class_scintilab_1_1_selection_info_a33bd5eca362c1934f22832481248d19d}{SysPar} = null;
+205         \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_selection_info_a48b525ccc458db1fbc75243378864922}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!All\+Beakers@{All\+Beakers}}
+\index{All\+Beakers@{All\+Beakers}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{All\+Beakers}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Beaker}$>$ Scintilab.\+Selection\+Info.\+All\+Beakers}}\label{class_scintilab_1_1_selection_info_a48b525ccc458db1fbc75243378864922}
+
+
+Definisjon på linje 215 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_a23c987113ffb2b75a7253ae95579901c}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!All\+Detectors@{All\+Detectors}}
+\index{All\+Detectors@{All\+Detectors}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{All\+Detectors}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Detector}$>$ Scintilab.\+Selection\+Info.\+All\+Detectors}}\label{class_scintilab_1_1_selection_info_a23c987113ffb2b75a7253ae95579901c}
+
+
+Definisjon på linje 214 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_a524c6951cb71a220b5142cfd64f244cc}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!All\+Q\+A\+Beakers@{All\+Q\+A\+Beakers}}
+\index{All\+Q\+A\+Beakers@{All\+Q\+A\+Beakers}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{All\+Q\+A\+Beakers}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Q\+A\+Beaker}$>$ Scintilab.\+Selection\+Info.\+All\+Q\+A\+Beakers}}\label{class_scintilab_1_1_selection_info_a524c6951cb71a220b5142cfd64f244cc}
+
+
+Definisjon på linje 216 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_aba3d0673e0d48ee2e2320fdb18179650}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Anal\+Type@{Anal\+Type}}
+\index{Anal\+Type@{Anal\+Type}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Anal\+Type}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Selection\+Info.\+Anal\+Type}}\label{class_scintilab_1_1_selection_info_aba3d0673e0d48ee2e2320fdb18179650}
+
+
+Definisjon på linje 207 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_a07ceb3649a622337e5f6f40cb63fc35a}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Do\+Start@{Do\+Start}}
+\index{Do\+Start@{Do\+Start}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Do\+Start}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Selection\+Info.\+Do\+Start}}\label{class_scintilab_1_1_selection_info_a07ceb3649a622337e5f6f40cb63fc35a}
+
+
+Definisjon på linje 212 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_a96e2aa901380fdaf56f62adb7ed4a7c8}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Is\+Wizard@{Is\+Wizard}}
+\index{Is\+Wizard@{Is\+Wizard}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Is\+Wizard}]{\setlength{\rightskip}{0pt plus 5cm}bool Scintilab.\+Selection\+Info.\+Is\+Wizard}}\label{class_scintilab_1_1_selection_info_a96e2aa901380fdaf56f62adb7ed4a7c8}
+
+
+Definisjon på linje 208 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_a01bbabc09b9e8b503d1433b25d30c261}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Selected\+Beaker\+Info@{Selected\+Beaker\+Info}}
+\index{Selected\+Beaker\+Info@{Selected\+Beaker\+Info}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Selected\+Beaker\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Beaker\+Info} Scintilab.\+Selection\+Info.\+Selected\+Beaker\+Info}}\label{class_scintilab_1_1_selection_info_a01bbabc09b9e8b503d1433b25d30c261}
+
+
+Definisjon på linje 210 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_aba0448eddbfd3ea7d133a4a7410e593a}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Selected\+Detector@{Selected\+Detector}}
+\index{Selected\+Detector@{Selected\+Detector}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Selected\+Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detector} Scintilab.\+Selection\+Info.\+Selected\+Detector}}\label{class_scintilab_1_1_selection_info_aba0448eddbfd3ea7d133a4a7410e593a}
+
+
+Definisjon på linje 209 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_abb0c8ee7bd5b11a26c2d3faa2f358052}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Selected\+L\+I\+M\+S\+File@{Selected\+L\+I\+M\+S\+File}}
+\index{Selected\+L\+I\+M\+S\+File@{Selected\+L\+I\+M\+S\+File}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Selected\+L\+I\+M\+S\+File}]{\setlength{\rightskip}{0pt plus 5cm}string Scintilab.\+Selection\+Info.\+Selected\+L\+I\+M\+S\+File}}\label{class_scintilab_1_1_selection_info_abb0c8ee7bd5b11a26c2d3faa2f358052}
+
+
+Definisjon på linje 213 i filen Types.\+cs.
+
+\hypertarget{class_scintilab_1_1_selection_info_a33bd5eca362c1934f22832481248d19d}{\index{Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}!Sys\+Par@{Sys\+Par}}
+\index{Sys\+Par@{Sys\+Par}!Scintilab\+::\+Selection\+Info@{Scintilab\+::\+Selection\+Info}}
+\subsubsection[{Sys\+Par}]{\setlength{\rightskip}{0pt plus 5cm}{\bf System\+Parameters} Scintilab.\+Selection\+Info.\+Sys\+Par}}\label{class_scintilab_1_1_selection_info_a33bd5eca362c1934f22832481248d19d}
+
+
+Definisjon på linje 217 i filen Types.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_types_8cs}{Types.\+cs}\end{DoxyCompactItemize}

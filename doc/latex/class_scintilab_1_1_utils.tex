@@ -1,0 +1,673 @@
+\hypertarget{class_scintilab_1_1_utils}{\section{Scintilab.\+Utils Klasse Referanse}
+\label{class_scintilab_1_1_utils}\index{Scintilab.\+Utils@{Scintilab.\+Utils}}
+}
+\subsection*{Statiske public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_scintilab_1_1_utils_a7da6e6cb6b676052c7c4ba920cc8f48c}{Has\+Job} (\hyperlink{class_scintilab_1_1_detector}{Detector} d)
+\item 
+static bool \hyperlink{class_scintilab_1_1_utils_a0aeabad40511af66c860cd14cec8db81}{Is\+Detector\+Ready} (\hyperlink{class_scintilab_1_1_detector}{Detector} d, ref Tool\+Strip\+Status\+Label lbl)
+\item 
+static bool \hyperlink{class_scintilab_1_1_utils_a378bfc726339b637f2a1720948c49ddf}{Validate\+Genie\+Path} (\hyperlink{class_scintilab_1_1_system_parameters}{System\+Parameters} sp, string new\+Genie\+Path)
+\item 
+static bool \hyperlink{class_scintilab_1_1_utils_aea5aaee8604dc11611bf141608af6036}{Run\+Command} (string cmd, string args, out string output, bool wait\+For\+Exit)
+\item 
+static void \hyperlink{class_scintilab_1_1_utils_a3bb111cc5bc6d318bc3fe2425eb9fa6c}{Serialize\+Detectors} (List$<$ \hyperlink{class_scintilab_1_1_detector}{Detector} $>$ detectors)
+\item 
+static void \hyperlink{class_scintilab_1_1_utils_a87bc038d93a8b7b75686a945cc8ab82f}{Serialize\+Beakers} (List$<$ \hyperlink{class_scintilab_1_1_beaker}{Beaker} $>$ beakers)
+\item 
+static void \hyperlink{class_scintilab_1_1_utils_af4ef299132954898ae7f02c71d704f23}{Serialize\+Q\+A\+Beakers} (List$<$ \hyperlink{class_scintilab_1_1_q_a_beaker}{Q\+A\+Beaker} $>$ qabeakers)
+\item 
+static void \hyperlink{class_scintilab_1_1_utils_a1def7832ca47212a1d252c470572b234}{Serialize\+Sys\+Par} (\hyperlink{class_scintilab_1_1_system_parameters}{System\+Parameters} sys\+Par)
+\item 
+static \hyperlink{class_scintilab_1_1_system_parameters}{System\+Parameters} \hyperlink{class_scintilab_1_1_utils_a2c91464a40a656071e8c705a60d001f4}{Deserialize\+Sys\+Par} ()
+\item 
+static List$<$ \hyperlink{class_scintilab_1_1_detector}{Detector} $>$ \hyperlink{class_scintilab_1_1_utils_a5012b935966d80094fb6dd5f6c02df53}{Deserialize\+Detectors} ()
+\item 
+static List$<$ \hyperlink{class_scintilab_1_1_beaker}{Beaker} $>$ \hyperlink{class_scintilab_1_1_utils_af01c79a4a4da7f3dcffc8e22fc06ecd1}{Deserialize\+Beakers} ()
+\item 
+static List$<$ \hyperlink{class_scintilab_1_1_q_a_beaker}{Q\+A\+Beaker} $>$ \hyperlink{class_scintilab_1_1_utils_a8a2f63ffeeda51eef2fc7a396f672cd9}{Deserialize\+Q\+A\+Beakers} ()
+\item 
+static void \hyperlink{class_scintilab_1_1_utils_adca861b1ad9c5024c6c1a7d2973011a5}{Serialize\+Job\+Params} (\hyperlink{class_scintilab_1_1_job_params}{Job\+Params} jp, string filename)
+\item 
+static \hyperlink{class_scintilab_1_1_job_params}{Job\+Params} \hyperlink{class_scintilab_1_1_utils_a2a6b21245e3a5aaeb201f2f665d77963}{Deserialize\+Job\+Params} (string filename)
+\item 
+static void \hyperlink{class_scintilab_1_1_utils_a1cbfcf1a651ebba2fd8fcf77b1c325f9}{Fix\+Directory\+Separator} (ref string path)
+\item 
+static double \hyperlink{class_scintilab_1_1_utils_ad7f3df742cd873fc5fd874c4b87b1b5f}{Convert\+To\+Double} (string text)
+\item 
+static bool \hyperlink{class_scintilab_1_1_utils_ad3f536338f6bca04d545e74499d7b2e5}{Valid\+Name} (string name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+Klasse for generelle hjelpefunksjoner Denne klassen inneholder diverse hjelpefunksjoner 
+
+Definisjon på linje 44 i filen Utils.\+cs.
+
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_scintilab_1_1_utils_ad7f3df742cd873fc5fd874c4b87b1b5f}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Convert\+To\+Double@{Convert\+To\+Double}}
+\index{Convert\+To\+Double@{Convert\+To\+Double}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Convert\+To\+Double}]{\setlength{\rightskip}{0pt plus 5cm}static double Scintilab.\+Utils.\+Convert\+To\+Double (
+\begin{DoxyParamCaption}
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_ad7f3df742cd873fc5fd874c4b87b1b5f}
+Konverter tekst til desimaltall (desimalseparator uavhengig)
+
+
+\begin{DoxyParams}{Parametre}
+{\em text} & Tekst som skal konverteres \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 378 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+379         \{
+380             \textcolor{comment}{// Erstatt '.' med systemets desimalseparator}
+381             text = text.Replace(\textcolor{stringliteral}{"."}, 
+      Thread.CurrentThread.CurrentCulture.NumberFormat.NumberDecimalSeparator);
+382             \textcolor{comment}{// Erstatt ',' med systemets desimalseparator}
+383             text = text.Replace(\textcolor{stringliteral}{","}, 
+      Thread.CurrentThread.CurrentCulture.NumberFormat.NumberDecimalSeparator);
+384             \textcolor{keywordflow}{return} Convert.ToDouble(text); \textcolor{comment}{// Konverter og returner desimaltall}
+385         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_af01c79a4a4da7f3dcffc8e22fc06ecd1}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Deserialize\+Beakers@{Deserialize\+Beakers}}
+\index{Deserialize\+Beakers@{Deserialize\+Beakers}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Deserialize\+Beakers}]{\setlength{\rightskip}{0pt plus 5cm}static List$<${\bf Beaker}$>$ Scintilab.\+Utils.\+Deserialize\+Beakers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_af01c79a4a4da7f3dcffc8e22fc06ecd1}
+Last inn geometri definisjoner fra fil
+
+\begin{DoxyReturn}{Returnerer}
+Liste med innlastede geometri datastrukturer 
+\end{DoxyReturn}
+
+
+Definisjon på linje 305 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+306         \{
+307             List<Beaker> beakers = \textcolor{keyword}{new} List<Beaker>();
+308             StreamReader sr = \textcolor{keyword}{new} StreamReader(Config.BeakerFile);
+309             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(beakers.GetType());
+310             beakers = x.Deserialize(sr) as List<Beaker>;
+311             sr.Close();
+312             \textcolor{keywordflow}{return} beakers;
+313         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a5012b935966d80094fb6dd5f6c02df53}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Deserialize\+Detectors@{Deserialize\+Detectors}}
+\index{Deserialize\+Detectors@{Deserialize\+Detectors}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Deserialize\+Detectors}]{\setlength{\rightskip}{0pt plus 5cm}static List$<${\bf Detector}$>$ Scintilab.\+Utils.\+Deserialize\+Detectors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a5012b935966d80094fb6dd5f6c02df53}
+Last inn detektor definisjoner fra fil
+
+\begin{DoxyReturn}{Returnerer}
+Liste med innlastede detektor datastrukturer 
+\end{DoxyReturn}
+
+
+Definisjon på linje 290 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+291         \{
+292             List<Detector> detectors = \textcolor{keyword}{new} List<Detector>();
+293             StreamReader sr = \textcolor{keyword}{new} StreamReader(Config.DetFile);
+294             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(detectors.GetType());
+295             detectors = x.Deserialize(sr) as List<Detector>;
+296             sr.Close();
+297             \textcolor{keywordflow}{return} detectors;
+298         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a2a6b21245e3a5aaeb201f2f665d77963}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Deserialize\+Job\+Params@{Deserialize\+Job\+Params}}
+\index{Deserialize\+Job\+Params@{Deserialize\+Job\+Params}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Deserialize\+Job\+Params}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Job\+Params} Scintilab.\+Utils.\+Deserialize\+Job\+Params (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a2a6b21245e3a5aaeb201f2f665d77963}
+Last inn jobb-\/parametere fra fil
+
+\begin{DoxyReturn}{Returnerer}
+Datastruktur med jobb-\/parametere 
+\end{DoxyReturn}
+
+
+Definisjon på linje 349 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+350         \{
+351             JobParams jp = \textcolor{keyword}{new} JobParams();
+352             StreamReader sr = \textcolor{keyword}{new} StreamReader(filename);
+353             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(jp.GetType());
+354             jp = x.Deserialize(sr) as JobParams;
+355             sr.Close();
+356             \textcolor{keywordflow}{return} jp;
+357         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a8a2f63ffeeda51eef2fc7a396f672cd9}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Deserialize\+Q\+A\+Beakers@{Deserialize\+Q\+A\+Beakers}}
+\index{Deserialize\+Q\+A\+Beakers@{Deserialize\+Q\+A\+Beakers}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Deserialize\+Q\+A\+Beakers}]{\setlength{\rightskip}{0pt plus 5cm}static List$<${\bf Q\+A\+Beaker}$>$ Scintilab.\+Utils.\+Deserialize\+Q\+A\+Beakers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a8a2f63ffeeda51eef2fc7a396f672cd9}
+Last inn Q\+A-\/geometri definisjoner fra fil
+
+\begin{DoxyReturn}{Returnerer}
+Liste med innlastede Q\+A-\/geometri datastrukturer 
+\end{DoxyReturn}
+
+
+Definisjon på linje 320 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+321         \{
+322             List<QABeaker> beakers = \textcolor{keyword}{new} List<QABeaker>();
+323             StreamReader sr = \textcolor{keyword}{new} StreamReader(Config.QABeakerFile);
+324             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(beakers.GetType());
+325             beakers = x.Deserialize(sr) as List<QABeaker>;
+326             sr.Close();
+327             \textcolor{keywordflow}{return} beakers;
+328         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a2c91464a40a656071e8c705a60d001f4}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Deserialize\+Sys\+Par@{Deserialize\+Sys\+Par}}
+\index{Deserialize\+Sys\+Par@{Deserialize\+Sys\+Par}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Deserialize\+Sys\+Par}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf System\+Parameters} Scintilab.\+Utils.\+Deserialize\+Sys\+Par (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a2c91464a40a656071e8c705a60d001f4}
+Last inn systemparametere fra fil
+
+\begin{DoxyReturn}{Returnerer}
+Datastruktur med innlastede systemparametere 
+\end{DoxyReturn}
+
+
+Definisjon på linje 275 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+276         \{
+277             SystemParameters sysPar = \textcolor{keyword}{new} SystemParameters();
+278             StreamReader sr = \textcolor{keyword}{new} StreamReader(Config.SysFile);
+279             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(sysPar.GetType());
+280             sysPar = x.Deserialize(sr) as SystemParameters;
+281             sr.Close();
+282             \textcolor{keywordflow}{return} sysPar;
+283         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a1cbfcf1a651ebba2fd8fcf77b1c325f9}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Fix\+Directory\+Separator@{Fix\+Directory\+Separator}}
+\index{Fix\+Directory\+Separator@{Fix\+Directory\+Separator}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Fix\+Directory\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Utils.\+Fix\+Directory\+Separator (
+\begin{DoxyParamCaption}
+\item[{ref string}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a1cbfcf1a651ebba2fd8fcf77b1c325f9}
+Legg til katalogseparator på katalogbane hvis den ikke finnes allerede
+
+
+\begin{DoxyParams}{Parametre}
+{\em path} & Katalogbane som skal utvides \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 364 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+365         \{
+366             \textcolor{keywordflow}{if} (path.Length > 0) \textcolor{comment}{// Skip hvis katalogbanen er tom}
+367             \{
+368                 \textcolor{keywordflow}{if} (path[path.Length - 1] != Path.DirectorySeparatorChar) \textcolor{comment}{// Hvis siste karakter ikke er
+       katalog separator...}
+369                     path += Path.DirectorySeparatorChar; \textcolor{comment}{// Legg til katalog separator}
+370             \}
+371         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a7da6e6cb6b676052c7c4ba920cc8f48c}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Has\+Job@{Has\+Job}}
+\index{Has\+Job@{Has\+Job}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Has\+Job}]{\setlength{\rightskip}{0pt plus 5cm}static bool Scintilab.\+Utils.\+Has\+Job (
+\begin{DoxyParamCaption}
+\item[{{\bf Detector}}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a7da6e6cb6b676052c7c4ba920cc8f48c}
+Avspill angitt .W\+A\+V fil.
+
+
+\begin{DoxyParams}{Parametre}
+{\em d} & Detektor som skal sjekkes for aktive jobber\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returnerer}
+Sant hvis detektoren har en aktiv jobb, usant ellers 
+\end{DoxyReturn}
+
+
+Definisjon på linje 53 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+54         \{
+55             \textcolor{comment}{// Opprett liste over filbaner til .BAT filer i jobb katalogen}
+56             \textcolor{keywordtype}{string}[] batFiles = Directory.GetFiles(\hyperlink{class_scintilab_1_1_config_a0810c3c214672429b456af8f77e98632}{Config.JobDir}, \textcolor{stringliteral}{"*.BAT"});
+57 
+58             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} file \textcolor{keywordflow}{in} batFiles)
+59             \{
+60                 \textcolor{comment}{// Opprett variabel med kun filnavnet (uten ending) fra filbanen}
+61                 \textcolor{keywordtype}{string} fn = Path.GetFileNameWithoutExtension(file);
+62 
+63                 \textcolor{comment}{// Hvis filnavnet tilsvarer navnet på detektoren, har detektoren en aktiv jobb}
+64                 \textcolor{keywordflow}{if} (d.Name.ToUpper() == fn.ToUpper())
+65                     \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{// Detektoren har en aktiv jobb}
+66             \}
+67             \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{// Detektoren har ikke en aktiv jobb}
+68         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a0aeabad40511af66c860cd14cec8db81}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Is\+Detector\+Ready@{Is\+Detector\+Ready}}
+\index{Is\+Detector\+Ready@{Is\+Detector\+Ready}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Is\+Detector\+Ready}]{\setlength{\rightskip}{0pt plus 5cm}static bool Scintilab.\+Utils.\+Is\+Detector\+Ready (
+\begin{DoxyParamCaption}
+\item[{{\bf Detector}}]{d, }
+\item[{ref Tool\+Strip\+Status\+Label}]{lbl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a0aeabad40511af66c860cd14cec8db81}
+Sjekk om angitt detektor er klar for bruk
+
+
+\begin{DoxyParams}{Parametre}
+{\em d} & Detektor som skal sjekkes \\
+\hline
+{\em lbl} & Label som skal vise status meldinger\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returnerer}
+Sant hvis detektoren er klar for bruk, usant ellers 
+\end{DoxyReturn}
+
+
+Definisjon på linje 78 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+79         \{
+80             \textcolor{comment}{// Kjør programmet "mcainfo.exe" for å få tak i status på detektoren}
+81             \textcolor{keywordtype}{string} cout; \textcolor{comment}{// Ta imot standard output fra mcainfo.exe med denne}
+82             \textcolor{comment}{// Kjør programmet mcainfo.exe}
+83             \textcolor{keywordflow}{if} (!Utils.RunCommand(Config.ExeDir + \textcolor{stringliteral}{"mcainfo.exe"}, d.Name, out cout, \textcolor{keyword}{true}))
+84             \{
+85                 \textcolor{comment}{// Noe gikk galt, vis feilmelding og avslutt}
+86                 MessageBox.Show(\textcolor{stringliteral}{"mcainfo.exe feilet"});
+87                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+88             \}
+89 
+90             \textcolor{keywordtype}{char}[] itemSeps = \{ \textcolor{charliteral}{','} \}; \textcolor{comment}{// Seperatør for parametere gitt av mcainfo.exe}
+91             \textcolor{keywordtype}{char}[] tokenSeps = \{ \textcolor{charliteral}{':'} \}; \textcolor{comment}{// Seperatør for for å splitte navn/verdi på parametere gitt av
+       mcainfo.exe}
+92             \textcolor{keywordtype}{string}[] items = cout.Split(itemSeps, StringSplitOptions.RemoveEmptyEntries); \textcolor{comment}{// Opprett liste
+       over parametere}
+93             \textcolor{keywordtype}{string}[] exists = items[1].Split(tokenSeps, StringSplitOptions.RemoveEmptyEntries); \textcolor{comment}{// Hent
+       verdi for parameter 1}
+94             \textcolor{keywordtype}{string}[] voltage = items[2].Split(tokenSeps, StringSplitOptions.RemoveEmptyEntries); \textcolor{comment}{// Hent
+       verdi for parameter 2}
+95             \textcolor{keywordtype}{string}[] busy = items[3].Split(tokenSeps, StringSplitOptions.RemoveEmptyEntries); \textcolor{comment}{// Hent verdi
+       for parameter 3}
+96             \textcolor{keywordtype}{string}[] chans = items[4].Split(tokenSeps, StringSplitOptions.RemoveEmptyEntries); \textcolor{comment}{// Hent
+       verdi for parameter 4}
+97 
+98             \textcolor{comment}{// Hvis verdien til parameter 1 (exists) ikke er "YES", så er ikke detektoren definert i
+       Genie2k}
+99             \textcolor{keywordflow}{if} (exists[1].Trim().ToUpper() != \textcolor{stringliteral}{"YES"})
+100             \{
+101                 \textcolor{comment}{// Vis feilmelding og avslutt}
+102                 MessageBox.Show(\textcolor{stringliteral}{"Detektor "} + d.Name + \textcolor{stringliteral}{" er ikke tilkoblet"});
+103                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+104             \}
+105 
+106             \textcolor{comment}{// Hvis verdien til parameter 3 (busy) ikke er "NO", så er detektoren opptatt}
+107             \textcolor{keywordflow}{if} (busy[1].Trim().ToUpper() != \textcolor{stringliteral}{"NO"})
+108             \{
+109                 \textcolor{comment}{// Vis feilmelding og avslutt}
+110                 MessageBox.Show(\textcolor{stringliteral}{"Detektor "} + d.Name + \textcolor{stringliteral}{" er opptatt"});
+111                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+112             \}
+113 
+114             \textcolor{comment}{// Hvis verdien til parameter 2 (voltage) ikke er "ON", så mangler detektoren høyspenning}
+115             \textcolor{keywordflow}{if} (voltage[1].Trim().ToUpper() != \textcolor{stringliteral}{"ON"})
+116             \{
+117                 \textcolor{comment}{// Si fra til bruker at høyspenning settes på}
+118                 lbl.Text = \textcolor{stringliteral}{"Setter på høyspenning for detektor "} + d.Name + \textcolor{stringliteral}{"..."};
+119                 Application.DoEvents(); \textcolor{comment}{// Tøm hendelseskøen slik at lbl blir oppdatert umiddelbart}
+120                 \textcolor{keywordtype}{string} output; \textcolor{comment}{// Ta imot standard output}
+121                 \textcolor{comment}{// Kjør programmet HVCNTL for å seete på høyspenning for detektoren}
+122                 Utils.RunCommand(\textcolor{stringliteral}{"HVCNTL"}, \textcolor{stringliteral}{"det:"} + d.Name + \textcolor{stringliteral}{" /ON"}, out output, \textcolor{keyword}{true});                
+123             \}
+124 
+125             \textcolor{comment}{// Sett detektorens max antall kanaler like parameter 4 (chans) fra mcainfo.exe}
+126             d.MaxChannels = Convert.ToInt32(chans[1]);
+127 
+128             \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{// Detektoren er klar til bruk}
+129         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_aea5aaee8604dc11611bf141608af6036}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Run\+Command@{Run\+Command}}
+\index{Run\+Command@{Run\+Command}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Run\+Command}]{\setlength{\rightskip}{0pt plus 5cm}static bool Scintilab.\+Utils.\+Run\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{cmd, }
+\item[{string}]{args, }
+\item[{out string}]{output, }
+\item[{bool}]{wait\+For\+Exit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_aea5aaee8604dc11611bf141608af6036}
+Kjør et eksternt program
+
+
+\begin{DoxyParams}{Parametre}
+{\em cmd} & Filbane til kjørbart program \\
+\hline
+{\em args} & Parametere for kjørbart program \\
+\hline
+{\em output} & Lagring av programmets standard output \\
+\hline
+{\em wait\+For\+Exit} & Angi om funksjonen skal blokkere til eksternt program har avsluttet\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returnerer}
+Sant hvis kjøring av eksternt program var vellykket, usant ellers 
+\end{DoxyReturn}
+
+
+Definisjon på linje 189 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+190         \{
+191             \textcolor{comment}{// Opprett og fyll inn datastruktur for ny prosess}
+192             Process p = \textcolor{keyword}{new} Process();
+193             p.StartInfo.FileName = cmd;
+194             p.StartInfo.Arguments = args;
+195             p.StartInfo.WorkingDirectory = \hyperlink{class_scintilab_1_1_config_a0810c3c214672429b456af8f77e98632}{Config.JobDir};
+196             p.StartInfo.UseShellExecute = \textcolor{keyword}{false};
+197             p.StartInfo.CreateNoWindow = \textcolor{keyword}{true};
+198             p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+199             p.StartInfo.RedirectStandardOutput = waitForExit ? \textcolor{keyword}{true} : \textcolor{keyword}{false};
+200 
+201             \textcolor{comment}{// Start eksternt program}
+202             p.Start();
+203             output = \textcolor{stringliteral}{""};
+204             \textcolor{keywordflow}{if}(waitForExit)
+205             \{
+206                 \textcolor{comment}{// Ta imot standard output}
+207                 output = p.StandardOutput.ReadToEnd();
+208                 \textcolor{comment}{// Vent til programmet avslutter}
+209                 p.WaitForExit();
+210                 \textcolor{comment}{// Returner exitverdien til programmet}
+211                 \textcolor{keywordflow}{return} p.ExitCode == 0;
+212             \}
+213             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+214         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a87bc038d93a8b7b75686a945cc8ab82f}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Serialize\+Beakers@{Serialize\+Beakers}}
+\index{Serialize\+Beakers@{Serialize\+Beakers}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Serialize\+Beakers}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Utils.\+Serialize\+Beakers (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Beaker} $>$}]{beakers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a87bc038d93a8b7b75686a945cc8ab82f}
+Lagre geometri definisjoner til fil
+
+
+\begin{DoxyParams}{Parametre}
+{\em beakers} & Liste med geometri datastrukturer \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 236 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+237         \{
+238             StreamWriter sw = \textcolor{keyword}{new} StreamWriter(Config.BeakerFile);
+239             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(beakers.GetType());
+240             x.Serialize(sw, beakers);
+241             sw.Close();
+242         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a3bb111cc5bc6d318bc3fe2425eb9fa6c}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Serialize\+Detectors@{Serialize\+Detectors}}
+\index{Serialize\+Detectors@{Serialize\+Detectors}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Serialize\+Detectors}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Utils.\+Serialize\+Detectors (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Detector} $>$}]{detectors}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a3bb111cc5bc6d318bc3fe2425eb9fa6c}
+Lagre detektor definisjoner til fil
+
+
+\begin{DoxyParams}{Parametre}
+{\em detectors} & Liste med detektor datastrukturer \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 221 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+222         \{
+223             \textcolor{comment}{// Opprett object for serialisering til fil}
+224             StreamWriter sw = \textcolor{keyword}{new} StreamWriter(Config.DetFile);
+225             \textcolor{comment}{// Opprett object for xml serialisering av detektor listen}
+226             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(detectors.GetType());
+227             x.Serialize(sw, detectors); \textcolor{comment}{// Serialiser listen til fil}
+228             sw.Close(); \textcolor{comment}{// Lukk serialiseringsobjektet}
+229         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_adca861b1ad9c5024c6c1a7d2973011a5}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Serialize\+Job\+Params@{Serialize\+Job\+Params}}
+\index{Serialize\+Job\+Params@{Serialize\+Job\+Params}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Serialize\+Job\+Params}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Utils.\+Serialize\+Job\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf Job\+Params}}]{jp, }
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_adca861b1ad9c5024c6c1a7d2973011a5}
+Lagre jobb-\/parametere til fil
+
+
+\begin{DoxyParams}{Parametre}
+{\em jp} & Datastruktur med jobb parametere \\
+\hline
+{\em filename} & Filbane til .X\+M\+L fil som skal lagres \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 336 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+337         \{
+338             StreamWriter sw = \textcolor{keyword}{new} StreamWriter(filename);
+339             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(jp.GetType());
+340             x.Serialize(sw, jp);
+341             sw.Close();
+342         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_af4ef299132954898ae7f02c71d704f23}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Serialize\+Q\+A\+Beakers@{Serialize\+Q\+A\+Beakers}}
+\index{Serialize\+Q\+A\+Beakers@{Serialize\+Q\+A\+Beakers}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Serialize\+Q\+A\+Beakers}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Utils.\+Serialize\+Q\+A\+Beakers (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Q\+A\+Beaker} $>$}]{qabeakers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_af4ef299132954898ae7f02c71d704f23}
+Lagre Q\+A-\/geometri definisjoner til fil
+
+
+\begin{DoxyParams}{Parametre}
+{\em qabeakers} & Liste med Q\+A-\/geometri datastrukturer \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 249 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+250         \{
+251             StreamWriter sw = \textcolor{keyword}{new} StreamWriter(Config.QABeakerFile);
+252             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(qabeakers.GetType());
+253             x.Serialize(sw, qabeakers);
+254             sw.Close();
+255         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a1def7832ca47212a1d252c470572b234}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Serialize\+Sys\+Par@{Serialize\+Sys\+Par}}
+\index{Serialize\+Sys\+Par@{Serialize\+Sys\+Par}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Serialize\+Sys\+Par}]{\setlength{\rightskip}{0pt plus 5cm}static void Scintilab.\+Utils.\+Serialize\+Sys\+Par (
+\begin{DoxyParamCaption}
+\item[{{\bf System\+Parameters}}]{sys\+Par}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a1def7832ca47212a1d252c470572b234}
+Lagre systemparametere til fil
+
+
+\begin{DoxyParams}{Parametre}
+{\em sys\+Par} & datastruktur med systemparametere \\
+\hline
+\end{DoxyParams}
+
+
+Definisjon på linje 262 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+263         \{
+264             StreamWriter sw = \textcolor{keyword}{new} StreamWriter(Config.SysFile);
+265             XmlSerializer x = \textcolor{keyword}{new} XmlSerializer(sysPar.GetType());
+266             x.Serialize(sw, sysPar);
+267             sw.Close();
+268         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_a378bfc726339b637f2a1720948c49ddf}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Validate\+Genie\+Path@{Validate\+Genie\+Path}}
+\index{Validate\+Genie\+Path@{Validate\+Genie\+Path}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Validate\+Genie\+Path}]{\setlength{\rightskip}{0pt plus 5cm}static bool Scintilab.\+Utils.\+Validate\+Genie\+Path (
+\begin{DoxyParamCaption}
+\item[{{\bf System\+Parameters}}]{sp, }
+\item[{string}]{new\+Genie\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_a378bfc726339b637f2a1720948c49ddf}
+Sjekk at angitt Genie2k katalog er gyldig
+
+
+\begin{DoxyParams}{Parametre}
+{\em sp} & System parametere for \hyperlink{namespace_scintilab}{Scintilab} \\
+\hline
+{\em new\+Genie\+Path} & Katalogbane som skal sjekkes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returnerer}
+Sant hvis katalogbanen er en gyldig Genie2k katalog, usant ellers 
+\end{DoxyReturn}
+
+
+Definisjon på linje 139 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+140         \{
+141             \textcolor{comment}{// Hvis angitt katalogbane er gyldig, avslutt med suksess status}
+142             \textcolor{keywordflow}{if} (!String.IsNullOrEmpty(newGeniePath)
+143                 && Directory.Exists(newGeniePath)
+144                 && Directory.Exists(newGeniePath + Path.DirectorySeparatorChar + \textcolor{stringliteral}{"EXEFILES"}))
+145                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+146 
+147             \textcolor{comment}{// Angitt katalogbane var ugyldig eller ikke funnet, be brukeren velge en Genie2k katalog}
+148             FolderBrowserDialog bd = \textcolor{keyword}{new} FolderBrowserDialog();
+149             \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+150             bd.Description = \textcolor{stringliteral}{"Velg GENIE2K katalog"};
+151             bd.SelectedPath = Path.GetPathRoot(Environment.SystemDirectory);
+152 
+153             \textcolor{comment}{// Fortsett til brukeren har angitt en gyldig Genie2k katalog eller trykket "cancel"}
+154             \textcolor{keywordflow}{while} (!done)
+155             \{
+156                 \textcolor{keywordflow}{if} (bd.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
+157                     \textcolor{keywordflow}{break};
+158                 newGeniePath = bd.SelectedPath;
+159                 \textcolor{keywordflow}{if} (String.IsNullOrEmpty(newGeniePath)
+160                     || !Directory.Exists(newGeniePath)
+161                     || !Directory.Exists(newGeniePath + Path.DirectorySeparatorChar + \textcolor{stringliteral}{"EXEFILES"})
+162                     || !File.Exists(newGeniePath + Path.DirectorySeparatorChar + \textcolor{stringliteral}{"EXEFILES"} + 
+      Path.DirectorySeparatorChar + \textcolor{stringliteral}{"MVCG.EXE"}))
+163                 \{
+164                     \textcolor{comment}{// Vis feilmelding}
+165                     MessageBox.Show(\textcolor{stringliteral}{"Katalogen "} + newGeniePath + \textcolor{stringliteral}{" ser ikke ut til å være gyldig. Prøv
+       igjen"}, \textcolor{stringliteral}{"Feil"});
+166                 \}
+167                 \textcolor{keywordflow}{else}
+168                 \{
+169                     \textcolor{comment}{// Brukeren har valgt en gyldig Genie2k katalog. Lagre denne og avslutt løkken}
+170                     sp.GenieDirectory = newGeniePath; \textcolor{comment}{// Sett Genie2k katalogen i systemparameterene}
+171                     \hyperlink{class_scintilab_1_1_utils_a1def7832ca47212a1d252c470572b234}{SerializeSysPar}(sp); \textcolor{comment}{// Lagre systemparameterene tilbake til fil}
+172                     done = \textcolor{keyword}{true}; \textcolor{comment}{// Avslutt løkke}
+173                 \}
+174             \}
+175 
+176             \textcolor{keywordflow}{return} done;
+177         \}
+\end{DoxyCode}
+\hypertarget{class_scintilab_1_1_utils_ad3f536338f6bca04d545e74499d7b2e5}{\index{Scintilab\+::\+Utils@{Scintilab\+::\+Utils}!Valid\+Name@{Valid\+Name}}
+\index{Valid\+Name@{Valid\+Name}!Scintilab\+::\+Utils@{Scintilab\+::\+Utils}}
+\subsubsection[{Valid\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static bool Scintilab.\+Utils.\+Valid\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_scintilab_1_1_utils_ad3f536338f6bca04d545e74499d7b2e5}
+Sjekk at et enhetsnavn kun inneholder gyldige karakterer
+
+
+\begin{DoxyParams}{Parametre}
+{\em name} & navnet som skal sjekkes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returnerer}
+Sant hvis navnet er gyldig, usant ellers 
+\end{DoxyReturn}
+
+
+Definisjon på linje 394 i filen Utils.\+cs.
+
+
+\begin{DoxyCode}
+395         \{
+396             \textcolor{comment}{// Tom streng er ugyldig}
+397             \textcolor{keywordflow}{if} (String.IsNullOrEmpty(name))
+398                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+399 
+400             \textcolor{comment}{// Sjekk at hver karakter i navnet er enten bokstav, tall eller '-'}
+401             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{char} ch \textcolor{keywordflow}{in} name)
+402                 \textcolor{keywordflow}{if} (!Char.IsLetterOrDigit(ch) && ch != \textcolor{charliteral}{'-'})
+403                     \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{// Ugyldig tegn funnet}
+404             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+405         \}
+\end{DoxyCode}
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_utils_8cs}{Utils.\+cs}\end{DoxyCompactItemize}

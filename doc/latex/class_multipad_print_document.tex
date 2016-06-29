@@ -1,0 +1,375 @@
+\hypertarget{class_multipad_print_document}{\section{Multipad\+Print\+Document Klasse Referanse}
+\label{class_multipad_print_document}\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+}
+Arvediagram for Multipad\+Print\+Document\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_multipad_print_document}
+\end{center}
+\end{figure}
+\subsection*{Public medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_multipad_print_document_abfc7a27a7d1ad64a21c77e20a83e420f}{Multipad\+Print\+Document} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected memdlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_multipad_print_document_ac451309e0952b87aac24e9c2faf89fb3}{On\+Begin\+Print} (Print\+Event\+Args e)
+\item 
+override void \hyperlink{class_multipad_print_document_af9ad8a7b3384fcf5607d7ad5a6e36b2d}{On\+Print\+Page} (Print\+Page\+Event\+Args e)
+\item 
+override void \hyperlink{class_multipad_print_document_acb19b2c896d69a4cfa1e10c5058b5185}{On\+End\+Print} (Print\+Event\+Args e)
+\end{DoxyCompactItemize}
+\subsection*{Egenskaper}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_multipad_print_document_a9dcbcaa3ddbfc7d34fda92e5409e8723}{Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Font \hyperlink{class_multipad_print_document_aaf1813fbc532697e2d3bfb95c33f9d19}{Font}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private medlemsfunksjoner}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{class_multipad_print_document_aab739e0161348dff7a3196588b97a293}{Next\+Char\+Is\+New\+Line} ()
+\item 
+Int32 \hyperlink{class_multipad_print_document_a0795165575b0075bff77d2fcc7c0699f}{Next\+Char} ()
+\end{DoxyCompactItemize}
+\subsection*{Private attributter}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_multipad_print_document_ad8b42ce8bc5588c1a28b209c85dd8fa7}{\+\_\+text} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{class_multipad_print_document_aaf1813fbc532697e2d3bfb95c33f9d19}{Font} \hyperlink{class_multipad_print_document_abfb15491f048283a8868a3b410f8b78e}{\+\_\+font} = null
+\item 
+Int32 \hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\+\_\+offset} = 0
+\item 
+Int32 \hyperlink{class_multipad_print_document_a1b6cabd162baf6ce1c5256059fa1e840}{\+\_\+pageno} = 0
+\item 
+const Int32 \hyperlink{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{Eos} = -\/1
+\item 
+const Int32 \hyperlink{class_multipad_print_document_a4a051275c8477606d5ef1d8f89cc54ca}{New\+Line} = -\/2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detaljert beskrivelse}
+
+
+Definisjon på linje 8 i filen Multipad\+Print\+Document.\+cs.
+
+
+
+\subsection{Konstruktør-\/ \& destruktør-\/dokumentasjon}
+\hypertarget{class_multipad_print_document_abfc7a27a7d1ad64a21c77e20a83e420f}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{Multipad\+Print\+Document}]{\setlength{\rightskip}{0pt plus 5cm}Multipad\+Print\+Document.\+Multipad\+Print\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_multipad_print_document_abfc7a27a7d1ad64a21c77e20a83e420f}
+
+
+Definisjon på linje 15 i filen Multipad\+Print\+Document.\+cs.
+
+
+\begin{DoxyCode}
+16     \{
+17     \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsfunksjon-\/dokumentasjon}
+\hypertarget{class_multipad_print_document_a0795165575b0075bff77d2fcc7c0699f}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Next\+Char@{Next\+Char}}
+\index{Next\+Char@{Next\+Char}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{Next\+Char}]{\setlength{\rightskip}{0pt plus 5cm}Int32 Multipad\+Print\+Document.\+Next\+Char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_multipad_print_document_a0795165575b0075bff77d2fcc7c0699f}
+
+
+Definisjon på linje 59 i filen Multipad\+Print\+Document.\+cs.
+
+
+\begin{DoxyCode}
+60     \{
+61         \textcolor{keywordflow}{if} (\hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset} >= this.\hyperlink{class_multipad_print_document_ad8b42ce8bc5588c1a28b209c85dd8fa7}{\_text}.Length)
+62             \textcolor{keywordflow}{return} -1;
+63 
+64         \textcolor{keywordflow}{if} (\hyperlink{class_multipad_print_document_aab739e0161348dff7a3196588b97a293}{NextCharIsNewLine}()) \{
+65             \hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset} += Environment.NewLine.Length;
+66             \textcolor{keywordflow}{return} -2;
+67         \}
+68 
+69         \textcolor{keywordflow}{return} (Int32)\hyperlink{class_multipad_print_document_ad8b42ce8bc5588c1a28b209c85dd8fa7}{\_text}[\hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset}++];
+70     \}
+\end{DoxyCode}
+\hypertarget{class_multipad_print_document_aab739e0161348dff7a3196588b97a293}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Next\+Char\+Is\+New\+Line@{Next\+Char\+Is\+New\+Line}}
+\index{Next\+Char\+Is\+New\+Line@{Next\+Char\+Is\+New\+Line}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{Next\+Char\+Is\+New\+Line}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Multipad\+Print\+Document.\+Next\+Char\+Is\+New\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_multipad_print_document_aab739e0161348dff7a3196588b97a293}
+
+
+Definisjon på linje 39 i filen Multipad\+Print\+Document.\+cs.
+
+
+\begin{DoxyCode}
+40     \{
+41         Int32 nl = Environment.NewLine.Length;
+42         Int32 tl = \_text.Length - \hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset};
+43 
+44         \textcolor{keywordflow}{if} (tl < nl) \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+45 
+46         String newline = Environment.NewLine;
+47 
+48         \textcolor{keywordflow}{for} (Int32 i = 0; i < nl; i++) \{
+49             \textcolor{keywordflow}{if} (\hyperlink{class_multipad_print_document_ad8b42ce8bc5588c1a28b209c85dd8fa7}{\_text}[\_offset + i] != newline[i])
+50                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+51         \}
+52 
+53         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+54     \}
+\end{DoxyCode}
+\hypertarget{class_multipad_print_document_ac451309e0952b87aac24e9c2faf89fb3}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!On\+Begin\+Print@{On\+Begin\+Print}}
+\index{On\+Begin\+Print@{On\+Begin\+Print}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{On\+Begin\+Print}]{\setlength{\rightskip}{0pt plus 5cm}override void Multipad\+Print\+Document.\+On\+Begin\+Print (
+\begin{DoxyParamCaption}
+\item[{Print\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_multipad_print_document_ac451309e0952b87aac24e9c2faf89fb3}
+
+
+Definisjon på linje 31 i filen Multipad\+Print\+Document.\+cs.
+
+
+\begin{DoxyCode}
+32     \{
+33         \hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset} = 0;
+34         \hyperlink{class_multipad_print_document_a1b6cabd162baf6ce1c5256059fa1e840}{\_pageno} = 1;
+35 
+36         base.OnBeginPrint(e);
+37     \}
+\end{DoxyCode}
+\hypertarget{class_multipad_print_document_acb19b2c896d69a4cfa1e10c5058b5185}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!On\+End\+Print@{On\+End\+Print}}
+\index{On\+End\+Print@{On\+End\+Print}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{On\+End\+Print}]{\setlength{\rightskip}{0pt plus 5cm}override void Multipad\+Print\+Document.\+On\+End\+Print (
+\begin{DoxyParamCaption}
+\item[{Print\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_multipad_print_document_acb19b2c896d69a4cfa1e10c5058b5185}
+
+
+Definisjon på linje 196 i filen Multipad\+Print\+Document.\+cs.
+
+
+\begin{DoxyCode}
+197     \{
+198         base.OnEndPrint(e);
+199     \}
+\end{DoxyCode}
+\hypertarget{class_multipad_print_document_af9ad8a7b3384fcf5607d7ad5a6e36b2d}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!On\+Print\+Page@{On\+Print\+Page}}
+\index{On\+Print\+Page@{On\+Print\+Page}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{On\+Print\+Page}]{\setlength{\rightskip}{0pt plus 5cm}override void Multipad\+Print\+Document.\+On\+Print\+Page (
+\begin{DoxyParamCaption}
+\item[{Print\+Page\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_multipad_print_document_af9ad8a7b3384fcf5607d7ad5a6e36b2d}
+
+
+Definisjon på linje 72 i filen Multipad\+Print\+Document.\+cs.
+
+
+\begin{DoxyCode}
+73     \{
+74         base.OnPrintPage(e);
+75 
+76         Single pagewidth = e.MarginBounds.Width * 3.0f;
+77         Single pageheight = e.MarginBounds.Height * 3.0f;
+78 
+79         Single textwidth = 0.0f;
+80         Single textheight = 0.0f;
+81 
+82         Single offsetx = e.MarginBounds.Left * 3.0f;
+83         Single offsety = e.MarginBounds.Top * 3.0f;
+84 
+85         Single x = offsetx;
+86         Single y = offsety;
+87 
+88         StringBuilder line = \textcolor{keyword}{new} StringBuilder(256);
+89         StringFormat sf = StringFormat.GenericTypographic;
+90         sf.FormatFlags = StringFormatFlags.DisplayFormatControl;
+91         sf.SetTabStops(0.0f, \textcolor{keyword}{new} Single[]\{300.0f\});
+92 
+93         RectangleF r;
+94 
+95         Graphics g = e.Graphics;
+96         g.PageUnit = GraphicsUnit.Document;
+97 
+98         SizeF size = g.MeasureString(\textcolor{stringliteral}{"X"}, \hyperlink{class_multipad_print_document_abfb15491f048283a8868a3b410f8b78e}{\_font}, 1, sf);
+99         Single lineheight = size.Height;
+100 
+101         \textcolor{comment}{// make sure we can print at least 1 line (font too big?)}
+102         \textcolor{keywordflow}{if} (lineheight + (lineheight * 3) > pageheight) \{
+103 
+104             \textcolor{comment}{// cannot print at least 1 line and footer}
+105             g.Dispose();
+106 
+107             e.HasMorePages = \textcolor{keyword}{false};
+108 
+109             \textcolor{keywordflow}{return};
+110         \}
+111 
+112         \textcolor{comment}{// don't include footer}
+113         pageheight -= lineheight * 3;
+114 
+115         \textcolor{comment}{// last whitespace in line buffer}
+116         Int32 lastws = -1;
+117 
+118         \textcolor{comment}{// next character}
+119         Int32 c = \hyperlink{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{Eos};
+120 
+121         \textcolor{keywordflow}{for} (;;) \{
+122 
+123             \textcolor{comment}{// get next character}
+124             c = \hyperlink{class_multipad_print_document_a0795165575b0075bff77d2fcc7c0699f}{NextChar}();
+125 
+126             \textcolor{comment}{// append c to line if not NewLine or Eos}
+127             \textcolor{keywordflow}{if} ((c != \hyperlink{class_multipad_print_document_a4a051275c8477606d5ef1d8f89cc54ca}{NewLine}) && (c != \hyperlink{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{Eos})) \{
+128                 Char ch = Convert.ToChar(c);
+129                 line.Append(ch);
+130 
+131                 \textcolor{comment}{// if ch is whitespace, remember pos and continue}
+132                 \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{' '} || ch == \textcolor{charliteral}{'\(\backslash\)t'}) \{
+133                     lastws = line.Length - 1;
+134                     \textcolor{keywordflow}{continue};
+135                 \}
+136             \}
+137 
+138             \textcolor{comment}{// measure string if line is not empty}
+139             \textcolor{keywordflow}{if} (line.Length > 0) \{
+140                 size = g.MeasureString(line.ToString(), \_font, Int32.MaxValue,
+141                     StringFormat.GenericTypographic);
+142                 textwidth = size.Width;
+143             \}
+144 
+145             \textcolor{comment}{// draw line if line is full, if NewLine or if last line}
+146             \textcolor{keywordflow}{if} (c == \hyperlink{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{Eos} || (textwidth > pagewidth) || (c == \hyperlink{class_multipad_print_document_a4a051275c8477606d5ef1d8f89cc54ca}{NewLine})) \{
+147                 \textcolor{keywordflow}{if} (textwidth > pagewidth) \{
+148                     \textcolor{keywordflow}{if} (lastws != -1) \{
+149                         \hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset} -= line.Length - lastws - 1;
+150                         line.Length = lastws + 1;
+151                     \} \textcolor{keywordflow}{else} \{
+152                         line.Length--;
+153                         \hyperlink{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\_offset}--;
+154                     \}
+155                 \}
+156 
+157                 \textcolor{comment}{// there's something to draw}
+158                 \textcolor{keywordflow}{if} (line.Length > 0) \{
+159                     r = \textcolor{keyword}{new} RectangleF(x, y, pagewidth, lineheight);
+160                     sf.Alignment = StringAlignment.Near;
+161                     g.DrawString(line.ToString(), \_font, Brushes.Black, r, sf);
+162                 \}
+163 
+164                 \textcolor{comment}{// increase ypos}
+165                 y += lineheight;
+166                 textheight += lineheight;
+167 
+168                 \textcolor{comment}{// empty line buffer}
+169                 line.Length = 0;
+170                 textwidth = 0.0f;
+171                 lastws = -1;
+172             \}
+173 
+174             \textcolor{comment}{// if next line doesn't fit on page anymore, exit loop}
+175             \textcolor{keywordflow}{if} (textheight > (pageheight - lineheight))
+176                 \textcolor{keywordflow}{break};
+177 
+178             \textcolor{keywordflow}{if} (c == \hyperlink{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{Eos})
+179                 \textcolor{keywordflow}{break};
+180         \}
+181 
+182         \textcolor{comment}{// print footer}
+183         x = offsetx;
+184         y = offsety + pageheight + (lineheight * 2);
+185         r = \textcolor{keyword}{new} RectangleF(x, y, pagewidth, lineheight);
+186         sf.Alignment = StringAlignment.Center;
+187         g.DrawString(\_pageno.ToString(), \_font, Brushes.Black, r, sf);
+188 
+189         g.Dispose();
+190 
+191         \hyperlink{class_multipad_print_document_a1b6cabd162baf6ce1c5256059fa1e840}{\_pageno}++;
+192 
+193         e.HasMorePages = (c != \hyperlink{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{Eos});
+194     \}
+\end{DoxyCode}
+
+
+\subsection{Medlemsdata-\/dokumentasjon}
+\hypertarget{class_multipad_print_document_abfb15491f048283a8868a3b410f8b78e}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!\+\_\+font@{\+\_\+font}}
+\index{\+\_\+font@{\+\_\+font}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{\+\_\+font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font} Multipad\+Print\+Document.\+\_\+font = null\hspace{0.3cm}{\ttfamily [private]}}}\label{class_multipad_print_document_abfb15491f048283a8868a3b410f8b78e}
+
+
+Definisjon på linje 11 i filen Multipad\+Print\+Document.\+cs.
+
+\hypertarget{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!\+\_\+offset@{\+\_\+offset}}
+\index{\+\_\+offset@{\+\_\+offset}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{\+\_\+offset}]{\setlength{\rightskip}{0pt plus 5cm}Int32 Multipad\+Print\+Document.\+\_\+offset = 0\hspace{0.3cm}{\ttfamily [private]}}}\label{class_multipad_print_document_a5a30e0a4319d60a90ea0ec1f861d4afa}
+
+
+Definisjon på linje 12 i filen Multipad\+Print\+Document.\+cs.
+
+\hypertarget{class_multipad_print_document_a1b6cabd162baf6ce1c5256059fa1e840}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!\+\_\+pageno@{\+\_\+pageno}}
+\index{\+\_\+pageno@{\+\_\+pageno}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{\+\_\+pageno}]{\setlength{\rightskip}{0pt plus 5cm}Int32 Multipad\+Print\+Document.\+\_\+pageno = 0\hspace{0.3cm}{\ttfamily [private]}}}\label{class_multipad_print_document_a1b6cabd162baf6ce1c5256059fa1e840}
+
+
+Definisjon på linje 13 i filen Multipad\+Print\+Document.\+cs.
+
+\hypertarget{class_multipad_print_document_ad8b42ce8bc5588c1a28b209c85dd8fa7}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!\+\_\+text@{\+\_\+text}}
+\index{\+\_\+text@{\+\_\+text}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{\+\_\+text}]{\setlength{\rightskip}{0pt plus 5cm}String Multipad\+Print\+Document.\+\_\+text = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_multipad_print_document_ad8b42ce8bc5588c1a28b209c85dd8fa7}
+
+
+Definisjon på linje 10 i filen Multipad\+Print\+Document.\+cs.
+
+\hypertarget{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Eos@{Eos}}
+\index{Eos@{Eos}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{Eos}]{\setlength{\rightskip}{0pt plus 5cm}const Int32 Multipad\+Print\+Document.\+Eos = -\/1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_multipad_print_document_adfd2fe48dc1a582ea58044a93dda2353}
+
+
+Definisjon på linje 56 i filen Multipad\+Print\+Document.\+cs.
+
+\hypertarget{class_multipad_print_document_a4a051275c8477606d5ef1d8f89cc54ca}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!New\+Line@{New\+Line}}
+\index{New\+Line@{New\+Line}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{New\+Line}]{\setlength{\rightskip}{0pt plus 5cm}const Int32 Multipad\+Print\+Document.\+New\+Line = -\/2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_multipad_print_document_a4a051275c8477606d5ef1d8f89cc54ca}
+
+
+Definisjon på linje 57 i filen Multipad\+Print\+Document.\+cs.
+
+
+
+\subsection{Egenskaps-\/dokumentasjon}
+\hypertarget{class_multipad_print_document_aaf1813fbc532697e2d3bfb95c33f9d19}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Font@{Font}}
+\index{Font@{Font}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{Font}]{\setlength{\rightskip}{0pt plus 5cm}Font Multipad\+Print\+Document.\+Font\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_multipad_print_document_aaf1813fbc532697e2d3bfb95c33f9d19}
+
+
+Definisjon på linje 26 i filen Multipad\+Print\+Document.\+cs.
+
+\hypertarget{class_multipad_print_document_a9dcbcaa3ddbfc7d34fda92e5409e8723}{\index{Multipad\+Print\+Document@{Multipad\+Print\+Document}!Text@{Text}}
+\index{Text@{Text}!Multipad\+Print\+Document@{Multipad\+Print\+Document}}
+\subsubsection[{Text}]{\setlength{\rightskip}{0pt plus 5cm}String Multipad\+Print\+Document.\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_multipad_print_document_a9dcbcaa3ddbfc7d34fda92e5409e8723}
+
+
+Definisjon på linje 20 i filen Multipad\+Print\+Document.\+cs.
+
+
+
+Dokumentasjonen for denne klasse ble generert fra følgende fil\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_multipad_print_document_8cs}{Multipad\+Print\+Document.\+cs}\end{DoxyCompactItemize}

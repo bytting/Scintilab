@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scintilab", "Scintilab.csproj", "{15ED6194-EF07-4B33-87A3-5E2EA0EFDBBD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Scintilab-Setup", "Scintilab-Setup\Scintilab-Setup.vdproj", "{B1733730-A5EA-48DD-9F89-3B8821C6CAA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15ED6194-EF07-4B33-87A3-5E2EA0EFDBBD}.Debug|x86.ActiveCfg = Debug|x86
+		{15ED6194-EF07-4B33-87A3-5E2EA0EFDBBD}.Debug|x86.Build.0 = Debug|x86
+		{15ED6194-EF07-4B33-87A3-5E2EA0EFDBBD}.Release|x86.ActiveCfg = Release|x86
+		{15ED6194-EF07-4B33-87A3-5E2EA0EFDBBD}.Release|x86.Build.0 = Release|x86
+		{B1733730-A5EA-48DD-9F89-3B8821C6CAA1}.Debug|x86.ActiveCfg = Debug
+		{B1733730-A5EA-48DD-9F89-3B8821C6CAA1}.Debug|x86.Build.0 = Debug
+		{B1733730-A5EA-48DD-9F89-3B8821C6CAA1}.Release|x86.ActiveCfg = Release
+		{B1733730-A5EA-48DD-9F89-3B8821C6CAA1}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1360,7 +1360,9 @@
             this.cboxSampQuantUnit.FormattingEnabled = true;
             this.cboxSampQuantUnit.Items.AddRange(new object[] {
             "g",
-            "Kg"});
+            "Kg",
+            "Kg dw",
+            "Kg tw"});
             this.cboxSampQuantUnit.Location = new System.Drawing.Point(0, 20);
             this.cboxSampQuantUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cboxSampQuantUnit.Name = "cboxSampQuantUnit";

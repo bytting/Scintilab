@@ -733,7 +733,7 @@ namespace Scintilab
             if(tabs.SelectedTab == tabJobs)
                 updateGridJobs();
 
-            // Oppdater grensesnittet hvis valgt fane ikke prøve informasjon
+            // Oppdater grensesnittet hvis valgt fane ikke er prøve informasjon
             if (tabs.SelectedTab != tabSample)
             {
                 tabsSamples.SelectedTab = tabSamplesParams;
@@ -765,7 +765,7 @@ namespace Scintilab
                 else
                 {
                     lblSampIsReanal.Text = "";
-                    btnSampStart.Text = "Start";
+                    btnSampStart.Text = "Start";                    
                     tbSampRef.Text = d.Name + DateTime.Now.Year.ToString().Substring(2, 2) + String.Format("{0:0000}", d.SpectrumCounter + 1);
                 }
             }

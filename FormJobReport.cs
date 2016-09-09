@@ -40,7 +40,7 @@ namespace Scintilab
         Detector Detector;
         public bool UpdateDetectors;
         SystemParameters SysPar;
-        JobParams jp = null;
+        JobParams jp = null;        
 
         /** 
          * Konstruktør         
@@ -53,7 +53,7 @@ namespace Scintilab
             Detector = detector;
             SysPar = sysPar;
             IsReanal = isReanal;
-            UpdateDetectors = false;
+            UpdateDetectors = false;            
         }
 
         /** 
@@ -70,10 +70,8 @@ namespace Scintilab
             if (File.Exists(parFile))
                 jp = Utils.DeserializeJobParams(parFile);
 
-            if (File.Exists(rptFile))
-            {
-                tbReport.Text = File.ReadAllText(rptFile, Encoding.GetEncoding(1252));
-            }
+            if (File.Exists(rptFile))            
+                tbReport.Text = File.ReadAllText(rptFile, Encoding.GetEncoding(1252));            
 
             hasError = false;
             if (File.Exists(outFile))
@@ -97,7 +95,7 @@ namespace Scintilab
                     cbExportLIMS.Checked = true;
             }
 
-            // Fjern selection fra inputfelter
+            // Fjern selection fra input felter
             tbReport.Select(0, 0);
             tbLog.Select(0, 0);
         }
@@ -205,8 +203,14 @@ namespace Scintilab
 
                     if (!Directory.Exists(Config.ArchiveDir + Detector.Name))
                         Directory.CreateDirectory(Config.ArchiveDir + Detector.Name);
-                    if (!Directory.Exists(Config.ArchiveDir + Detector.Name + Path.DirectorySeparatorChar + year))
+                    if (!Directory.Exists(Config.ArchiveDir + Detector.Name + Path.DirectorySeparatorChar + year))                    
                         Directory.CreateDirectory(Config.ArchiveDir + Detector.Name + Path.DirectorySeparatorChar + year);
+
+                    Detector.SpectrumCounter++;
+                    UpdateDetectors = true;    
+
+                    if (Directory.GetFiles(Config.ArchiveDir + Detector.Name + Path.DirectorySeparatorChar + year, Detector.Name + "*.CNF").Length == 0)
+                        Detector.SpectrumCounter = 0;                    
 
                     if (cbExportLIMS.Checked)    
                         File.Copy(rptFile, SysPar.LimsImport + jp.SampleID + ".NAI.RES", true);
@@ -216,9 +220,8 @@ namespace Scintilab
                     File.Move(parFile, archiveDir + baseName + ".PAR");
                     
                     File.Delete(batFile);
-                    File.Delete(outFile);
-                    Detector.SpectrumCounter++;
-                    UpdateDetectors = true;
+                    File.Delete(outFile);                                    
+
                     lblStatus.Text = "Jobb for detektor " + Detector.Name + " ble arkivert som " + baseName;
 
                     if (cbPrint.Checked)
@@ -246,6 +249,6 @@ namespace Scintilab
             }
 
             Close();
-        }
+        }        
     }
 }

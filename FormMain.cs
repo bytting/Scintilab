@@ -351,7 +351,11 @@ namespace Scintilab
         {
             try
             {
-                tabs.HideTabs = true; // Skjul faner i grensesnitt
+                tabs.Appearance = TabAppearance.FlatButtons;
+                tabs.ItemSize = new Size(0, 1);
+                tabs.SizeMode = TabSizeMode.Fixed;
+                tabs.SelectedTab = pageMenu;
+                
                 Width = 800; // Bredde på vindu
                 Height = 550; // Høyde på vindu
                 lblToolsInterface.Text = tabs.SelectedTab.Text; // Vis navnet på valgt fane i toppmenyen
@@ -553,14 +557,14 @@ namespace Scintilab
             }
 
             // Diverse oppdateringer for grensesnittet
-            if (tabs.SelectedTab == tabAdmin && tabsAdmin.SelectedTab == tabAdminQA && btnAdmQANew.Visible == false)
+            if (tabs.SelectedTab == pageAdmin && tabsAdmin.SelectedTab == tabAdminQA && btnAdmQANew.Visible == false)
                 btnAdmQANew.Visible = true;
-            else if((tabs.SelectedTab != tabAdmin || tabsAdmin.SelectedTab != tabAdminQA) && btnAdmQANew.Visible == true)
+            else if((tabs.SelectedTab != pageAdmin || tabsAdmin.SelectedTab != tabAdminQA) && btnAdmQANew.Visible == true)
                 btnAdmQANew.Visible = false;
 
-            if (tabs.SelectedTab == tabAdmin && tabsAdmin.SelectedTab == tabAdminGeom && btnAdmGeoNew.Visible == false)
+            if (tabs.SelectedTab == pageAdmin && tabsAdmin.SelectedTab == tabAdminGeom && btnAdmGeoNew.Visible == false)
                 btnAdmGeoNew.Visible = true;
-            else if ((tabs.SelectedTab != tabAdmin || tabsAdmin.SelectedTab != tabAdminGeom) && btnAdmGeoNew.Visible == true)
+            else if ((tabs.SelectedTab != pageAdmin || tabsAdmin.SelectedTab != tabAdminGeom) && btnAdmGeoNew.Visible == true)
                 btnAdmGeoNew.Visible = false;
         }
 
@@ -671,7 +675,7 @@ namespace Scintilab
         private void btnMenuJobs_Click(object sender, EventArgs e)
         {
             // Skift til jobb fanen
-            tabs.SelectedTab = tabJobs;
+            tabs.SelectedTab = pageJobs;
         }
 
         /** 
@@ -693,7 +697,7 @@ namespace Scintilab
             }
 
             // Skift til arkiv fanen
-            tabs.SelectedTab = tabArchive;
+            tabs.SelectedTab = pageArchive;
         }
 
         /** 
@@ -702,7 +706,7 @@ namespace Scintilab
         private void MenuItemAdmin_Click(object sender, EventArgs e)
         {
             // Skift til admin fanen
-            tabs.SelectedTab = tabAdmin;
+            tabs.SelectedTab = pageAdmin;
         }
 
         /** 
@@ -711,7 +715,7 @@ namespace Scintilab
         private void btnBack_Click(object sender, EventArgs e)
         {
             // Skift til meny fanen
-            tabs.SelectedTab = tabMenu;
+            tabs.SelectedTab = pageMenu;
         }
 
         /** 
@@ -724,17 +728,17 @@ namespace Scintilab
             lblStatus.Text = "";
 
             // Aktiver/Deaktiver "back" knappen basert på valgt fane
-            if (tabs.SelectedTab == tabMenu)
+            if (tabs.SelectedTab == pageMenu)
                 btnBack.Enabled = false;
             else
                 btnBack.Enabled = true;
 
             // Oppdater jobb informasjon hvis valgt fane er jobb fanen
-            if(tabs.SelectedTab == tabJobs)
+            if(tabs.SelectedTab == pageJobs)
                 updateGridJobs();
 
             // Oppdater grensesnittet hvis valgt fane ikke er prøve informasjon
-            if (tabs.SelectedTab != tabSample)
+            if (tabs.SelectedTab != pageSample)
             {
                 tabsSamples.SelectedTab = tabSamplesParams;
                 tabsBuildup.SelectedTab = tabBuildupNone;
@@ -771,7 +775,7 @@ namespace Scintilab
             }
 
             // Oppdater grensesnittet hvis valgt fane er admin
-            if (tabs.SelectedTab != tabAdmin)
+            if (tabs.SelectedTab != pageAdmin)
             {
                 clearAdmBeakers();
                 lbAdmGeomList.ClearSelected();
@@ -782,7 +786,7 @@ namespace Scintilab
             }
 
             // Oppdater grensesnittet hvis valgt fane er detektor meny
-            if (tabs.SelectedTab == tabDetectors)
+            if (tabs.SelectedTab == pageDetectors)
             {
                 foreach (ListViewItem item in lvDetectors.Items)
                     item.Selected = false;
@@ -816,7 +820,7 @@ namespace Scintilab
             // Hvis valgt detektor allerede har en pågående jobb, gå til jobb info og avbryt
             if (DetectorHasJob(d))
             {
-                tabs.SelectedTab = tabJobs;
+                tabs.SelectedTab = pageJobs;
                 return;
             }
 
@@ -827,7 +831,7 @@ namespace Scintilab
             // SJekk om detektor er klar for bruk
             if (!Utils.IsDetectorReady(d, ref lblStatus))
             {
-                tabs.SelectedTab = tabMenu;
+                tabs.SelectedTab = pageMenu;
                 return;
             }
             
@@ -1377,7 +1381,7 @@ namespace Scintilab
             tbSampComment.Text = Items[8];
             tabsSamples.SelectedTab = tabSamplesParams;
             tabsBuildup.SelectedTab = tabBuildupNone;
-            tabs.SelectedTab = tabSample;
+            tabs.SelectedTab = pageSample;
             sr.Close();
             return true;
         }
@@ -1665,7 +1669,7 @@ namespace Scintilab
                 form.ShowDialog();
             }
 
-            tabs.SelectedTab = tabMenu;
+            tabs.SelectedTab = pageMenu;
         }
 
         /**        
@@ -2241,7 +2245,7 @@ namespace Scintilab
                 tbSampAdvPreTimeValue.Enabled = false;
                 cboxSampAdvPreTimeUnit.Enabled = false;
                 
-                tabs.SelectedTab = tabSample;
+                tabs.SelectedTab = pageSample;
                 tabsSamples.SelectedTab = tabSamplesParams;
             }
             catch (Exception ex)
@@ -2416,7 +2420,7 @@ namespace Scintilab
         private void MenuItemLogout_Click(object sender, EventArgs e)
         {
             // Tøm felter for bruker
-            tabs.SelectedTab = tabMenu;
+            tabs.SelectedTab = pageMenu;
             lblStatusUsername.Text = "";
 
             // Vis vindu for innlogging
@@ -2680,7 +2684,7 @@ namespace Scintilab
                 SetSampleFieldsStatus(true);
             }
 
-            tabs.SelectedTab = tabSample;
+            tabs.SelectedTab = pageSample;
 
             if (si.DoStart && no_problem)
                 btnSampStart_Click(null, null);
@@ -2741,7 +2745,7 @@ namespace Scintilab
             else
             {
                 UpdateDetectorLists();
-                tabs.SelectedTab = tabDetectors;
+                tabs.SelectedTab = pageDetectors;
             }
         }
 

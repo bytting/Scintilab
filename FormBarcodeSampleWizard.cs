@@ -78,15 +78,18 @@ namespace Scintilab
          */
         private void FormBarcodeSampleWizard_Load(object sender, EventArgs e)
         {
+            tabs.Appearance = TabAppearance.FlatButtons;
+            tabs.ItemSize = new Size(0, 1);
+            tabs.SizeMode = TabSizeMode.Fixed;
+
             // Tøm alle felter
-            tabs.HideTabs = true;
             lblStatus.Text = "";
             lblSelectedDetector.Text = "";
             lblErrorDet.Text = "";
             lblErrorGeom.Text = "";
             lblErrorSamp.Text = "";
             lblErrorStart.Text = "";
-            tabs.SelectedTab = tabDet;
+            tabs.SelectedTab = pageDet;
             tbDetector.Select();
         }
 
@@ -138,17 +141,17 @@ namespace Scintilab
                         lblSelectedDetectorGeom.Text = "Valgt detektor: " + det;
                         if (SelInfo.AnalType == "Bkg")
                         {
-                            tabs.SelectedTab = tabStart;
+                            tabs.SelectedTab = pageStart;
                             tbStart.Select();
                         }
                         else if (SelInfo.AnalType == "Ref")
                         {
-                            tabs.SelectedTab = tabGeom;
+                            tabs.SelectedTab = pageGeom;
                             tbGeom.Select();
                         }
                         else
                         {
-                            tabs.SelectedTab = tabSamp;
+                            tabs.SelectedTab = pageSamp;
                             tbSampID.Select();
                         }
                         Media.PlayWav("success.wav");
@@ -176,7 +179,7 @@ namespace Scintilab
                 {
                     Media.PlayWav("success.wav");
                     SelInfo.SelectedLIMSFile = fname;
-                    tabs.SelectedTab = tabStart;
+                    tabs.SelectedTab = pageStart;
                 }
                 else
                 {
@@ -233,7 +236,7 @@ namespace Scintilab
                             //SelectedQAName = bi.QAName;
 
                             Media.PlayWav("success.wav");
-                            tabs.SelectedTab = tabStart;
+                            tabs.SelectedTab = pageStart;
                         }
                         else
                         {
